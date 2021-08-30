@@ -1,0 +1,8 @@
+Image	Name	Class	Parent	ROI	Centroid X µm	Centroid Y µm	ROI: 2.00 µm per pixel: ADH1B: Mean	Num Detections	Area µm^2	Perimeter µm
+725_composite_PHILEMON.tif	Tumor	Tumor	Image	Geometry	8096.6	3479.4	0.5469	216371	33080703.1	3272700.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Image	Geometry	7875.5	3534.7	18.3327	240804	33473641	2708054
+725_composite_PHILEMON.tif	ADH1B	ADH1B	Stroma	Geometry	7791.6	3907.4	61.4007	64772	9110254.7	2669934.1
+725_composite_PHILEMON.tif	FAP	FAP	Stroma	Geometry	9224.4	2373.4	9.0361	8615	1782903	880071.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9034.4	2728.2	11.419	47145	7613833	3714676.7
+725_composite_PHILEMON.tif	20µm	20µm	Image	Geometry	7913.3	3515.5	5.2285	361484	66131015.2	917825.3
+725_composite_PHILEMON.tif	8µm	8µm	Image	Geometry	7962.6	3490.9	2.9185	305819	54443395.8	1519451.3
