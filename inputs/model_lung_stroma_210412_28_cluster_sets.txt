@@ -1,0 +1,50 @@
+node	parent
+13	Epithelial
+18	Mitochondrial
+1	Meso. fib.
+16	Junk
+6	Junk
+24	FAP+ CAF
+22	FAP+aSMA+ CAF_22
+26	FAP+aSMA+ CAF_26
+11	MYH11+aSMA+ CAF
+4	Alv. fib.
+8	Inf. alv. fib.
+5	Pericyte
+12	Pericyte
+25	Smooth muscle
+7	Smooth muscle
+9	MSC/Adv. fib.
+20	ADH1B+ CAF
+17	CCL19+ PvC
+19	CLU+ fib.
+14	gCap
+2	gCap
+15	Aerocyte
+27	Artery
+21	Inflamed endo
+10	Lymphatics
+3	SELE+ venule
+23	SELE- venule
+28	Tip cells
+Meso. fib.	Fibroblast
+Inf. alv. fib.	Fibroblast
+Alv. fib.	Fibroblast
+CLU+ fib.	Fibroblast
+MSC	Fibroblast
+FAP+ CAF	Fibroblast
+FAP+aSMA+ CAF_22	Fibroblast
+FAP+aSMA+ CAF_26	Fibroblast
+MYH11+aSMA+ CAF	Fibroblast
+ADH1B+ CAF	Fibroblast
+Tip cells	Endothelial
+SELE- venule	Endothelial
+SELE+ venule	Endothelial
+Lymphatics	Endothelial
+Inflamed endo	Endothelial
+Artery	Endothelial
+Aerocyte	Endothelial
+gCap	Endothelial
+CCL19+ PvC	Perivascular
+Smooth muscle	Perivascular
+Pericyte	Perivascular
