@@ -1,0 +1,187 @@
+sample_ID,patient_ID,tissue,library_chemistry,prime,prep
+34,554,Normal,V2,3,beads
+35,554,Tumor,V2,3,beads
+36,558,Tumor,V2,3,beads
+37,564,Normal,V2,3,beads
+38,564,Tumor,V2,3,beads
+39,569,Normal,V2,3,beads
+40,569,Tumor,V2,3,beads
+41,570,Normal,V2,3,beads
+42,570,Tumor,V2,3,beads
+43,571,Tumor,V2,3,beads
+44,572,Normal,V2,3,beads
+45,572,Tumor,V2,3,beads
+46,578,Normal,V2,3,beads
+47,578,Tumor,V2,3,beads
+48,581,Tumor,V2,3,beads
+49,581,Normal,V2,3,beads
+50,581,Normal,V2,3,beads
+51,581,Tumor,V2,3,beads
+52,584,Tumor,V2,3,beads
+53,584,Tumor,V2,3,beads
+54,584,Normal,V2,3,beads
+55,584,Normal,V2,3,beads
+56,593,Normal,V2,3,beads
+57,593,Tumor,V2,3,beads
+58,596,Tumor,V2,3,beads
+59,596,Tumor,V2,3,beads
+60,596,Normal,V2,3,beads
+61,596,Normal,V2,3,beads
+62,630,Tumor,V2,3,beads
+63,630,Normal,V2,3,beads
+95,626,Tumor,V2,3,beads
+96,626,Normal,V2,3,beads
+97,626,Tumor,V2,3,beads
+98,626,Normal,V2,3,beads
+99,695,Tumor,V2,3,digest/dead cell
+100,695,Normal,V2,3,digest/dead cell
+101,695,PBMC,V2,3,
+102,mouse_a20,mouse,V2,3,
+103,695,Tumor,V2,3,digest/dead cell
+104,695,Normal,V2,3,digest/dead cell
+105,695,PBMC,V2,3,
+106,mouse_a20,mouse,V2,3,
+107,695,Tumor,V2,3,digest/dead cell
+108,695,Normal,V2,3,digest/dead cell
+109,695,PBMC,V2,3,
+110,mouse_a20,mouse,V2,3,
+111,695,Tumor,V2,3,digest/dead cell
+112,695,Normal,V2,3,digest/dead cell
+113,695,PBMC,V2,3,
+114,mouse_a20,mouse,V2,3,
+115,695,Normal,V1,5,CD2
+116,695,Tumor,V1,5,CD2
+117,695,Normal,V1,5,CD2
+118,695,Tumor,V1,5,CD2
+119,695,Normal,V1,5,CD2
+120,695,Tumor,V1,5,CD2
+235,405,Normal,V2,3,stroma_sort
+236,405,Tumor,V2,3,stroma_sort
+237,407,Normal,V2,3,stroma_sort
+238,407,Tumor,V2,3,stroma_sort
+239,458,Normal,V2,3,stroma_sort
+240,458,Tumor,V2,3,stroma_sort
+241,460,Normal,V2,3,stroma_sort
+242,460,Tumor,V2,3,stroma_sort
+243,464,Normal,V2,3,stroma_sort
+244,464,Tumor,V2,3,stroma_sort
+245,514,Normal,V2,3,stroma_sort
+246,514,Tumor,V2,3,stroma_sort
+247,522,Normal,V2,3,stroma_sort
+248,522,Tumor,V2,3,stroma_sort
+249,532,Normal,V2,3,stroma_sort
+250,532,Tumor,V2,3,stroma_sort
+251,536,Normal,V2,3,stroma_sort
+252,536,Tumor,V2,3,stroma_sort
+253,553,Tumor,V2,3,stroma_sort
+254,555,Tumor,V2,3,stroma_sort
+255,566,Normal,V2,3,stroma_sort
+256,566,Tumor,V2,3,stroma_sort
+257,571,Normal,V2,3,stroma_sort
+258,571,Tumor,V2,3,stroma_sort
+259,574,Normal,V2,3,stroma_sort
+260,574,Tumor,V2,3,stroma_sort
+297,338,Tumor,V1,3,sort
+298,338,Tumor,V1,3,sort
+299,309,T&N,marsseq,3,myeloid_sort
+300,320,T&N,marsseq,3,myeloid_sort
+310,370,Normal,V2,3,beads
+311,370,Tumor,V2,3,beads
+312,371,Normal,V2,3,beads
+313,371,Tumor,V2,3,beads
+314,377,Normal,V2,3,beads
+315,377,Tumor,V2,3,beads
+316,378,Normal,V2,3,beads
+317,378,Tumor,V2,3,beads
+318,393,Tumor,V2,3,beads
+319,403,Normal,V2,3,beads
+320,403,Tumor,V2,3,beads
+321,405,Normal,V2,3,sort
+322,405,Tumor,V2,3,sort
+323,406,Normal,V2,3,beads
+324,406,Tumor,V2,3,beads
+325,408,Normal,V2,3,beads
+326,408,Tumor,V2,3,beads
+327,410,Normal,V2,3,beads
+328,410,Tumor,V2,3,beads
+329,413,Normal,V2,3,sort
+330,413,Tumor,V2,3,sort
+331,458,Normal,V2,3,sort
+332,458,Tumor,V2,3,sort
+333,460,Normal,V2,3,sort
+334,460,Tumor,V2,3,sort
+335,464,Normal,V2,3,sort
+336,464,Tumor,V2,3,sort
+337,514,Normal,V2,3,beads
+338,514,Tumor,V2,3,beads
+339,522,Normal,V2,3,beads
+340,522,Tumor,V2,3,beads
+341,532,Normal,V2,3,sort
+342,532,Tumor,V2,3,sort
+343,522,Normal,V1,5,beads
+344,522,Tumor,V1,5,beads
+347,706,Tumor,V2,3,digest/dead cell
+348,706,Normal,V2,3,digest/dead cell
+349,706,PBMC,V2,3,
+350,mouse_a20,mouse,V2,3,
+351,706,Tumor,V3,3,digest/dead cell
+352,706,Normal,V3,3,digest/dead cell
+353,706,PBMC,V3,3,
+354,mouse_a20,mouse,V3,3,
+398,714,Tumor,V2,3,beads
+399,714,Normal,V2,3,beads
+400,714,Tumor,V2,3,stroma_sort
+401,714,Normal,V2,3,stroma_sort
+411,729,Normal,V2,3,stroma_sort
+412,729,Tumor,V2,3,stroma_sort
+413,729,Normal,V2,3,beads
+414,729,Tumor,V2,3,beads
+415,725,Tumor,V3,3,beads
+416,725,Normal,V3,3,stroma_sort
+417,725,Tumor,V3,3,stroma_sort
+448,706,Tumor,V2,3,digest/dead cell
+449,706,Normal,V2,3,digest/dead cell
+450,706,PBMC,V2,3,
+451,mouse_a20,mouse,V2,3,
+452,706,Tumor,V2,3,digest/dead cell
+453,706,Normal,V2,3,digest/dead cell
+454,706,PBMC,V2,3,
+455,mouse_a20,mouse,V2,3,
+456,706,Tumor,V2,3,digest/dead cell
+457,706,Normal,V2,3,digest/dead cell
+458,706,PBMC,V2,3,
+459,mouse_a20,mouse,V2,3,
+460,706,Tumor,V2,3,digest/dead cell
+461,706,Normal,V2,3,digest/dead cell
+462,706,PBMC,V2,3,
+463,mouse_a20,mouse,V2,3,
+464,706,Tumor,V2,3,digest/dead cell
+465,706,Normal,V2,3,digest/dead cell
+466,706,PBMC,V2,3,
+467,mouse_a20,mouse,V2,3,
+468,706,Tumor,V2,3,digest/dead cell
+469,706,Normal,V2,3,digest/dead cell
+470,706,PBMC,V2,3,
+471,mouse_a20,mouse,V2,3,
+472,706,Tumor,V2,3,digest/dead cell
+473,706,Normal,V2,3,digest/dead cell
+474,706,PBMC,V2,3,
+475,mouse_a20,mouse,V2,3,
+476,706,Tumor,V3,3,digest/dead cell
+477,706,Normal,V3,3,digest/dead cell
+478,706,PBMC,V3,3,
+479,mouse_a20,mouse,V3,3,
+480,706,Normal,V1,5,CD2
+481,706,Tumor,V1,5,CD2
+841,747,Tumor,V1,5,beads
+842,747,Normal,V1,5,beads
+843,747,Tumor,V1,5,beads
+844,747,Normal,V1,5,beads
+845,747,PBMC,V1,5,
+846,747,Tumor,V1,5,beads
+847,747,Normal,V1,5,beads
+848,747,Tumor,V1,5,beads
+849,747,Normal,V1,5,beads
+850,747,PBMC,V1,5,
+851,800,Tumor,V3,3,beads
+920,800,Tumor,V3,3,stroma_sort

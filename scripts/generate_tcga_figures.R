@@ -34,26 +34,22 @@ library(reshape)
 library(Rmisc)
 library(gridExtra)
 
-write_path <- "D:/Google Drive/Paper website/Scripts/outputs/"
+write_path <- "outputs/"
 
 #########################
 # loading raw LUAD data and normaizing
-load("D:/Google Drive/Paper website/Scripts/inputs/LUAD_exprs.rd")
+load("inputs/LUAD_exprs.rd")
 geneData <- expr_mat
 rm(expr_mat)
 
-# reading 'junk' genes
-t1=read.table("D:/Google Drive/Paper website/Scripts/inputs/excluded_genes.txt",stringsAsFactors = F,row.names = 1)
+# reading gene lists
+t1=read.table("inputs/gene_lists.txt",stringsAsFactors = F,row.names = 1)
 gl=strsplit(t1[,1],",")
 names(gl)=rownames(t1)
 
+# genes to be discarded
 junk <- c(gl$RPs, gl$Junk, gl$Ribosome, gl$IgVar, gl$Mito)
 junk <- intersect(junk,rownames(geneData))
-
-# reading signatures and creating a normlized dataset of genes
-t1=read.table("D:/Google Drive/Paper website/Scripts/inputs/TCGA_sigs.txt",stringsAsFactors = F,row.names = 1)
-gl=strsplit(t1[,1],",")
-names(gl)=rownames(t1)
 
 dups <-  names(table(colnames(geneData))[table(colnames(geneData))==2])
 for (dup in dups){
@@ -102,7 +98,7 @@ sig_matrix["LCAM",] <- colMedians(sig_matrix[LCAMhi,])-colMedians(sig_matrix[LCA
 #########################
 # figure 3C
 
-merged_data <- read.csv("D:/Google Drive/Paper website/Scripts/inputs/merged_data_luad.csv", row.names = 1)
+merged_data <- read.csv("inputs/merged_data_luad.csv", row.names = 1)
 
 caf_genes <- c(gl$ADH1B_CAF, gl$FAP_CAF)
 new_dat <- norm_dat_gene_scaled[rownames(norm_dat_gene_scaled)%in%caf_genes,]
@@ -146,7 +142,7 @@ for (geneSet in gl){
 }
 all_genes <- intersect(all_genes,rownames(norm_dat_gene_scaled))
 
-merged_data <- read.csv("D:/Google Drive/Paper website/Scripts/inputs/merged_data_luad.csv", row.names = 1)
+merged_data <- read.csv("inputs/merged_data_luad.csv", row.names = 1)
 tumor_samps <- rownames(merged_data)[merged_data[,"sample_type_id"]%in%c("1")]
 norm_dat_gene_scaled <- norm_dat_gene_scaled[,tumor_samps]
 
@@ -163,7 +159,7 @@ rm(gene_cors)
 #########################
 # figure 3D
 
-merged_data <- read.csv("D:/Google Drive/Paper website/Scripts/inputs/merged_data_luad.csv", row.names = 1)
+merged_data <- read.csv("inputs/merged_data_luad.csv", row.names = 1)
 
 # selecting unique subtypes with > 10 patients
 names_data <- c("Acinar predominant Adc","Papillary predominant Adc",
@@ -220,7 +216,7 @@ for (pathology in names_data){
 #########################
 # figure 3D
 
-merged_data <- read.csv("D:/Google Drive/Paper website/Scripts/inputs/merged_data_luad.csv", row.names = 1)
+merged_data <- read.csv("inputs/merged_data_luad.csv", row.names = 1)
 # stages 3 and above are listed as 3 in merged_data file
 
 merged_data[,"tumor_stage_num"] <- as.integer(merged_data[,"tumor_stage_num"])
@@ -275,7 +271,7 @@ for (stage in stages){
 #########################
 # figure 3G
 
-merged_data <- read.csv("D:/Google Drive/Paper website/Scripts/inputs/merged_data_luad.csv", row.names = 1, stringsAsFactors = F)
+merged_data <- read.csv("inputs/merged_data_luad.csv", row.names = 1, stringsAsFactors = F)
 sigs <- c("Fib","ADH1B_CAF","FAP_CAF","LCAM","delta")
 
 # selecting only primary tumor

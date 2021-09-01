@@ -29,29 +29,20 @@ library(RColorBrewer)
 library(pheatmap)
 library(seriation)
 
-write_path <- "D:/Google Drive/Paper website/Scripts/outputs/"
+write_path <- "outputs/"
 
 # source files
-ecm_immunomod <- "D:/Google Drive/Paper website/Scripts/inputs/immunomod/"
-genes_to_exclude <- "D:/Google Drive/Paper website/Scripts/inputs/excluded_genes.txt"
-image_genes <- "D:/Google Drive/Paper website/Scripts/inputs/image_gene_lists.txt"
-lig_heatmap_genes <- "D:/Google Drive/Paper website/Scripts/inputs/lig_rec_ligands.txt"
-ecm_heatmap_genes <- "D:/Google Drive/Paper website/Scripts/inputs/ecm.txt"
-modules_3a_genes <- "D:/Google Drive/Paper website/Scripts/inputs/modules_fig_3a.txt"
-modules_all_stroma <- "D:/Google Drive/Paper website/Scripts/inputs/modules_all_stroma.txt"
-sample_sets <- "D:/Google Drive/Paper website/Scripts/inputs/sample_sets.txt"
-lcam_cafs <- "D:/Google Drive/Paper website/Scripts/inputs/lcam_cafs.txt"
-stroma_ldm <- "D:/Google Drive/Paper website/Scripts/inputs/ldm_2000_v2.RData"
-# LCAM source codes
-data_dir <- "D:/Google Drive/Paper website/Scripts/inputs"
+gene_lists <- "inputs/gene_lists.txt"
+stroma_ldm <- "inputs/ldm_2000_v2.RData"
+data_dir <- "inputs"
 sample_annots <- read.csv(file.path(data_dir,"sample_annots.csv"),r=1,h=1,stringsAsFactors = F)
 annots_list <- read.csv(file.path(data_dir,"model_lung_190606_annot_lists.csv"),r=1,h=1,stringsAsFactors = F)
 annots_list$norm_group[annots_list$lineage=="MNP"] <- "MNP"
-lcam_metadata <- "D:/Google Drive/Paper website/Scripts/inputs/cell_metadata.rd"
-lcam_id_conversion <- "D:/Google Drive/Paper website/Scripts/inputs/conversion.txt"
+lcam_metadata <- "inputs/cell_metadata.rd"
+lcam_id_conversion <- "inputs/conversion.txt"
 
 # genes to remove from gene module analysis
-t1=read.table(genes_to_exclude,stringsAsFactors = F,row.names = 1)
+t1=read.table(gene_lists,stringsAsFactors = F,row.names = 1)
 gl=strsplit(t1[,1],",")
 names(gl)=rownames(t1)
 junk <- c(gl$RPs, gl$Junk, gl$Ribosome, gl$IgVar, gl$Mito)
@@ -62,38 +53,6 @@ junk <- c(gl$RPs, gl$Junk, gl$Ribosome, gl$IgVar, gl$Mito)
 `%notin%` <- Negate(`%in%`)
 fisher.r2z <- function(r) { 0.5 * (log(1+r) - log(1-r)) }
 fisher.z2r <- function(z) {(exp(2 * z) - 1)/(1 + exp(2 * z))}
-
-
-
-
-
-
-
-
-# get_gene_symbol_convetors=function(path="D:/Google Drive/scDissector-master/inst/extdata/"){
-#   hgnc<-read.delim(paste(path,"hgnc_complete_set.txt",sep=""),header = T,stringsAsFactors = F)
-#   old_symbol=ifelse(hgnc[,"prev_symbol"]=="",hgnc[,"symbol"],hgnc[,"prev_symbol"])
-#   l_old_symbol=strsplit(old_symbol,"\\|")
-#   old_symbol2=unlist(l_old_symbol)
-#   
-#   new_symbol=hgnc[,"symbol"]
-#   new_symbol2=rep(new_symbol,sapply(l_old_symbol,length))
-#   
-#   gene_symbol_old2new<-new_symbol2
-#   gene_symbol_new2old<-old_symbol
-# }
-# get_gene_symbol_convetors()
-
-
-
-
-
-
-
-
-
-
-
 
 open_plot=function(path="figures/",fn,plot_type="png",width=NA,height=NA,bg="white"){
   if (plot_type=="png"){
@@ -119,7 +78,7 @@ open_plot=function(path="figures/",fn,plot_type="png",width=NA,height=NA,bg="whi
 colgrad_abs_file=system.file("extdata", "colors_paul.txt", package="scDissector")
 
 if (colgrad_abs_file==""){
-  colgrad_abs_file="../extdata/colors_viridis.txt"
+  colgrad_abs_file="extdata/colors_viridis.txt"
 }
 
 colgrad_abs<<-read.table(colgrad_abs_file,stringsAsFactors=F)[,1]
@@ -130,7 +89,7 @@ close_plot=function(){
 
 Relative_or_Absolute="Relative"
 colgrad<<-c(colorRampPalette(c("white",colors()[378],"orange", "tomato","mediumorchid4"))(100))
-sample_cols<<-rep(paste("#",read.table("D:/Google Drive/Paper website/Scripts/inputs/sample_colors.txt",
+sample_cols<<-rep(paste("#",read.table("inputs/sample_colors.txt",
                                        stringsAsFactors = F)[,1],sep=""),10)
 
 make_truth_plots=function(ldm,clusters_to_exclude,gene_list1,gene_list2,samples=0,
@@ -437,7 +396,7 @@ test_run()
 ########################
 # Figure 1B
 
-t1=read.table(image_genes,
+t1=read.table(gene_lists,
               stringsAsFactors = F,row.names = 1)
 gl=strsplit(t1[,1],",")
 names(gl)=rownames(t1)
@@ -511,7 +470,7 @@ figure_1c()
 ########################
 # Figure 1D
 
-t1=read.table(image_genes,
+t1=read.table(gene_lists,
               stringsAsFactors = F,row.names = 1)
 gl=strsplit(t1[,1],",")
 names(gl)=rownames(t1)
@@ -626,7 +585,7 @@ barplot(t(ratio_clusts),col=c("gray85","gray40"))
 ########################
 # Figure 3A
 
-t1=read.table(modules_3a_genes,
+t1=read.table(gene_lists,
               stringsAsFactors = F,row.names = 1)
 gl=strsplit(t1[,1],",")
 names(gl)=rownames(t1)
@@ -710,49 +669,31 @@ for (num in 1:length(gene_sets)){
 ########################
 # figure S1D
 
-# read all saved sample sets
-s1=read.table(sample_sets,stringsAsFactors = F,row.names = 1)
-il=strsplit(s1[,1],",")
-names(il)=rownames(s1)
-# saving the normal and tumor stroma sets
-samps <- paste("data_",il$stroma,".rd",sep="")
-# compiled samples
-samps <- paste("D:/Google Drive/Paper website/Scripts/inputs/stroma_lung_compiled",samps,sep="/")
-samples <- samps
-# table with mito genes
-t1=read.table(genes_to_exclude,stringsAsFactors = F,row.names = 1)
+# read sample sets
+t1=read.table(gene_lists,stringsAsFactors = F,row.names = 1)
 gl=strsplit(t1[,1],",")
 names(gl)=rownames(t1)
-#samples
+
+cell_umi_tot <- c()
+for (pat in ldm$dataset$numis_before_filtering){
+  cell_umi_tot <- c(cell_umi_tot, pat)
+}
+ldm$dataset$insilico_gating_scores$MITO
+mito_umi_count <- ldm$dataset$insilico_gating_scores$MITO * cell_umi_tot
+
 normal_samps <- as.character(c(239,241,243,245,247,249,251,257,259,401,411,416))
 tumor_samps <- as.character(c(240,242,244,246,248,250,252,253,254,258,260,400,412,417,920))
 samps <- as.character(c(normal_samps,tumor_samps))
-sample_summary <- matrix(NA, nrow = nrow(u1), ncol = length(samps), dimnames = list(rownames(u1), samps))
-# loading the samples
-u1=NA
-samp_env=new.env()
-samp <- samples[1]
-load(samp,envir=samp_env)
-u1=samp_env$umitab
-# loading
-for (num in 1:length(samples)){
-  samp_env=new.env()
-  
-  samp <- samples[num]
-  samp_num <- samps[num]
-  
-  print(samp)
-  load(samp,envir=samp_env)
-  sample_summary[,samp_num] <- rowMeans(samp_env$umitab)
+sample_summary <- matrix(NA, nrow = 1, ncol = length(samps), dimnames = list(rownames("Mito"), samps))
+
+for (samp in samps){
+  umi_tot <- sum(cell_umi_tot[names(ldm$dataset$numis_before_filtering[[samp]])])
+  mito_tot <- sum(mito_umi_count[names(ldm$dataset$numis_before_filtering[[samp]])])
+  sample_summary[,samp] <- mito_tot/umi_tot
 }
 
-u <- u1
-rm(u1)
-
-mito_sums <- colSums(sample_summary[gl$Mito,])/colSums(sample_summary)
-mito_sums <- melt(mito_sums)
-mito_sums <- cbind(mito_sums, rownames(mito_sums))
-colnames(mito_sums) <- c("value","patients")
+mito_sums <- mito_sums[,2:3]
+colnames(mito_sums) <- c("patients","value")
 mito_sums$patients <- factor(mito_sums$patients, levels = mito_sums$patients)
 
 ggplot(mito_sums, aes(y=value, x=patients)) +
@@ -763,11 +704,12 @@ rm(u)
 ########################
 # figure S1E
 
-t1=read.table(modules_all_stroma,stringsAsFactors = F)
-gl=c(t1[,1])
+t1=read.table(gene_lists,stringsAsFactors = F,row.names = 1)
+gl=strsplit(t1[,1],",")
+names(gl)=rownames(t1)
 
-gene_list1 <- gl
-gene_list2 <- gl
+gene_list1 <- gl$modules_all_stroma
+gene_list2 <- gl$modules_all_stroma
 
 clusters <- unique(ldm$dataset$cell_to_cluster)
 ldm$cluster_order <- rev(as.character(c(9,8,4,20,24,26,22,11,19,1,17,25,7,5,12,14,2,15,27,21,3,23,28,10)))
@@ -854,7 +796,7 @@ for (set in gene_sets){
 ########################
 # Figure S2B
 
-t1=read.table(image_genes,
+t1=read.table(gene_lists,
               stringsAsFactors = F,row.names = 1)
 gl=strsplit(t1[,1],",")
 names(gl)=rownames(t1)
@@ -936,7 +878,7 @@ for (set in gene_sets){
 ########################
 # Figure S3E
 
-t1=read.table(image_genes,
+t1=read.table(gene_lists,
               stringsAsFactors = F,row.names = 1)
 gl=strsplit(t1[,1],",")
 names(gl)=rownames(t1)
@@ -957,13 +899,19 @@ make_truth_plots(ldm,clusters_to_exclude=clusters_to_exclude,clust_num=500,samp_
 ########################
 # Figure S5A
 
-t1=read.table(modules_3a_genes,
+t1=read.table(gene_lists,
               stringsAsFactors = F,row.names = 1)
 gl=strsplit(t1[,1],",")
 names(gl)=rownames(t1)
 
-gene_list2=unlist(gl, use.names = FALSE)
-gene_list1=unlist(gl, use.names = FALSE)
+gene_list1 <- c()
+
+for (module in 1:15){
+  gene_list1 <- c(gene_list1, gl[as.character(module)])
+}
+
+gene_list1=unlist(gene_list1, use.names = FALSE)
+gene_list2=unlist(gene_list1, use.names = FALSE)
 
 gene_list1 <- rev(gene_list1)
 gene_list2 <- rev(gene_list2)
@@ -979,24 +927,15 @@ make_truth_plots(ldm,clusters_to_exclude=clusters_to_exclude,clust_num=250,samp_
 # figure 3E and 5D
 # immunomod and ecm graphing
 
-t1=read.table(image_genes,
-              stringsAsFactors = F,row.names = 1)
-gl=strsplit(t1[,1],",")
-names(gl)=rownames(t1)
-
 gene_sets <- c("ecm_genes","imm_genes")
 
 for (set in gene_sets){
-  all_genes <- gl[set][[1]]
-  
   if (set == "ecm_genes"){
-    all_genes <- read.table(paste(ecm_immunomod,"ecm_genes.txt",sep=""))
-    all_genes <- all_genes[[1]]
+    all_genes <- gl$ecm
     all_genes <- rev(all_genes)
     i = c(8,4,20,24,26,22,11)
   }else{
-    all_genes <- read.table(paste(ecm_immunomod,"imm_genes.txt",sep=""))
-    all_genes <- all_genes[[1]]
+    all_genes <- gl$ligands
     i = c(20,24,26,22,11)
   }
   
@@ -1064,7 +1003,11 @@ for (set in gene_sets){
 
 ########################
 # Figure 3B
-# Gene expression table
+
+t1=read.table(gene_lists,
+              stringsAsFactors = F,row.names = 1)
+gl=strsplit(t1[,1],",")
+names(gl)=rownames(t1)
 
 temp_dataset <- ldm$dataset
 
@@ -1072,22 +1015,11 @@ temp_dataset <- ldm$dataset
 temp_dataset$cell_to_cluster <- gsub("^26$","22",temp_dataset$cell_to_cluster)
 temp_dataset$cell_to_cluster <- gsub("^24$","22",temp_dataset$cell_to_cluster)
 
-# modules to look at
-t1=read.table(modules_3a_genes,
-              stringsAsFactors = F,row.names = 1)
-gl=strsplit(t1[,1],",")
-names(gl)=rownames(t1)
-
-gene_list2=unlist(gl, use.names = FALSE)
-gene_list1=unlist(gl, use.names = FALSE)
-
-gene_list1 <- rev(c(gene_list1,"APOD","PLA2G2A"))
-gene_list2 <- rev(c(gene_list2,"APOD","PLA2G2A"))
+gene_list1 <- gl$'fig_3b_genes'
+gene_list2 <- gl$'fig_3b_genes'
 
 # clusters to select for
 i = as.character(c(9,8,4,20,22))
-set_name <- "modules_all"
-all_genes <- gene_list1
 
 merged_cluster_id <- temp_dataset$cell_to_cluster
 merged_sample_id <- temp_dataset$cell_to_sample
@@ -1096,6 +1028,7 @@ samples <- unique(merged_sample_id)
 u=temp_dataset$umitab
 u=u[,merged_cluster_id[colnames(u)]%in%i]
 l=list()
+
 # sample normalization
 for (cluster in i){
   for (samp in samples){
@@ -1131,8 +1064,7 @@ for (num in 1:length(i)){
 }
 min_val <- sort(unique(as.vector(bars_matrix)))[2]
 
-genes_to_keep <- rev(c("ACTA2","COL1A1","COL3A1","BGN","ASPN",
-                       "MACF1","TCF21","FIGF","C3","APOD","PLA2G2A"))
+genes_to_keep <- rev(gene_list1)
 bars_matrix <- bars_matrix[,genes_to_keep]
 bars_matrix_reg <- bars_matrix + 1e-4
 
@@ -1168,9 +1100,12 @@ fold_change <- 3
 # figure 3E first pass gene selection
 
 # immune
-t1=read.table(lig_heatmap_genes,
-              stringsAsFactors = F)
-all_genes <- unlist(strsplit(t1[,2],","))
+t1=read.table(gene_lists,
+              stringsAsFactors = F,row.names = 1)
+gl=strsplit(t1[,1],",")
+names(gl)=rownames(t1)
+
+all_genes <- gl$all_ligands
 
 u=temp_dataset$umitab
 u=u[,merged_cluster_id[colnames(u)]%in%i]
@@ -1245,9 +1180,12 @@ genesAll <- genesAll[genesAll%notin%mmp_exclude]
 # figure 5D first pass gene selection
 
 # ecm
-t1=read.table(ecm_heatmap_genes,
-              stringsAsFactors = F)
-all_genes <- unlist(strsplit(t1[,2],","))
+t1=read.table(gene_lists,
+              stringsAsFactors = F,row.names = 1)
+gl=strsplit(t1[,1],",")
+names(gl)=rownames(t1)
+
+all_genes <- gl$all_ecm
 
 u=temp_dataset$umitab
 u=u[,merged_cluster_id[colnames(u)]%in%i]
@@ -1320,14 +1258,15 @@ genesAll <- all_de_genes
 
 load(lcam_metadata)
 
-cell_metadata <- cbind(cell_metadata,sample_annots[as.character(cell_metadata$merged_sample_id),
-                                                   c("patient_ID","tissue","library_chemistry","prep","Project","prime")])
+cell_metadata <- cbind(cell_metadata,temp_1[as.character(cell_metadata$sample_ID),c("patient_ID","tissue","library_chemistry","prep","prime")])
 cell_metadata <- cbind(cell_metadata,annots_list[as.character(cell_metadata$cluster_assignment),])
-prep_mask <- cell_metadata$library_chemistry=="V2" & cell_metadata$prep=="beads" & cell_metadata$Project=="lung" & cell_metadata$prime=="3"
-patient_tissue <- apply(sample_annots[,c("patient_ID","tissue")],1,paste,collapse="_")
-names(patient_tissue) <- rownames(sample_annots)
-patient_tissue <- patient_tissue[as.character(cell_metadata$merged_cluster_id)]
+prep_mask <- cell_metadata$prime=="3"
+cell_metadata <- cell_metadata[prep_mask,]
+patient_tissue <- apply(temp_1[,c("patient_ID","tissue")],1,paste,collapse="_")
+names(patient_tissue) <- rownames(temp_1)
+patient_tissue <- patient_tissue[as.character(cell_metadata$sample_ID)]
 tab <- table(patient_tissue,cell_metadata$sub_lineage)
+
 # removing 'junk' cells
 tab <- tab[,colnames(tab)%notin%"epi_endo_fibro_doublet"]
 tab <- tab/rowSums(tab)
@@ -1355,7 +1294,6 @@ resting_score <- rowSums(log(tab[,resting_clusts]+1e-2))
 pat_ord_tumor <- order((LCAM_score-resting_score)[grep("Tumor",rownames(tab),v=T)])
 pat_ord_normal <- order((LCAM_score-resting_score)[grep("Normal",rownames(tab),v=T)])
 
-# without regard to prep first:
 tab_tumor <- tab[grep("Tumor",rownames(tab)),]
 tab_normal <- tab[grep("Normal",rownames(tab)),]
 
@@ -1374,27 +1312,23 @@ col_tumor <- bluered(50)[min(mat_tumor):max(mat_tumor)]
 
 h <- seq(-0.5,8.5)[4]/8
 
-# removing zilionis and lambrechts data sets and selecting only tumor
-exclude_tums <- grep("zilionis",colnames(mat_tumor),)
-exclude_tums <- c(exclude_tums,grep("Lambrechts",colnames(mat_tumor),))
-include_tums <- c(grep("Tumor",colnames(mat_tumor),))
-include_tums <- include_tums[-exclude_tums]
 colnames(mat_tumor) <- gsub("_Tumor","",colnames(mat_tumor))
-mat_tumor <- mat_tumor[,include_tums]
 saved_lcam_order <- colnames(mat_tumor)
 
 t1=read.table(lcam_id_conversion,row.names = 1,
               stringsAsFactors = F)
+
 mat_tumor <- mat_tumor[,colnames(mat_tumor)%in%rownames(t1)]
 colnames(mat_tumor) <- t1[colnames(mat_tumor),]
 
-t1=read.table(lcam_cafs,row.names = 1,
+t1=read.table(gene_lists,row.names = 1,
               stringsAsFactors = F)
-lcam_caf_ids <- unlist(strsplit(t1[,1],","))
+gl=strsplit(t1[,1],",")
+names(gl)=rownames(t1)
 
-adh1b <- strsplit(t1["adh1b",],",")[[1]]
-adh1b_myh11 <- strsplit(t1["adh1b_myh11",],",")[[1]]
-fap <- strsplit(t1["fap",],",")[[1]]
+adh1b <- gl$'adh1b'
+adh1b_myh11 <- gl$'adh1b_myh11'
+fap <- gl$'fap'
 
 l_adh1b <- length(adh1b)
 l_adh1b_myh11 <- length(adh1b_myh11)
@@ -1404,7 +1338,7 @@ l_fap <- length(fap)
 fib <- c(rep(1,l_adh1b),
          rep(1,l_adh1b_myh11),
          rep(50,l_fap))
-pats <- as.character(lcam_caf_ids)
+pats <- c(adh1b,adh1b_myh11,fap)
 names(fib) <- pats
 
 mat_tumor <- mat_tumor[,colnames(mat_tumor)%in%pats]
@@ -1429,7 +1363,15 @@ box()
 # correlation value calculation
 names(LCAM_score) <- gsub("_Tumor","",names(LCAM_score))
 saved_lcam_order <- as.character(saved_lcam_order)
-saved_lcam_order <- saved_lcam_order[saved_lcam_order%in%colnames(mat_tumor)]
+
+t1=read.table(lcam_id_conversion,row.names = 1,
+              stringsAsFactors = F)
+saved_lcam_order <- t1[saved_lcam_order,]
+saved_lcam_order <- saved_lcam_order[!is.na(saved_lcam_order)]
+names(LCAM_score) <- t1[names(LCAM_score),]
+LCAM_score <- LCAM_score[!is.na(names(LCAM_score))]
+
+saved_lcam_order <- as.character(saved_lcam_order[saved_lcam_order%in%colnames(mat_tumor)])
 cor.test(mat_tumor["Fib",saved_lcam_order], LCAM_score[saved_lcam_order])
 
 ########################

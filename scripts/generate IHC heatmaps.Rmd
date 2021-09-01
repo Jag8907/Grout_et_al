@@ -1,0 +1,1108 @@
+---
+title: "patient tissue analysis "
+author: "Eglantine"
+output:
+  html_document:
+    code_folding: hide
+    theme: cerulean
+    toc: true
+    toc_float: true
+    mathjax: null 
+    self_contained: true  
+  word_document:
+    fig_width: 6
+    fig_height: 5
+    fig_caption: true
+  pdf_document:   
+    fig_width: 4
+    fig_height: 3 
+    fig_caption: true
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE,progress = FALSE, verbose = FALSE)
+```
+
+### Importing data and packages 
+
+```{r}
+library(knitr)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library("RColorBrewer")
+library(devtools)
+library(SPIAT)
+library(cowplot)
+library(gridExtra)
+library(ggpubr)
+library(plotly)
+library(ggplotlyExtra)
+library(DT)
+library(data.table)
+library(corrplot)
+library("Hmisc")
+library("ggpubr")
+library(pheatmap)
+```
+
+
+
+```{r}
+#datapatient <- read.table("/home/salmon/Documents/Image_analysis/all_images/results/0patient_composite_detection_distances.txt", header = TRUE, sep = "\t", dec = ".")
+datapatient <- read.table("inputs/patient_composite_PHILEMON_detection_distances_500.txt", header = TRUE, sep = "\t", dec = ".")
+dim(datapatient)
+```
+
+```{r}
+annotpatient <- read.table("inputs/patient_composite_PHILEMON_annotation_results_total_500.txt", header = TRUE, sep = "\t", dec = ".")
+```
+
+
+```{r}
+annotpatienttiles <- read.table("inputs/patient_composite_PHILEMON_annotation_results_tiles_500.txt", header = TRUE, sep = "\t", dec = ".")
+
+```
+
+View(datapatient[1:10, 100:ncol(datapatient)])
+```{r}
+
+datapatient <- datapatient[which(datapatient$Distance.to.annotation.with.Stroma.Âµm == 0 | datapatient$Distance.to.annotation.with.Tumor.Âµm == 0),] # here unclassified nuclei are filtered out 
+datapatient <- transform(datapatient, Parent = ifelse(datapatient$Distance.to.annotation.with.Stroma.Âµm == 0 , "Stroma", "Tumor"))
+datapatient$distance_to_tumor <- round(datapatient$Distance.to.annotation.with.Tumor.Âµm) - round(datapatient$Distance.to.annotation.with.Stroma.Âµm)
+
+
+datapatient <- datapatient%>% 
+       dplyr::mutate(CurrentRing = case_when((distance_to_tumor >= 0  & distance_to_tumor <= 10 & Parent == "Stroma") ~ "8Âµm", (distance_to_tumor >10 & distance_to_tumor <= 20 & Parent == "Stroma") ~ "20Âµm", (Parent == "Tumor") ~ "Tumor", (distance_to_tumor > 20 & Parent == "Stroma") ~ "remainingStroma",
+                    TRUE ~ "others")) 
+```
+
+### Detection threshold
+
+```{r}
+markers_to_analyze <- colnames(datapatient %>% dplyr::select(dplyr::starts_with("Cell..")) %>% dplyr::select(dplyr::ends_with("mean")))
+```
+
+```{r}
+# here, a threshold is applied to determine positive cells. some exceptions can be added for stainings with poor specificity as shown below: 
+
+marknum <- c()
+for(i in 1:length(markers_to_analyze)){
+  cellmark <- markers_to_analyze[i]
+  marknum <- cbind(marknum, match(cellmark, names(datapatient)))
+  current_marker <- str_sub(cellmark, 7, -6)
+  print(current_marker)
+  current_marker <- paste0(current_marker, "pos")
+  if(current_marker == "FAPpos"){datapatient[, current_marker] <-  ifelse(datapatient[, cellmark] > 5, "Positive", "Negative")}
+  else if(current_marker == "ASMApos"){datapatient[, current_marker] <-  ifelse(datapatient[, cellmark] > 5, "Positive", "Negative")}
+  else {datapatient[, current_marker] <-  ifelse(datapatient[, cellmark] > 10, "Positive", "Negative")}
+  
+  
+  
+}
+```
+
+
+```{r, width = 15, heigth = 13}
+pl2 <- lapply(X=markers_to_analyze, FUN=function(x)  ggplot(data= datapatient, aes(datapatient[,x])) + geom_histogram() +ggtitle(x)) 
+markerdistrib <- marrangeGrob(pl2, nrow=2, ncol=4)
+markerdistrib
+```
+
+### attributing phenotypes 
+
+Section to be modified (comment unavailable markers)
+
+
+```{r}
+datapatient <- datapatient%>% 
+       dplyr::mutate(Phenotype = case_when((keratinpos == "Positive" & Parent == "Tumor" & CD3pos == "Negative") ~ "Tumoral",
+                          (CD3pos == "Positive" & CD8pos == "Positive") ~ "CD3+CD8+",
+                          (CD3pos == "Positive" & CD8pos == "Negative") ~ "CD3+CD8-",
+                          
+                      
+                          
+                          (CD34pos == "Positive" & MYH11pos == "Positive" &ASMApos  == "Negative" ) ~ "CD34+MYH11+",
+                          (CD34pos == "Positive" & ASMApos == "Positive" ) ~ "CD34+ASMA+",
+                          (MYH11pos == "Positive" & ASMApos == "Positive" ) ~ "MYH11+ASMA+",
+                          
+                          
+                          (CD34pos == "Positive" & ASMApos == "Negative" ) ~ "CD34 SP",
+                          
+                          (ADH1Bpos  == "Positive" & FAPpos == "Positive" ) ~ "ADH1B+FAP+ DP",
+                          (ADH1Bpos  == "Positive" & CD34pos == "Negative" ) ~ "ADH1B",
+                        
+                          
+                          (FAPpos == "Positive" & ASMApos == "Positive" & CD8pos == "Negative") ~ "FAP+ASMA+",
+                          (FAPpos == "Positive" & keratinpos == "Negative" & CD8pos == "Negative" ) ~ "FAP+",
+                          (ASMApos  == "Positive" & FAPpos == "Negative" & CD34pos == "Negative" & MYH11pos == "Negative") ~ "ASMA SP",
+                          
+                          
+                     
+                          TRUE ~ "other")) 
+
+```
+
+
+
+
+
+```{r}
+table(datapatient$Phenotype)
+```
+
+
+## General features of the tumor 
+
+
+### calculating densities
+
+```{r}
+
+#View(annotpatient$Cell..Area)
+
+tumor_area <- annotpatient[which(annotpatient$Name == "Tumor"),]$Area.Âµm.2 / 1000000
+stroma_area <- annotpatient[which(annotpatient$Name == "Stroma"),]$Area.Âµm.2 / 1000000
+alveoli_area <- annotpatient[which(annotpatient$Name == "alveoli"),]$Area.Âµm.2 / 1000000
+print(paste0("Tumor area: ", tumor_area, "mm²")) 
+print(paste0("Stroma area: ", stroma_area, "mm²"))
+print(paste0("Alveoli area: ", alveoli_area, "mm²"))
+
+```
+Philémon: 28 et 33 
+
+
+```{r fig.height=8, fig.width=12}
+ggplot(datapatient[which(datapatient$Phenotype != "Tumoral" | datapatient$Phenotype != "other"),], aes(x=Phenotype, fill= Parent ))+
+  geom_bar(stat="count", position=position_dodge()) + scale_fill_manual(values=c('darkgreen', 'darkred',  'black')) + theme_minimal()  + ggtitle("number of cells in tumor vs stroma")
+```
+
+```{r}
+densities_patient <- datapatient %>%
+  group_by(Parent, Phenotype) %>%
+  dplyr::summarise(n = n()) %>% filter(Phenotype != "other" & n > 10)
+
+densities_patient <- densities_patient[order(-as.numeric(as.character(densities_patient$n))),]
+
+```
+
+```{r}
+
+densities_patient <- densities_patient%>% 
+       dplyr::mutate(ParentArea = case_when((Parent == "Stroma") ~ stroma_area ,
+                          (Parent == "Tumor") ~ tumor_area,
+                          #(Parent  == "alveoli") ~ alveoli_area,
+                          TRUE ~ 1)) 
+
+densities_patient$density <- densities_patient$n/densities_patient$ParentArea
+
+datatable(densities_patient)
+```
+
+
+
+```{r fig.height=5, fig.width=8}
+p <- ggplot(data=densities_patient[which(densities_patient$Phenotype != "Tumoral"),], aes(x= Phenotype, y=density, fill=Parent)) +
+geom_bar(stat="identity", color="black", position=position_dodge())+
+  theme_minimal()
+# Use custom colors
+p + scale_fill_manual(values=c( 'darkgreen', 'darkred')) + ggtitle(" cell densities in tumor vs stroma")
+```
+
+```{r fig.height=5, fig.width=9}
+r8_area <- annotpatient[which(annotpatient$Name == "8Âµm"),]$Area.Âµm.2 / 1000000 - tumor_area
+r20_area <- annotpatient[which(annotpatient$Name == "20Âµm"),]$Area.Âµm.2 / 1000000 - r8_area - tumor_area
+remain_area <- annotpatient[which(annotpatient$Name == "Stroma"),]$Area.Âµm.2 / 1000000 -r20_area  - r8_area
+
+#distance_to_tumor
+
+densities_patient <- datapatient %>%
+  group_by(CurrentRing, Phenotype) %>%
+  dplyr::summarise(n = n()) %>% filter(Phenotype != "other" & n > 20)
+
+
+densities_patient <- densities_patient%>% 
+       dplyr::mutate(RingArea = case_when((CurrentRing == "Tumor") ~ tumor_area ,
+                          (CurrentRing == "8Âµm") ~ r8_area,
+                          (CurrentRing == "20Âµm") ~ r20_area,
+                          (CurrentRing == "20Âµm") ~ r20_area,
+                          (CurrentRing == "remainingStroma") ~ remain_area  ,
+                          #(Parent  == "alveoli") ~ alveoli_area,
+                          TRUE ~ 0)) 
+
+densities_patient$density <- densities_patient$n/densities_patient$RingArea
+densities_patient$CurrentRing <- factor(densities_patient$CurrentRing, levels = c("Tumor","8Âµm", "20Âµm", "remainingStroma"))
+
+p <- ggplot(data=densities_patient[which(densities_patient$Phenotype != "Tumoral" & densities_patient$CurrentRing != "other"),], aes(x= Phenotype, y=density, fill=CurrentRing)) +
+geom_bar(stat="identity", color="black", position=position_dodge())+
+  theme_minimal()
+# Use custom colors
+p  + ggtitle(" cell densities in tumor vs stroma")
+#+ scale_fill_manual(values=c( 'darkgreen', 'darkred'))
+
+```
+
+### Tumor architecture
+
+Possible score: 
+(tumor area/perimeter / stroma area/perimeter)
+leptidic: high % of tumor cells in the stroma ? 
+acino papillary 
+solid => compact islets (high area/perimeter ration)
+
+## Tiling 
+
+### Creating tiles
+
+
+
+```{r}
+tilelength = 500 
+
+xmax = max(datapatient$Centroid.X.Âµm)
+xlength = xmax - min(datapatient$Centroid.X.Âµm) #13421
+ymax  = max(datapatient$Centroid.Y.Âµm)
+ylength = ymax - min(datapatient$Centroid.Y.Âµm) # 8461
+nX = trunc(xlength/tilelength) + 1 
+nY= trunc(ylength/tilelength) + 1 
+
+tileNumber = c()
+datapatient$temporaryTile <- 1 + trunc(datapatient$Centroid.X.Âµm/tilelength) + nX * trunc((datapatient$Centroid.Y.Âµm)/tilelength)
+
+
+```
+
+```{r}
+datapatient <- datapatient[order(datapatient$Centroid.Y.Âµm, datapatient$Centroid.X.Âµm),]
+p1 <- as.data.frame(table(datapatient$temporaryTile))
+colnames(p1) <- c("tempotile", "Freq")
+#p1 <- p1[order(as.numeric(as.character(p1$Freq))),]
+p1 <- p1[which(p1$Freq > 50),] # can be necessary here if small tiles
+datapatient <- datapatient[which(datapatient$temporaryTile %in% p1$tempotile),]
+datapatient <- datapatient %>% group_by(temporaryTile) %>% dplyr::mutate( tileNumber = group_indices() )
+```
+
+
+
+```{r fig.height=6, fig.width=8}
+
+p1 <- datapatient[c(seq(0, nrow(datapatient), by=10)), c(1:ncol(datapatient))]
+sp <-ggplot(p1, aes(x=Centroid.X.Âµm, y=Centroid.Y.Âµm, color=tileNumber)) + geom_point()
+sp <- sp +scale_color_gradientn(colours = rainbow(5)) + scale_y_reverse() + theme(axis.title = element_blank()) + scale_x_continuous(position = "top") +coord_fixed(ratio = 1)
+#ggplotly(p = sp, tooltip = c("Centroid.X.Âµm", "Centroid.Y.Âµm",  "tileNumber"))
+sp 
+
+```
+### Infiltrations scores per tile 
+
+- percentage cells per tile 
+- proxy of cell densities ? 
+- ditribution of distances to tumor 
+- linear regression exclusion score ~ cell composition 
+
+
+Infiltration score: 
+-sign(gradient)*(1 + 1/ (1+ gradient) )
+-2 if %T cells < 1% (immnune desert ? )
+
+```{r}
+shift <- function(x, n){
+  c(x[-(seq(n))], rep(NA, n))
+}
+```
+
+
+
+
+
+
+```{r}
+summary_distances = datapatient %>% group_by(tileNumber, distance_to_tumor, Phenotype) %>% dplyr::summarise(nCells = n()) 
+summary_distances= as.data.frame(summary_distances)
+summary_distances <- spread(summary_distances, Phenotype, nCells,fill=0)
+datatable(summary_distances)
+```
+
+```{r}
+PropTable <- datapatient %>% group_by(tileNumber, Parent, Phenotype)  %>% dplyr::summarise(nCells = n())
+PropTable= as.data.frame(PropTable)
+PropTable <- spread(PropTable, Phenotype, nCells,fill=0)
+PropTable <- PropTable %>% dplyr::mutate(total = rowSums(across(where(is.numeric))))
+
+```
+
+
+### Densities per tiles 
+
+```{r}
+annotpatienttiles <- annotpatienttiles[which(grepl(pattern = "Tile", x = annotpatienttiles$Parent) == TRUE  | grepl(pattern = "Stroma", x = annotpatienttiles$Parent) == TRUE  ),]
+
+annotpatienttiles$TileASMA <- shift(annotpatienttiles$Parent, 1)
+
+for(i in 1:nrow(annotpatienttiles)){
+    if(annotpatienttiles$Parent[i]=="Stroma"){
+        annotpatienttiles$Parent[i]= annotpatienttiles$Parent[i-1]
+     }
+}
+
+
+
+tiles_areas_patient <- annotpatienttiles %>% group_by(Parent)   %>% dplyr::summarise(area = Area.Âµm.2/1000000, localization = Class) 
+tiles_areas_patient <- as.data.frame(tiles_areas_patient)
+tiles_areas_patient <- spread(tiles_areas_patient, localization, area,fill=0)  
+colnames(tiles_areas_patient) <- c("Tile_Name", "ASMA.Area", "Stroma.Area", "Tumor.Area")
+
+tiles_areas_patient$stromal_ASMA_coverage <- 100 * tiles_areas_patient$ASMA.Area/tiles_areas_patient$Stroma.Area
+
+tiles_areas_patient$TileNum <- as.numeric(str_sub(tiles_areas_patient$Tile_Name, 6, -1))
+head(tiles_areas_patient)
+
+#test <- colnames(tiles_areas_patient)
+#tile30row <- data.frame("Tile 30", NA, NA,    NA, NA, 30)
+#names(tile30row) <- test
+#tiles_areas_patient <- rbind(tiles_areas_patient, tile30row)
+```
+
+```{r fig.height=15, fig.width=13}
+#options(repr.plot.width = 15, repr.plot.height = 15)
+datapatient <- datapatient[order(datapatient$tileNumber),]
+tileVector <- unique(datapatient$tileNumber)
+length(tileVector)
+AllScores <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+
+ProportionT <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+
+Allprop <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+
+AllTdens <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+
+AllSMA <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+ASMAareas <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+AllSdens <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+
+AllCD3Stroma <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+AllCD3Tumor <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+AllCD3TS <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+
+AllCD4Stroma <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+AllCD4Tumor <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+AllCD4TS <- matrix(data = NA, nrow = length(tileVector), ncol = 1)
+
+ScoresInfiltration <- c() 
+T_proportions <- c()
+CD8_densities_TS <- c()
+Barrier_scores <- c()
+CD8_densities_tumor <- c()
+CD8_densities_stroma <- c()
+CD3_densities_stroma <- c()
+CD3_densities_tumor <- c()
+CD3_densities_TS <- c()
+
+CD4_densities <- c()
+CD4_densities_tumor <- c()
+CD4_densities_TS <- c()
+
+cummulativeMarkers <- c()
+ASMA_areas <- c()
+
+pT <- list()
+for (i in tileVector){
+  currentTable <- summary_distances[which(summary_distances$tileNumber == i),]
+  currentTable <- currentTable[which(currentTable$distance_to_tumor < 31 & currentTable$distance_to_tumor > -5),]
+  
+  # Score 1
+  currentTable2 <- PropTable[which(PropTable$tileNumber == i),]
+  currentTable2 <- currentTable2[which(currentTable2$Parent == "Stroma" | currentTable2$Parent == "Tumor"),]
+  currentTable2$tprop <- currentTable2$`CD3+CD8+`/(currentTable2$total)
+  
+  # Score 2                                                   
+  TSratio <- currentTable2[which(currentTable2$Parent == "Tumor"),]$tprop / currentTable2[which(currentTable2$Parent== "Stroma"),]$tprop
+  if ( nrow(currentTable2) < 2){TSratio <- NA}
+  else {TSration <- as.numeric(round(TSratio, 3)) }
+  ProportionT[i] <- TSratio
+  
+  # Score 3 TS densities
+  currenttile = tiles_areas_patient[which(tiles_areas_patient$TileNum == i),]
+  TumorDens <-  currentTable2[which(currentTable2$Parent == "Tumor"),]$`CD3+CD8+` / currenttile$Tumor.Area
+  #TumorDens <- log(1+ TumorDens)
+  StromaDens <- currentTable2[which(currentTable2$Parent == "Stroma"),]$`CD3+CD8+` / currenttile$Stroma.Area
+  #StromaDens <- log(1 + StromaDens)
+  if ( ( "Tumor" %in% currentTable2$Parent) == FALSE ){TSareas <- NA}
+  else if ( ( "Stroma" %in% currentTable2$Parent) == FALSE ){TSareas <- NA}
+  else if ( ( nrow(currenttile)) == 0 ){TSareas <- NA}
+  else if ( currentTable2[which(currentTable2$Parent == "Stroma"),]$`CD3+CD8+` < 2 ){TSareas = NA}
+  else if ( currenttile$Tumor.Area < 0.01 ){TSareas = NA}
+  else if ( currenttile$Stroma.Area < 0.01 ){TSareas = NA}
+  else {TSareas<- round(as.numeric(TumorDens/StromaDens),3 )}
+  #if ( currentTable2[which(currentTable2$Parent == "Stroma"),]$`CD3+CD8+` < 8 ){TSareas = NaN}
+  Allprop[i] <- TSareas
+  
+  
+  # score Tumoral density CD8
+  if ( ( "Tumor" %in% currentTable2$Parent) == FALSE ){Tdensity <- NA}
+  else if ( nrow(currenttile) == 0 ){TSareas <- NA}
+  else if ( currenttile$Tumor.Area < 0.01 ){Tdensity = NA}
+  else {Tdensity <- round(as.numeric(TumorDens), 3)}
+  AllTdens[i] <- Tdensity
+  
+  # score Stromal density CD8
+  if ( ( "Stroma" %in% currentTable2$Parent) == FALSE ){Sdensity <- NA}
+  else if ( currenttile$Stroma.Area < 0.01 ){Sdensity = NA}
+  else {Sdensity <- round(as.numeric(StromaDens), 3)}
+  AllSdens[i] <- Sdensity
+  
+  # CD3 stromal  density 
+  CD3DensStroma <- currentTable2[which(currentTable2$Parent == "Stroma"),]$`CD3+CD8-` + currentTable2[which(currentTable2$Parent == "Stroma"),]$`CD3+CD8+`
+  CD3DensStroma <- CD3DensStroma / currenttile$Stroma.Area
+  if ( ( "Stroma" %in% currentTable2$Parent) == FALSE ){CD3densityStroma <- NA}
+  else if ( currenttile$Stroma.Area < 0.01 ){CD3densityStroma = NA}
+  else {CD3densityStroma <- round(as.numeric(CD3DensStroma), 3)}
+  AllCD3Stroma[i] <- CD3densityStroma
+  
+  #CD3 tumor ratio:
+  CD3DensTumor <-  currentTable2[which(currentTable2$Parent == "Tumor"),]$`CD3+CD8+` / currenttile$Tumor.Area + currentTable2[which(currentTable2$Parent == "Tumor"),]$`CD3+CD8-` / currenttile$Tumor.Area
+  if ( ( "Tumor" %in% currentTable2$Parent) == FALSE ){CD3densityTumor <- NA}
+  else if ( nrow(currenttile) == 0 ){CD3densityTumor <- NA}
+  else if ( currenttile$Tumor.Area < 0.01 ){CD3densityTumor = NA}
+  else {CD3densityTumor <- round(as.numeric(CD3DensTumor), 3)}
+  AllCD3Tumor[i] <- CD3densityTumor
+  
+
+  
+  # CD3 TS ratio 
+  if ( ( "Tumor" %in% currentTable2$Parent) == FALSE ){CD3TS <- NA}
+  else if ( ( "Stroma" %in% currentTable2$Parent) == FALSE ){CD3TS <- NA}
+  else if ( ( nrow(currenttile)) == 0 ){CD3TS <- NA}
+  else if ( CD3DensStroma < 5 ){CD3TS = NA}
+  else if ( currenttile$Tumor.Area < 0.01 ){CD3TS = NA}
+  else if ( currenttile$Stroma.Area < 0.01 ){CD3TS = NA}
+  else {CD3TS<- round(as.numeric(CD3densityTumor/CD3densityStroma),3 )}
+  #if ( currentTable2[which(currentTable2$Parent == "Stroma"),]$`CD3+CD8+` < 8 ){TSareas = NaN}
+  AllCD3TS[i] <- CD3TS
+  
+  
+    # CD4 stromal  density 
+  CD4DensStroma <- currentTable2[which(currentTable2$Parent == "Stroma"),]$`CD3+CD8-`
+  CD4DensStroma <- CD4DensStroma / currenttile$Stroma.Area
+  if ( ( "Stroma" %in% currentTable2$Parent) == FALSE ){CD4densityStroma <- NA}
+  else if ( currenttile$Stroma.Area < 0.01 ){CD4densityStroma = NA}
+  else {CD4densityStroma <- round(as.numeric(CD4DensStroma), 3)}
+  AllCD4Stroma[i] <- CD4densityStroma
+  
+  #CD4 tumor ratio:
+  CD4DensTumor <-  currentTable2[which(currentTable2$Parent == "Tumor"),]$`CD3+CD8-` / currenttile$Tumor.Area 
+  if ( ( "Tumor" %in% currentTable2$Parent) == FALSE ){CD4densityTumor <- NA}
+  else if ( ( "Stroma" %in% currentTable2$Parent) == FALSE ){CD4densityTumor <- NA}
+  else if ( ( nrow(currenttile)) == 0 ){CD4densityTumor <- NA}
+  #else if (CD4DensTumor < 3 ){CD4densityTumor = NA}
+  else if ( currenttile$Tumor.Area < 0.01 ){CD4densityTumor = NA}
+  #else if ( currenttile$Stroma.Area < 0.01 ){CD4densityTumor = NA}
+  else {CD4densityTumor <- round(as.numeric(CD4DensTumor), 3)}
+  AllCD4Tumor[i] <- CD4densityTumor
+  
+  # CD4 TS ratio 
+  if ( ( "Tumor" %in% currentTable2$Parent) == FALSE ){CD4TS <- NA}
+  else if ( ( "Stroma" %in% currentTable2$Parent) == FALSE ){CD4TS <- NA}
+  else if ( ( nrow(currenttile)) == 0 ){CD4TS <- NA}
+  else if ( CD4DensStroma < 3 ){CD4TS = NA}
+  else if ( currenttile$Tumor.Area < 0.01 ){CD4TS = NA}
+  else if ( currenttile$Stroma.Area < 0.01 ){CD4TS = NA}
+  else {CD4TS<- round(as.numeric(CD4densityTumor/CD4densityStroma),3 )}
+  #if ( currentTable2[which(currentTable2$Parent == "Stroma"),]$`CD4+CD8+` < 8 ){TSareas = NaN}
+  AllCD4TS[i] <- CD4TS
+  
+  
+  
+  #peak score 
+  #currentTable <- currentTable %>% dplyr::mutate(total_ASMA = rowSums(.[grep("CD34", names(.))], na.rm = TRUE))
+  currentTable <- currentTable %>% dplyr::mutate(total_ASMA = rowSums(.[grep("ASMA", names(.))], na.rm = TRUE))
+  currentTable <- currentTable %>% dplyr::mutate(total_CD34 = rowSums(.[grep("CD34", names(.))], na.rm = TRUE))
+  currentTable <- currentTable %>% dplyr::mutate(total_FAP = rowSums(.[grep("FAP", names(.))], na.rm = TRUE))
+  currentTable <- currentTable %>% dplyr::mutate(total_MYH11 = rowSums(.[grep("MYH11", names(.))], na.rm = TRUE))
+  #currentTable$totalCD34ASMA <- (currentTable$total_ASMA + currentTable$total_CD34)/2
+  ASMA0 <- quantile(currentTable[which(currentTable$distance_to_tumor < 10 & currentTable$distance_to_tumor >0 ),]$`MYH11+ASMA+`, probs = 0.75)
+  ASMA20 <- quantile(currentTable[which(currentTable$distance_to_tumor <30 & currentTable$distance_to_tumor >20 ),]$`MYH11+ASMA+`, probs = 0.75)
+  if (is.na(ASMA0 == T)){ASMA0 <- 0}
+  if (is.na(ASMA20 == T)){ASMA20 <- 0}
+  Score_ASMA <- log2( (1+ASMA0)/ (1 + ASMA20) )
+  Score_ASMA <- as.numeric(Score_ASMA)
+  AllSMA[i] <- Score_ASMA
+  
+  # ASMA area
+  ASMApc <- currenttile$stromal_ASMA_coverage
+  ASMAareas[i] <- ASMApc
+  
+  # cumulated ASMA 
+  currentTable <- currentTable[order(currentTable$distance_to_tumor, decreasing = TRUE),]
+  currentTable$cumASMA <- cumsum(currentTable$total_ASMA)
+  cummulativeMarkers <- rbind(cummulativeMarkers, cbind(currentTable$tileNumber, currentTable$distance_to_tumor, currentTable$`CD3+CD8+`, currentTable$cumASMA, currentTable$total_ASMA))
+  #
+  p1 <- nrow(datapatient[which(datapatient$tileNumber == i),] )
+  #ScoresInfiltration <- c(ScoresInfiltration, rep(Infiltration_score, p1) ) 
+  T_proportions <- c(T_proportions, rep(TSratio, p1) )
+  CD8_densities_TS <- c(CD8_densities_TS, rep(TSareas, p1) )
+  CD8_densities_tumor <- c(CD8_densities_tumor, rep(Tdensity, p1) )
+  CD8_densities_stroma <- c(CD8_densities_stroma, rep(Sdensity, p1) )
+  Barrier_scores <- c(Barrier_scores, rep(Score_ASMA, p1) )
+  ASMA_areas <- c(ASMA_areas, rep(ASMApc, p1))
+  CD3_densities_stroma <- c(CD3_densities_stroma, rep(CD3densityStroma, p1) )
+  CD3_densities_tumor <- c(CD3_densities_tumor, rep(CD3densityTumor, p1) )
+  CD3_densities_TS <- c(CD3_densities_TS, rep(CD3TS, p1) )
+  
+  CD4_densities <- c(CD4_densities, rep(CD4densityStroma, p1) )
+  CD4_densities_tumor <- c(CD4_densities_tumor, rep(CD4densityTumor, p1) )
+  CD4_densities_TS <- c(CD4_densities_TS, rep(CD4TS, p1) )
+  
+  currentTable <- currentTable[order(currentTable$distance_to_tumor),]
+  currentTable$distance_to_tumor <- as.character(currentTable$distance_to_tumor)
+  if ( nrow(currentTable[which(currentTable$distance_to_tumor < 30),]) > 0){
+    currentTable$distance_to_tumor <- as.numeric(currentTable$distance_to_tumor)
+    currentTable <- currentTable[which(currentTable$distance_to_tumor < 30 & currentTable$distance_to_tumor > -5 ),]
+  }
+  
+  #p1 <- ggplot(data=currentTable, aes(x=distance_to_tumor, y= `CD3+CD8+`, group=1)) +  geom_line()+ geom_point() + theme(axis.title = element_blank())
+  p1 <-ggplot(data=currentTable, aes(x=distance_to_tumor)) +  geom_line(aes(y = `CD3+CD8+`), color = "magenta") + geom_line(aes(y = total_ASMA), color = "blue") + geom_line(aes(y = total_FAP), color = "red")  + xlim(-5, 30) +  ylim(0, 60) +  theme_bw()+geom_vline(xintercept = 0, linetype="dotted",  color = "gray10") + ggtitle(paste0(i)) + theme(plot.title = element_text(size = 7), axis.text.x = element_text(color = "grey20", size = 5), axis.text.y = element_text(color = "grey20", size = 5), axis.title.x = element_blank(), axis.title.y = element_blank()) 
+  pT[[i]] <- p1
+  #pT[[i]] <- ggplot(data=currentTable, aes(x=distance_to_tumor, y= `CD3+CD8+`, group=1)) +  geom_line()+ geom_point()
+}
+
+#do.call(grid.arrange, c(pT))
+
+#ggsave(p1, height = 18, width = 18)
+#multiplot(plotlist = plots, cols = 3)
+```
+
+
+```{r}
+TilesSummary <- cbind( tileVector, AllScores)
+colnames(TilesSummary) <- c("TileNumber", "AllScores")
+#TilesSummary
+```
+
+### tile visualization 
+
+
+
+##### CD8 
+
+```{r}
+breaks <- c( 0,  1, 2 ,3)
+CD8_densities_TS <- replace_na(data = CD8_densities_TS, replace= NA)
+datapatient$CD8_densities_TS <- as.matrix(CD8_densities_TS)
+p1 <- datapatient[c(seq(0, nrow(datapatient), by=10)), c(1:ncol(datapatient))]
+p1 <- p1[which(p1$Parent != "alveoli"),]
+sp <-ggplot(p1, aes(x=Centroid.X.Âµm, y=Centroid.Y.Âµm, color=CD8_densities_TS, group = tileNumber )) + geom_point()
+sp <- sp + scale_colour_gradientn(colours = c("blue","cyan", "green", "yellow", "red"),
+                         breaks = breaks, labels = format(breaks))
+sp <- sp + scale_y_reverse() + theme(axis.title = element_blank()) + scale_x_continuous(position = "top") +coord_fixed(ratio = 1)
+sp + ggtitle("CD8 tumor/stroma density ratios")
+#ggplotly(p = sp, tooltip = c("Centroid.X.Âµm", "Centroid.Y.Âµm", "CD8_densities_TS", "tileNumber"))
+```
+
+```{r}
+breaks <- c( 0,10, 50)
+CD8_densities_tumor <- replace_na(data = CD8_densities_tumor, replace= NA)
+datapatient$CD8_densities_tumor <- as.matrix(CD8_densities_tumor)
+p1 <- datapatient[c(seq(0, nrow(datapatient), by=10)), c(1:ncol(datapatient))]
+p1 <- p1[which(p1$Parent != "alveoli"),]
+sp <-ggplot(p1, aes(x=Centroid.X.Âµm, y=Centroid.Y.Âµm, color=CD8_densities_tumor, group = tileNumber )) + geom_point()
+sp <- sp + scale_colour_gradientn(colours = c("blue","cyan", "green", "yellow", "red"))
+sp <- sp + scale_y_reverse() + theme(axis.title = element_blank()) + scale_x_continuous(position = "top") +coord_fixed(ratio = 1)
+
+sp + ggtitle("CD8 densities in tumor")
+```
+
+```{r}
+breaks <- c( 0,1000, 2000, 3000)
+CD8_densities_stroma <- replace_na(data = CD8_densities_stroma, replace= NA)
+datapatient$CD8_densities_stroma <- as.matrix(CD8_densities_stroma)
+p1 <- datapatient[c(seq(0, nrow(datapatient), by=10)), c(1:ncol(datapatient))]
+p1 <- p1[which(p1$Parent != "alveoli"),]
+sp <-ggplot(p1, aes(x=Centroid.X.Âµm, y=Centroid.Y.Âµm, color=CD8_densities_stroma, group = tileNumber )) + geom_point()
+sp <- sp + scale_colour_gradientn( colours = c("blue","cyan", "green", "yellow", "red"),
+                         breaks = breaks, labels = format(breaks))
+sp <- sp + scale_y_reverse() + theme(axis.title = element_blank()) + scale_x_continuous(position = "top") +coord_fixed(ratio = 1)
+
+sp + ggtitle("CD8 densities in Stroma")
+```
+
+
+
+##### CD3
+
+```{r}
+breaks <- c( 0,1000, 2000, 3000)
+CD3_densities_stroma <- replace_na(data = CD3_densities_stroma, replace= NA)
+datapatient$CD3_densities_stroma <- as.matrix(CD3_densities_stroma)
+p1 <- datapatient[c(seq(0, nrow(datapatient), by=10)), c(1:ncol(datapatient))]
+p1 <- p1[which(p1$Parent != "alveoli"),]
+sp <-ggplot(p1, aes(x=Centroid.X.Âµm, y=Centroid.Y.Âµm, color=CD3_densities_stroma, group = tileNumber )) + geom_point()
+sp <- sp + scale_colour_gradientn( colours = c("blue","cyan", "green", "yellow", "red") )
+sp <- sp + scale_y_reverse() + theme(axis.title = element_blank()) + scale_x_continuous(position = "top") +coord_fixed(ratio = 1)
+
+sp + ggtitle("CD3 densities in stroma")
+```
+
+```{r}
+breaks <- c( 0,1000, 2000, 3000)
+CD3_densities_tumor <- replace_na(data = CD3_densities_tumor, replace= NA)
+datapatient$CD3_densities_tumor <- as.matrix(CD3_densities_tumor)
+p1 <- datapatient[c(seq(0, nrow(datapatient), by=10)), c(1:ncol(datapatient))]
+p1 <- p1[which(p1$Parent != "alveoli"),]
+sp <-ggplot(p1, aes(x=Centroid.X.Âµm, y=Centroid.Y.Âµm, color=CD3_densities_tumor, group = tileNumber )) + geom_point()
+sp <- sp + scale_colour_gradientn( colours = c("blue","cyan", "green", "yellow", "red") )
+sp <- sp + scale_y_reverse() + theme(axis.title = element_blank()) + scale_x_continuous(position = "top") +coord_fixed(ratio = 1)
+
+sp + ggtitle("CD3 densities in tumor")
+```
+
+
+```{r}
+breaks <- c( 0, 100, 1000)
+CD3_densities_TS <- replace_na(data = CD3_densities_TS, replace= NA)
+datapatient$CD3_densities_TS <- as.matrix(CD3_densities_TS)
+p1 <- datapatient[c(seq(0, nrow(datapatient), by=10)), c(1:ncol(datapatient))]
+p1 <- p1[which(p1$Parent != "alveoli"),]
+sp <-ggplot(p1, aes(x=Centroid.X.Âµm, y=Centroid.Y.Âµm, color=CD3_densities_TS, group = tileNumber )) + geom_point()
+sp <- sp + scale_colour_gradientn(colours = c("blue","cyan", "green", "yellow", "red"))
+sp <- sp + scale_y_reverse() + theme(axis.title = element_blank()) + scale_x_continuous(position = "top") +coord_fixed(ratio = 1)
+
+sp + ggtitle("CD3 tumor/stroma density ratios")
+#ggplotly(p = sp, tooltip = c("Centroid.X.Âµm", "Centroid.Y.Âµm", "CD8_densities_TS", "tileNumber"))
+```
+#### CD4 T cells 
+
+```{r}
+breaks <- c( 0,1000, 2000, 3000)
+CD4_densities <- replace_na(data = CD4_densities, replace= NA)
+datapatient$CD4_densities <- as.matrix(CD4_densities)
+p1 <- datapatient[c(seq(0, nrow(datapatient), by=10)), c(1:ncol(datapatient))]
+p1 <- p1[which(p1$Parent != "alveoli"),]
+sp <-ggplot(p1, aes(x=Centroid.X.Âµm, y=Centroid.Y.Âµm, color=CD4_densities, group = tileNumber )) + geom_point()
+sp <- sp + scale_colour_gradientn( colours = c("blue","cyan", "green", "yellow", "red") )
+sp <- sp + scale_y_reverse() + theme(axis.title = element_blank()) + scale_x_continuous(position = "top") +coord_fixed(ratio = 1)
+
+sp + ggtitle("CD4 densities in stroma")
+```
+
+```{r}
+breaks <- c( 0,1000, 2000, 3000)
+CD4_densities_tumor <- replace_na(data = CD4_densities_tumor, replace= NA)
+datapatient$CD4_densities_tumor <- as.matrix(CD4_densities_tumor)
+p1 <- datapatient[c(seq(0, nrow(datapatient), by=10)), c(1:ncol(datapatient))]
+p1 <- p1[which(p1$Parent != "alveoli"),]
+sp <-ggplot(p1, aes(x=Centroid.X.Âµm, y=Centroid.Y.Âµm, color=CD4_densities_tumor, group = tileNumber )) + geom_point()
+sp <- sp + scale_colour_gradientn( colours = c("blue","cyan", "green", "yellow", "red") )
+sp <- sp + scale_y_reverse() + theme(axis.title = element_blank()) + scale_x_continuous(position = "top") +coord_fixed(ratio = 1)
+
+sp + ggtitle("CD4 densities in tumor")
+```
+
+
+```{r}
+breaks <- c( 0, 100, 1000)
+CD4_densities_TS <- replace_na(data = CD4_densities_TS, replace= NA)
+datapatient$CD4_densities_TS <- as.matrix(CD4_densities_TS)
+p1 <- datapatient[c(seq(0, nrow(datapatient), by=10)), c(1:ncol(datapatient))]
+p1 <- p1[which(p1$Parent != "alveoli"),]
+sp <-ggplot(p1, aes(x=Centroid.X.Âµm, y=Centroid.Y.Âµm, color=CD4_densities_TS, group = tileNumber )) + geom_point()
+sp <- sp + scale_colour_gradientn(colours = c("blue","cyan", "green", "yellow", "red"))
+sp <- sp + scale_y_reverse() + theme(axis.title = element_blank()) + scale_x_continuous(position = "top") +coord_fixed(ratio = 1)
+
+sp + ggtitle("CD4 tumor/stroma density ratios")
+#ggplotly(p = sp, tooltip = c("Centroid.X.Âµm", "Centroid.Y.Âµm", "CD8_densities_TS", "tileNumber"))
+```
+
+##### Fibroblasts 
+
+```{r}
+breaks <- c( -2, -1, 0, 1, 2, 3)
+Barrier_scores <- replace_na(data = Barrier_scores, replace= NA)
+datapatient$Barrier_scores <- as.matrix(Barrier_scores)
+p1 <- datapatient[c(seq(0, nrow(datapatient), by=10)), c(1:ncol(datapatient))]
+p1 <- p1[which(p1$Parent != "alveoli"),]
+sp <-ggplot(p1, aes(x=Centroid.X.Âµm, y=Centroid.Y.Âµm, color=Barrier_scores, group = tileNumber )) + geom_point()
+sp <- sp + scale_colour_gradientn( colours = c("blue","cyan", "green", "yellow", "red"))
+sp <- sp + scale_y_reverse() + theme(axis.title = element_blank()) + scale_x_continuous(position = "top") +coord_fixed(ratio = 1)
+#ggplotly(p = sp, tooltip = c("Centroid.X.Âµm", "Centroid.Y.Âµm", "Barrier_scores", "tileNumber"))
+sp + ggtitle("ASMA+MYH11+ barrier CAF scores")
+#limits = c(-0.01, max(p1$Barrier_scores)),
+
+```
+
+```{r}
+breaks <- c( 0, 25, 50)
+ASMA_areas <- replace_na(data = ASMA_areas, replace= NA)
+datapatient$ASMA_areas <- as.matrix(ASMA_areas)
+p1 <- datapatient[c(seq(0, nrow(datapatient), by=10)), c(1:ncol(datapatient))]
+p1 <- p1[which(p1$Parent != "alveoli"),]
+sp <-ggplot(p1, aes(x=Centroid.X.Âµm, y=Centroid.Y.Âµm, color=ASMA_areas, group = tileNumber )) + geom_point()
+sp <- sp + scale_colour_gradientn( colours = c("blue","cyan", "green", "yellow", "red"))
+sp <- sp + scale_y_reverse() + theme(axis.title = element_blank()) + scale_x_continuous(position = "top") +coord_fixed(ratio = 1)
+sp + ggtitle("ASMA stromal coverage %")
+```
+
+
+## Linear regressions 
+
+summary_distances = datapatient %>% group_by(tileNumber, distance_to_tumor, Phenotype) %>% dplyr::summarise(nCells = n()) 
+summary_distances= as.data.frame(summary_distances)
+summary_distances <- spread(summary_distances, Phenotype, nCells,fill=0)
+summary_distances
+
+```{r}
+#tile_summary = datapatient %>% group_by(tileNumber, Phenotype) %>% dplyr::summarise(nCells = n()) %>%  dplyr::mutate(Percentage=nCells/sum(nCells))
+tile_summary = datapatient %>% group_by(tileNumber, Phenotype) %>% dplyr::summarise(nCells = n())
+tile_summary= as.data.frame(tile_summary)
+
+#tile_summary = tile_summary[,!(names(tile_summary) %in% c("nCells"))]
+tile_summary <- spread(tile_summary, Phenotype, nCells, fill=0)
+tile_summary$sumCells <- tile_summary$other + tile_summary$Tumoral
+
+#tile_summary$Infiltration_score <- AllScores
+#tile_summary$Proportion_score <- ProportionT
+tile_summary$TS_CD8_ratio <- Allprop
+
+tile_summary$Barrier_scores <- AllSMA
+
+tile_summary$Tumor_CD8_density <- AllTdens
+tile_summary$Stromal_CD8_density <- AllSdens
+tile_summary$ASMA_stroma_area <- ASMAareas
+
+tile_summary$Stromal_CD3_density <-  AllCD3Stroma
+tile_summary$Tumor_CD3_density <-  AllCD3Tumor
+tile_summary$TS_CD3_ratio <-  AllCD3TS
+datatable(tile_summary)
+#tile_summary <- tile_summary[-which(tile_summary$tileNumber %in% c(48,6)),]
+```
+
+
+
+### TS densities ratio 
+```{r}
+#tile_summary <-  tile_summary[-which(tile_summary$tileNumber %in% c(13,30, 95)),]
+regression_result <- lm(formula =  TS_CD8_ratio  ~  Barrier_scores  + `ADH1B`  +`FAP+`, data = tile_summary)
+summary(regression_result)
+par(mfrow=c(2,2))
+plot(regression_result)
+```
+
+
+
+```{r fig.height=4, fig.width=5}
+
+ggscatter(tile_summary[which(tile_summary$sumCells > 100),], x = "ASMA_stroma_area", y =  "TS_CD8_ratio",
+   color = "gray30",  shape = 21, size = 2, # Points color, shape and size 
+   add = "reg.line",  # Add regressin line
+   add.params = list(color = "blue", fill = "lightblue"), # Customize reg. line
+   conf.int = TRUE, # Add confidence interval
+   cor.coef = TRUE, # Add correlation coefficient. see ?stat_cor
+   cor.coeff.args = list(method = "spearman", label.x = 3, label.sep = "\n"), repel = TRUE
+   ) + ggtitle("Spearman correlation \n ASMA coverage vs Tumor/stroma CD8 densities") + theme(plot.title = element_text(size = 13))
+
+```
+```{r fig.height=4, fig.width=5}
+
+ggscatter(tile_summary[which(tile_summary$sumCells > 100),], x = "ASMA_stroma_area", y =  "TS_CD3_ratio",
+   color = "gray30",  shape = 21, size = 2, # Points color, shape and size 
+   add = "reg.line",  # Add regressin line
+   add.params = list(color = "blue", fill = "lightblue"), # Customize reg. line
+   conf.int = TRUE, # Add confidence interval
+   cor.coef = TRUE, # Add correlation coefficient. see ?stat_cor
+   cor.coeff.args = list(method = "spearman", label.x = 3, label.sep = "\n"), repel = TRUE
+   ) + ggtitle("Spearman correlation \n ASMA coverage vs Tumor/stroma CD3 densities") + theme(plot.title = element_text(size = 13))
+
+```
+
+
+
+```{r fig.height=4, fig.width=5}
+
+ggscatter(tile_summary[which(tile_summary$sumCells > 100),], x = "Barrier_scores", y =  "TS_CD8_ratio",
+   color = "gray30",  shape = 21, size = 2, # Points color, shape and size 
+   add = "reg.line",  # Add regressin line
+   add.params = list(color = "blue", fill = "lightblue"), # Customize reg. line
+   conf.int = TRUE, # Add confidence interval
+   cor.coef = TRUE, # Add correlation coefficient. see ?stat_cor
+   cor.coeff.args = list(method = "spearman", label.x = 3, label.sep = "\n"), repel = TRUE
+   ) + ggtitle("Spearman correlation \n ASMA+MYH11+ CAF score vs Tumor/stroma CD8 densities") + theme(plot.title = element_text(size = 11))
+
+```
+
+```{r fig.height=4, fig.width=5}
+
+ggscatter(tile_summary[which(tile_summary$sumCells > 100),], x = "Barrier_scores", y =  "TS_CD3_ratio",
+   color = "gray30",  shape = 21, size = 2, # Points color, shape and size 
+   add = "reg.line",  # Add regressin line
+   add.params = list(color = "blue", fill = "lightblue"), # Customize reg. line
+   conf.int = TRUE, # Add confidence interval
+   cor.coef = TRUE, # Add correlation coefficient. see ?stat_cor
+   cor.coeff.args = list(method = "spearman", label.x = 3, label.sep = "\n"), repel = TRUE
+   ) + ggtitle("Spearman correlation ASMA+MYH11+ barrier score  \n vs Tumor/stroma CD3 densities") + theme(plot.title = element_text(size = 13))
+
+```
+
+```{r fig.height=4, fig.width=5}
+ggscatter(tile_summary[which(tile_summary$sumCells > 100),], x = "ASMA_stroma_area", y =  "Stromal_CD8_density",
+   color = "gray30",  shape = 21, size = 2, # Points color, shape and size 
+   add = "reg.line",  # Add regressin line
+   add.params = list(color = "blue", fill = "lightblue"), # Customize reg. line
+   conf.int = TRUE, # Add confidence interval
+   cor.coef = TRUE, # Add correlation coefficient. see ?stat_cor
+   cor.coeff.args = list(method = "spearman", label.x = 3, label.sep = "\n"), repel = TRUE
+   ) + ggtitle("Spearman correlation \n ASMA coverage vs CD8 density in stroma") + theme(plot.title = element_text(size = 13))
+```
+```{r fig.height=4, fig.width=5}
+ggscatter(tile_summary[which(tile_summary$sumCells > 100),], x = "ASMA_stroma_area", y =  "Stromal_CD3_density",
+   color = "gray40",  shape = 21, size = 2, # Points color, shape and size 
+   add = "reg.line",  # Add regressin line
+   add.params = list(color = "blue", fill = "lightblue"), # Customize reg. line
+   conf.int = TRUE, # Add confidence interval
+   cor.coef = TRUE, # Add correlation coefficient. see ?stat_cor
+   cor.coeff.args = list(method = "spearman", label.x.npc = "right", label.y.npc = "top" ,label.x = 3, label.sep = "\n"), repel = TRUE
+   )  + ggtitle("Spearman correlation \n ASMA coverage vs CD3 density in stroma") + theme(plot.title = element_text(size = 13))
+```
+```{r fig.height=4, fig.width=5}
+ggscatter(tile_summary[which(tile_summary$sumCells > 100),], x = "Barrier_scores", y =  "Tumor_CD8_density",
+   color = "gray30",  shape = 21, size = 2, # Points color, shape and size 
+   add = "reg.line",  # Add regressin line
+   add.params = list(color = "blue", fill = "lightblue"), # Customize reg. line
+   conf.int = TRUE, # Add confidence interval
+   cor.coef = TRUE, # Add correlation coefficient. see ?stat_cor
+   cor.coeff.args = list(method = "spearman", label.x = 3, label.sep = "\n"), repel = TRUE
+   )  + ggtitle("Spearman correlation ASMA+MYH11+ barrier score \n  vs CD8 density in tumor") + theme(plot.title = element_text(size = 13))
+```
+```{r fig.height=4, fig.width=5}
+ggscatter(tile_summary[which(tile_summary$sumCells > 100),], x = "Barrier_scores", y = "Tumor_CD3_density" ,
+   color = "gray30",  shape = 21, size = 2, # Points color, shape and size 
+   add = "reg.line",  # Add regressin line
+   add.params = list(color = "blue", fill = "lightblue"), # Customize reg. line
+   conf.int = TRUE, # Add confidence interval
+   cor.coef = TRUE, # Add correlation coefficient. see ?stat_cor
+   cor.coeff.args = list(method = "spearman", label.x = 3, label.sep = "\n"), repel = TRUE
+   ) + ggtitle("Spearman correlation ASMA+MYH11+ barrier score \n  vs CD3 density in tumor") + theme(plot.title = element_text(size = 13))
+```
+
+### T densities 
+
+```{r}
+#tile_summary <-  tile_summary[-which(tile_summary$tileNumber %in% c(13,30, 95)),]
+regression_result <- lm(formula =  Tumor_CD8_density  ~  `FAP+ASMA+` , `CD34 SP`, ADH1B , data = tile_summary)
+summary(regression_result)
+par(mfrow=c(2,2))
+plot(regression_result)
+```
+
+
+
+### cumulative ASMA 
+
+```{r}
+cummulativeMarkers <- as.data.frame(cummulativeMarkers)
+colnames(cummulativeMarkers) <- c("tileNumber", "distance_to_tumor", "nCD8", "cum_ASMA", "nASMA")
+
+
+```
+
+```{r}
+test <- cummulativeMarkers[which(cummulativeMarkers$distance_to_tumor> 0),]
+test <- test %>% group_by(distance_to_tumor)
+test <-test %>% dplyr::summarise_each(funs(mean(., na.rm = TRUE)))
+test
+```
+
+
+```{r}
+ggscatter(test, x = "cum_ASMA", y = "nCD8", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "spearman") + ggtitle("patient Spearman correlation densities CD8 vs cumulative ASMA")
+```
+
+
+```{r}
+library(Rmisc)
+#rm(distance_to_tumor)
+test <- cummulativeMarkers[which(cummulativeMarkers$distance_to_tumor> 0),]
+test2 <- test %>% select(distance_to_tumor, tileNumber, nCD8)
+test2$Phenotype <- matrix(data= "CD8", nrow = nrow(test2), ncol = 1)
+colnames(test2) <- c("distance_to_tumor", "tileNumber", "Y", "Phenotype")
+  
+test <- test %>% select(distance_to_tumor, tileNumber, cum_ASMA)
+test$Phenotype <- matrix(data= "cumASMA", nrow = nrow(test), ncol = 1)
+colnames(test) <- c("distance_to_tumor", "tileNumber", "Y", "Phenotype")
+#test$Y <- (test$Y)
+test <-  rbind(test, test2)
+
+#test <- summarySE(test, measurevar="nCD8", groupvars=c("distance_to_tumor"))
+#ggplot(test, aes(x=distance_to_tumor, y=nCD8, colour= "magenta")) + geom_errorbar(aes(ymin=nCD8-se, ymax=nCD8+se), width=.1) + geom_errorbar(aes(ymin=cum_ASMA-se, ymax=cum_ASMA+se), width=.1) +geom_line() + geom_point()
+
+test <- summarySE(test, measurevar="Y", groupvars=c("Phenotype", "distance_to_tumor"))
+ggplot(test, aes(x=distance_to_tumor, y=Y, colour= Phenotype)) + geom_errorbar(aes(ymin=Y-se, ymax=Y+se), width=.1) +geom_line() + geom_point() + theme_bw()
+```
+
+```{r}
+test <- datapatient[which(datapatient$Phenotype %in% c( "ADH1B", "FAP+", "FAP+ASMA+", "MYH11+ASMA+", "CD34+MYH11+" )),]
+test <- test[which(test$distance_to_tumor >= 0 & test$distance_to_tumor < 30),]
+#test <- setDT(test)[, if (.N > 5000) .SD, by = Phenotype]
+test <- test %>% dplyr::group_by(distance_to_tumor, Phenotype) %>% dplyr::mutate(counting = n()) %>% dplyr::filter(counting > 100)
+test <- test %>% select(Phenotype, Cell..Eccentricity, distance_to_tumor) %>% dplyr::group_by(distance_to_tumor, Phenotype)  
+#test <- test %>% dplyr::group_by(distance_to_tumor, Phenotype) %>% dplyr::summarise(mean_eccentricity = mean(Cell..Eccentricity, na.rm = TRUE)) 
+
+
+test <- summarySE(test, measurevar="Cell..Eccentricity", groupvars=c("Phenotype", "distance_to_tumor"), na.rm = TRUE, .drop = TRUE)
+ggplot(test, aes(x=distance_to_tumor, y=Cell..Eccentricity, colour= Phenotype)) + geom_errorbar(aes(ymin=Cell..Eccentricity-se, ymax=Cell..Eccentricity+se), width=.1) +geom_line() + geom_point() + theme_bw() + scale_color_manual(values = c("green",  "red", "magenta", "blue"))
+
+
+
+```
+
+
+
+
+### correlations 
+
+```{r}
+
+res <- cor(tile_summary)
+#round(res, 2)
+p1 <- ncol(tile_summary) -11
+  
+res2 <- rcorr(as.matrix(tile_summary[1:nrow(tile_summary), 2:p1]), type = "spearman")
+corrplot(res2$r, type="upper", order="hclust", 
+         p.mat = res2$P, sig.level = 0.01, insig = "blank")
+```
+
+```{r fig.height=9, fig.width=4}
+p1 <- ncol(tile_summary) -11
+rownames(tile_summary) <- tile_summary$tileNumber
+#heatmap(as.matrix(tile_summary[1:nrow(tile_summary), 2:p1], scale = "none"))
+fontsize_row = nrow(table) / 100
+pheatmap(as.matrix(tile_summary[1:nrow(tile_summary), 2:p1], col=greenred(256),  scale = "column", cluster_cols=F, fontsize_row=5, angle_col = 45, border_color=NA), cluster_rows = TRUE, 
+         cluster_cols = FALSE,
+         scale="column")
+```
+
+
+
+## Saving data for cohort analysis 
+
+#```{r}
+p1 <- ncol(tile_summary) -2
+df <- tile_summary[1:nrow(tile_summary), p1:ncol(tile_summary)]
+df <- sapply(df, function(df) (df-mean(df, na.rm = TRUE))/sd(df, na.rm = TRUE))
+colnames(df) <- paste("Z", colnames(df), sep = "_")
+df <- cbind(tile_summary, df)
+
+write.table(x = df, file =  "/home/salmon/Documents/Image_analysis/all_images/results/tile_summaries/patient_tileSummary.txt", append = FALSE, sep = "\t", dec = ".", row.names = FALSE, col.names = TRUE)
+
+df <- densities_patient
+df$tissueName <- matrix(data = patient, nrow = nrow(densities_patient), ncol =1 )
+#df <- cbind(tissueName, densities_patient)
+write.table(x = df, file =  "/home/salmon/Documents/Image_analysis/all_images/results/tissue_summaries/patient_tissueSummary.txt", append = FALSE, sep = "\t", dec = ".", row.names = FALSE, col.names = TRUE)
+
+rm(df)
+
+#```
+
+
+
+
+## SPIAT analysis 
+
+#### rewrting data
+```{r}
+#datapatient.SPIAT <- datapatient[which(datapatient$Phenotype != "other" & datapatient$Parent == "Stroma" & datapatient$tileNumber < 108 & datapatient$tileNumber >8),]
+datapatient.SPIAT <- datapatient[which(datapatient$Phenotype %in% c("FAP+", "ADH1B", "FAP+ASMA+")  & datapatient$Parent == "Stroma")  ,]
+Cell.ID <- rownames(datapatient.SPIAT)
+Cell.X.Position <- datapatient.SPIAT$Centroid.X.Âµm
+Cell.Y.Position <- datapatient.SPIAT$Centroid.Y.Âµm
+image <- datapatient.SPIAT$Image
+
+Phenotype <- datapatient.SPIAT$Phenotype
+
+datapatient.SPIAT <- datapatient.SPIAT %>% select(starts_with("Cell..")) %>% select(ends_with("mean"))
+datapatient.SPIAT <- datapatient.SPIAT[, -which(names(datapatient.SPIAT) %in% c("temporaryTile"))]
+
+
+datapatient.SPIAT <- cbind(image = image, Cell.ID = Cell.ID, Phenotype = Phenotype, "Cell X Position"= Cell.X.Position, "Cell Y Position" = Cell.Y.Position, datapatient.SPIAT)
+
+datapatient.SPIAT <- transform(datapatient.SPIAT, Phenotype = ifelse( grepl(pattern = "FAP", x = datapatient.SPIAT$Phenotype), "FAP", "ADH1B"))
+
+datapatient.SPIAT <- as.data.frame(datapatient.SPIAT[which(datapatient.SPIAT$Cell..FAP.mean > 10 | datapatient.SPIAT$Cell..ADH1B.mean > 10),])
+
+ADH1Bsample <- datapatient.SPIAT[which(datapatient.SPIAT$Phenotype == "ADH1B"),]
+datapatient.SPIAT <- datapatient.SPIAT[which(datapatient.SPIAT$Phenotype == "FAP"),]
+sampleSize <- min(nrow(ADH1Bsample), nrow(datapatient.SPIAT))
+
+set.seed(42)
+rows <- sample(nrow(ADH1Bsample))
+ADH1Bsample <- ADH1Bsample[rows, ]
+set.seed(42)
+rows <- sample(nrow(datapatient.SPIAT))
+datapatient.SPIAT <- datapatient.SPIAT[rows, ]
+datapatient.SPIAT <- rbind(ADH1Bsample[1:sampleSize, 1:ncol(ADH1Bsample)], datapatient.SPIAT[1:sampleSize, 1:ncol(datapatient.SPIAT)])
+
+
+```
+
+
+```{r}
+
+
+write.table(x = datapatient.SPIAT, file =  "D:/DATA FOR EGLANTINE/patient_SPIAT.txt", append = FALSE, sep = "\t", dec = ".", row.names = FALSE, col.names = TRUE)
+```
+
+```{r}
+datapatient.SPIAT <-format_image_to_sce(
+  format = "INFORM",
+  image = "D:/DATA FOR EGLANTINE/patient_SPIAT.txt",
+  markers =  c("FAP" ,"ADH1B"),
+  dye_columns_interest = NULL,
+  intensity_columns_interest = c("Cell..FAP.mean" ,"Cell..ADH1B.mean" )
+)
+```
+
+#### distances
+```{r}
+average_minimum_distance(datapatient.SPIAT)
+distdat <- calculate_summary_distances_between_phenotypes(sce_object = datapatient.SPIAT)
+
+```
+
+```{r}
+gc() 
+cell_to_cell_dist <-  calculate_all_distances_between_phenotypes(
+sce_object = datapatient.SPIAT,
+  remove_other = FALSE,
+  cell_phenotypes_of_interest = c("ADH1B", "FAP"))
+
+#cell_to_cell_dist <- readRDS("/home/salmon/Documents/Image_analysis/all_images/results/SPIAT/RDSpatientCellDist.rds")
+
+```
+
+```{r}
+gc()
+
+plot_cell_distances_violin(cell_to_cell_dist)
+```
+```{r}
+gc()
+cell_to_cell_dist <- cell_to_cell_dist[which(cell_to_cell_dist$Distance > 8 & cell_to_cell_dist$Distance < 1000),]
+```
+
+```{r}
+ks.test(x = cell_to_cell_dist[which(cell_to_cell_dist$Pair == "FAP_ADH1B"),]$Distance, y = cell_to_cell_dist[which(cell_to_cell_dist$Pair == "FAP_FAP"),]$Distance, 
+        alternative = "less",
+        exact = NULL)
+```
+
+```{r}
+#c("two.sided", "less", "greater")
+ks.test(x = cell_to_cell_dist[which(cell_to_cell_dist$Pair == "FAP_ADH1B"),]$Distance, y = cell_to_cell_dist[which(cell_to_cell_dist$Pair == "ADH1B_ADH1B"),]$Distance, 
+        alternative = "less",
+        exact = NULL)
+```
+
+

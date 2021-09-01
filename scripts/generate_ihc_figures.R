@@ -9,7 +9,7 @@ library(RColorBrewer)
 ###################
 # adh1b versus fap staining
 
-plus_stains <- read.csv("D:/Google Drive/Paper website/Scripts/inputs/S5.csv",stringsAsFactors = F,fileEncoding="UTF-8-BOM")
+plus_stains <- read.csv("intermediate_files/S5.csv",stringsAsFactors = F,fileEncoding="UTF-8-BOM")
 
 ggplot(plus_stains, aes(x = ADH1B_coverage_stroma/100, y = adjusted_FAP/100, color = predominant_CAF)) +
   geom_point(aes(shape = MYH11_aSMA_CAF), size = 3) +
@@ -60,7 +60,7 @@ for (num in 1:length(obsv_p_vals)){
 ###################
 # cluster adjacent versus tumor enrichment
 
-sum_tissue <- read.csv("D:/Google Drive/Paper website/Scripts/inputs/S3.csv", row.names = 1)
+sum_tissue <- read.csv("intermediate_files/S3.csv", row.names = 1)
 
 for (fib in colnames(sum_tissue)){
   if (fib == "tissue"){
@@ -81,7 +81,7 @@ for (fib in colnames(sum_tissue)){
 # infiltration graphing and analysis
 brewer.pal(n = 8, name = "Dark2")
 
-quant_table <- "D:/Google Drive/Paper website/Scripts/inputs/S7.csv"
+quant_table <- "intermediate_files/S7.csv"
 infil_table <- read.csv(quant_table)
 colnames(infil_table) <- c("patient",c(colnames(infil_table)[2:ncol(infil_table)]))
 
@@ -157,11 +157,11 @@ for (quant in quant_type){
 
 ###################
 # infiltration graphing and analysis
-tiling_table <- "D:/Google Drive/Paper website/Scripts/inputs/S10.csv"
+tiling_table <- "intermediate_files/S10.csv"
 
 # or
 
-tiling_table <- "D:/Google Drive/Paper website/Scripts/inputs/S11.csv"
+tiling_table <- "intermediate_files/S11.csv"
 
 tiling_table <- read.csv(tiling_table)
 
@@ -211,11 +211,11 @@ print(g)
 
 ###################
 # infiltration graphing and analysis
-tiling_table <- "D:/Google Drive/Paper website/Scripts/inputs/S8.csv"
+tiling_table <- "intermediate_files/S8.csv"
 
 # or
 
-tiling_table <- "D:/Google Drive/Paper website/Scripts/inputs/S9.csv"
+tiling_table <- "intermediate_files/S9.csv"
 
 tiling_table <- read.csv(tiling_table)
 
