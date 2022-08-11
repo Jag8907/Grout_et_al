@@ -1,0 +1,8 @@
+Image	Name	Class	Parent	ROI	Centroid X µm	Centroid Y µm	ROI: 2.00 µm per pixel: ASMA: Mean	Num Detections	Area µm^2	Perimeter µm
+SCC3_composite_DS1.25v2.tif	Tumor	Tumor	Image	Geometry	16535.9	2830	0.2434	218440	28334681.9	928172.3
+SCC3_composite_DS1.25v2.tif	Stroma	Stroma	Image	Geometry	17981.2	2955	22.7416	179432	26362210.2	840597.7
+SCC3_composite_DS1.25v2.tif	FAP	FAP	Stroma	Geometry	18575.3	3391.9	48.8572	19776	4429176.3	2154696.2
+SCC3_composite_DS1.25v2.tif	ADH1B	ADH1B	Stroma	Geometry	13696.9	2150.4	11.8117	1347	103289.9	68176.9
+SCC3_composite_DS1.25v2.tif	ASMA	ASMA	Stroma	Geometry	18698.8	3100.1	77.1909	35260	6587915	2789803.9
+SCC3_composite_DS1.25v2.tif	20µm	20µm	Image	Geometry	16719.2	2794.1	5.1911	293498	40322328.2	432022.4
+SCC3_composite_DS1.25v2.tif	8µm	8µm	Image	Geometry	16615.4	2799.7	2.9901	260933	35366685.4	582618.8

@@ -1,0 +1,1905 @@
+Image	Name	Class	Parent	ROI	Centroid X µm	Centroid Y µm	Area µm^2	Perimeter µm
+725_composite_PHILEMON.tif	Tile 1	Other	Image	Geometry	3820.3	325.85	141200.5	1744.9
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 1	Geometry	3761.6	335.19	12738.7	3908
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3809.3	362.63	103.65	118.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 1	Geometry	3869.6	322.22	50133.5	9969
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3947.2	283.63	1356.8	1126.5
+725_composite_PHILEMON.tif	Tile 2	Other	Image	Rectangle	4250.9	250.05	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 2	Geometry	4289.6	273.74	104627.6	12662.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4215.6	293.11	577.49	637.38
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 2	Geometry	4173.3	225.2	58855.4	10241.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4262.4	252.13	4271.5	2992.7
+725_composite_PHILEMON.tif	Tile 3	Other	Image	Rectangle	4751	250.05	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 3	Geometry	4772.1	236.69	96622.1	12475.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4767.1	348.67	1449.6	1264.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 3	Geometry	4787	260.4	38924.7	7996.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4783.8	367.33	5494.3	3841.1
+725_composite_PHILEMON.tif	Tile 4	Other	Image	Rectangle	5251.1	250.05	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 4	Geometry	5265.2	256.79	115417.3	14065.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5218.2	375.41	469.16	473.18
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 4	Geometry	5227.6	205.07	60418	9790.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5177.3	256.79	6797.4	4468.7
+725_composite_PHILEMON.tif	Tile 5	Other	Image	Rectangle	5751.2	250.05	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 5	Geometry	5755.5	228.85	133429.3	15803.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5738.1	280.77	919.62	835.13
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 5	Geometry	5759.5	250.3	56364.7	9316.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5760.3	253.72	11038.9	7479.1
+725_composite_PHILEMON.tif	Tile 6	Other	Image	Rectangle	6251.3	250.05	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 6	Geometry	6147.7	347.13	42184.7	5774.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6112.7	293.68	552.55	529.68
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 6	Geometry	6173.4	355.71	22317.1	3635.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6134.7	375.24	4738.8	3161.3
+725_composite_PHILEMON.tif	Tile 7	Other	Image	Rectangle	6751.4	250.05	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 7	Geometry	6792.3	183.92	65567.5	9792
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6759.3	267.43	549.43	607.37
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 7	Geometry	6701.2	194.36	55758.4	10752.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6777.6	162.79	6650.1	4431.7
+725_composite_PHILEMON.tif	Tile 8	Other	Image	Geometry	7251.5	250.09	250072.9	1999.1
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 8	Geometry	7271.2	236.94	119762.5	12195.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7295.7	141.34	827.95	783.38
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 8	Geometry	7254	259.72	60154.6	8084.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7274.8	243.84	13123.6	7826.9
+725_composite_PHILEMON.tif	Tile 9	Other	Image	Geometry	7750.4	254.26	245882.2	1983.7
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 9	Geometry	7756.1	276.73	83829.1	8881.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7737.3	318.18	2428.8	2147
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 9	Geometry	7792.4	275.54	82205.4	4700.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7790.3	276.34	31641.4	13998.6
+725_composite_PHILEMON.tif	Tile 10	Other	Image	Geometry	8250.5	261.33	238807.3	1955.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 10	Geometry	8293.6	244.25	100827	9439.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8286.7	205.36	2031.7	2175.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 10	Geometry	8217.9	243.91	100788.2	5405.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8233.7	242.52	29895	14774.5
+725_composite_PHILEMON.tif	Tile 11	Other	Image	Geometry	8750.6	268.41	231732.3	1927.1
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 11	Geometry	8657.1	308.58	61383.4	6598.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8678.6	321.46	2752.9	2946.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 11	Geometry	8787.2	252.99	159884.6	7192.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8737.4	281.18	54091	24119.2
+725_composite_PHILEMON.tif	Tile 12	Other	Image	Geometry	9250.7	275.48	224657.4	1898.9
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 12	Geometry	9332	321	58753.6	5837.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9336.7	272.6	2713.3	2659
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 12	Geometry	9213.4	254.17	135849.9	6903.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9282.7	259.31	41024.3	19721.1
+725_composite_PHILEMON.tif	Tile 13	Other	Image	Geometry	9750.7	282.55	217582.5	1870.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 13	Geometry	9724.1	336.32	80279.3	7266.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9690.9	302.84	3434.3	3382.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 13	Geometry	9758	245.04	108074.8	7325.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9743.7	248.78	41716.9	16432.3
+725_composite_PHILEMON.tif	Tile 14	Other	Image	Geometry	10250.8	289.62	210507.5	1842.3
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 14	Geometry	10279.7	290.07	101906.7	6955
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10237.9	401.14	2301	2227.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 14	Geometry	10213.5	291.21	90873.2	5764.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10244.1	308.36	30740.4	14058.3
+725_composite_PHILEMON.tif	Tile 15	Other	Image	Geometry	10752	295.34	204802.1	1826.1
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 15	Geometry	10767.5	281.3	95772.5	8846.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10743.6	305.35	5406.8	5471.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 15	Geometry	10729.4	313.17	98707.3	6711
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10731.3	310.7	59339.6	18187.7
+725_composite_PHILEMON.tif	Tile 16	Other	Image	Geometry	11253.7	290.98	209158.8	1836.8
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 16	Geometry	11244.7	287.74	126064.9	13448.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11229.7	314.04	2721.1	3056
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 16	Geometry	11260.1	305.6	63083.3	8022.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11238.5	297.86	31455.8	12442
+725_composite_PHILEMON.tif	Tile 17	Other	Image	Geometry	11753.7	284.59	215543.9	1862.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 17	Geometry	11751.4	286.09	105649.6	11887.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11813	267.09	5438.5	4849.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 17	Geometry	11748.3	244.59	77502.9	8217.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11769.3	267.76	45065.5	13924.4
+725_composite_PHILEMON.tif	Tile 18	Other	Image	Geometry	12253.8	278.21	221927.9	1887.9
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 18	Geometry	12280.8	308.53	85858.2	8982.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12242.7	298.82	5192.3	4679.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 18	Geometry	12230.7	247.4	109413	9575.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12226	273.09	40087.7	14726.3
+725_composite_PHILEMON.tif	Tile 19	Other	Image	Geometry	12753.9	271.83	228311.9	1913.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 19	Geometry	12768.8	258.75	123760.8	12527.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12755.1	275.46	5693.7	4886.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 19	Geometry	12742.6	288.62	84519.6	9635.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12762.8	269.71	46014.8	15550
+725_composite_PHILEMON.tif	Tile 20	Other	Image	Geometry	13253.9	265.44	234697	1939
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 20	Geometry	13238.6	291.24	138568.7	12994.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13243.8	259.37	5366.5	4370.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 20	Geometry	13274.6	285.5	42595.4	6594.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13270	284.92	29658.8	8716.8
+725_composite_PHILEMON.tif	Tile 21	Other	Image	Geometry	13754	259.06	241082.1	1964.5
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 21	Geometry	13788.1	282.25	115838.7	11122.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13830.5	296.64	3213.2	2684.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 21	Geometry	13782	286.6	37382.7	5780.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13767.3	286.93	22530.2	7487.6
+725_composite_PHILEMON.tif	Tile 22	Other	Image	Geometry	14254.1	252.71	247435	1988.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 22	Geometry	14248.7	268.27	134688.2	12657.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14250.3	310.85	2976.3	2543.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 22	Geometry	14249.2	265.93	67608	7554.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14270.4	261.23	25476.7	11481.5
+725_composite_PHILEMON.tif	Tile 23	Other	Image	Geometry	14744.9	251.17	241076.8	1964.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 23	Geometry	14765	194.52	95773.8	8687.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14695.8	252.91	4012.4	3105.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 23	Geometry	14713.2	298.76	112832.4	9575.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14730.9	260.9	29920.4	12914.8
+725_composite_PHILEMON.tif	Tile 24	Other	Image	Geometry	2844.4	893.75	74415.8	1271.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 24	Geometry	2810.8	899.13	29134.4	4167.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2817.2	875.59	79.49	95.34
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 24	Geometry	2883.8	896.29	27557.6	4262.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2872.4	869	575.93	513.79
+725_composite_PHILEMON.tif	Tile 25	Other	Image	Geometry	3274.2	785.89	208545.6	1852.5
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 25	Geometry	3251.1	838.11	69125.8	8513.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3275.7	821.77	29.61	35.31
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 25	Geometry	3249.9	792.78	75975.8	13242.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3184.6	833.44	1672.1	1497.2
+725_composite_PHILEMON.tif	Tile 26	Other	Image	Geometry	3750.8	750.19	250074.1	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 26	Geometry	3812.9	800.39	84247	12263
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3746.7	781.53	183.14	211.87
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 26	Geometry	3737.4	733.08	90304	16451.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3744	764.92	2536.7	2068.4
+725_composite_PHILEMON.tif	Tile 27	Other	Image	Rectangle	4250.9	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 27	Geometry	4240.6	737.57	140540.6	18051.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4303.5	828.42	870.52	923.41
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 27	Geometry	4275.4	777.34	54298.7	8774.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4300.5	817.57	11764.9	7434.1
+725_composite_PHILEMON.tif	Tile 28	Other	Image	Rectangle	4751	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 28	Geometry	4705.2	773.97	80638.1	10772.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4784.7	665.23	1058.3	1037.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 28	Geometry	4675.1	755.1	28466	5979.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4674.8	768.05	6748.7	4647.1
+725_composite_PHILEMON.tif	Tile 29	Other	Image	Rectangle	5251.1	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 29	Geometry	5267	734.38	114021.9	14921.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5180.9	735.95	3554.9	3035.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 29	Geometry	5189.6	738.73	65129.3	8938.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5196.9	728.85	15678.7	10606
+725_composite_PHILEMON.tif	Tile 30	Other	Image	Rectangle	5751.2	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 30	Geometry	5768.2	747.07	119496.3	16099.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5811.6	735.84	3018	2588.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 30	Geometry	5777.6	704.58	58105.5	8451.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5767.6	710.86	15219.6	9946.5
+725_composite_PHILEMON.tif	Tile 31	Other	Image	Rectangle	6251.3	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 31	Geometry	6218.8	759.62	102720.4	13788.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6207.9	785.33	1397.3	1455.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 31	Geometry	6232.1	752.47	55351.5	7578
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6214.9	758.77	12965.4	8692.9
+725_composite_PHILEMON.tif	Tile 32	Other	Image	Rectangle	6751.4	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 32	Geometry	6735.2	754.98	90931.7	12950.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6697.3	710.15	636.72	600.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 32	Geometry	6825.8	772.08	69232.3	11821.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6736.7	758.59	6045.7	4622.3
+725_composite_PHILEMON.tif	Tile 33	Other	Image	Rectangle	7251.5	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 33	Geometry	7212.5	724.73	64086.7	8189.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7287.5	740.44	559.56	547.34
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 33	Geometry	7262.2	798.44	128249.8	11140.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7277	778.99	17913.4	10598
+725_composite_PHILEMON.tif	Tile 34	Other	Image	Rectangle	7751.6	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 34	Geometry	7727.3	761.34	43801.2	6034.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7784.2	671.68	1613.6	1424
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 34	Geometry	7746.6	739.45	116674.4	4071.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7748.5	736.04	29930.4	15871.9
+725_composite_PHILEMON.tif	Tile 35	Other	Image	Rectangle	8251.8	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 35	Geometry	8297.1	742.98	75139.9	7089.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8346.1	779.72	3487.5	3321.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 35	Geometry	8255.3	775.77	142394	5145.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8271.1	766.26	47925.3	21008
+725_composite_PHILEMON.tif	Tile 36	Other	Image	Rectangle	8751.9	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 36	Geometry	8768.2	768.66	96023.3	9583.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8763.2	783.59	6601.8	6326.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 36	Geometry	8740.8	736.56	145778.3	8022.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8754.9	764.49	68711.3	25695.7
+725_composite_PHILEMON.tif	Tile 37	Other	Image	Rectangle	9252	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 37	Geometry	9235.7	714.45	114228.8	8688.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9237.5	733.31	1737.9	1839.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 37	Geometry	9314.1	818.36	89868.7	4673.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9293.6	799.08	37121.3	17399.1
+725_composite_PHILEMON.tif	Tile 38	Other	Image	Rectangle	9752.1	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 38	Geometry	9729.4	687.96	66567.4	5880.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9700.8	700.39	1697.4	1961.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 38	Geometry	9702.7	659.87	51672.1	3813.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9674.7	661.05	19827.1	9532.5
+725_composite_PHILEMON.tif	Tile 39	Other	Image	Rectangle	10252.2	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 39	Geometry	10274.7	703.68	103693	9107
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10302	649.67	4342.5	3731.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 39	Geometry	10292	734.43	75448.5	7101.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10301.3	695.75	33347.4	13090.2
+725_composite_PHILEMON.tif	Tile 40	Other	Image	Rectangle	10752.3	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 40	Geometry	10769.8	723.29	133608.9	12076.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10708.9	771.48	6087	5794.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 40	Geometry	10729.9	790.19	100155.6	8219.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10741.4	781.78	60762.5	17417.6
+725_composite_PHILEMON.tif	Tile 41	Other	Image	Rectangle	11252.4	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 41	Geometry	11252.6	737.47	129049.2	12521.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11256.7	764.74	5594.1	5363
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 41	Geometry	11249.6	771.23	99901.9	8528.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11267.7	767.11	52039.8	15949.5
+725_composite_PHILEMON.tif	Tile 42	Other	Image	Rectangle	11752.5	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 42	Geometry	11719.1	725.79	104176.7	9970.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11745.2	758.37	6301.7	5336.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 42	Geometry	11713.9	766.8	58439.7	6316.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11729	754.75	40233.6	10950.3
+725_composite_PHILEMON.tif	Tile 43	Other	Image	Rectangle	12252.6	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 43	Geometry	12277.7	703.75	91186.4	9869.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12259.5	746.44	11690.8	5890.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 43	Geometry	12290.8	661.66	46058.7	5528.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12280.3	664.77	28618	8365.4
+725_composite_PHILEMON.tif	Tile 44	Other	Image	Rectangle	12752.7	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 44	Geometry	12749.9	775.83	130545.2	12195
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12713	771.99	8660.4	6365
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 44	Geometry	12759.9	705.65	88435.1	9463.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12727.5	759.08	39984.2	13640.1
+725_composite_PHILEMON.tif	Tile 45	Other	Image	Rectangle	13252.8	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 45	Geometry	13254.8	745.77	132595.2	12505.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13260.4	646.7	7900.9	6019.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 45	Geometry	13226.1	707.25	76062.4	7502.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13249.6	716.07	36855.2	12669.9
+725_composite_PHILEMON.tif	Tile 46	Other	Image	Rectangle	13752.9	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 46	Geometry	13734.2	756.9	133586	13634.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13714.1	724.09	5156.5	4294.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 46	Geometry	13756.3	783.74	60425	7786.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13756.4	782.78	39268.8	12159.7
+725_composite_PHILEMON.tif	Tile 47	Other	Image	Rectangle	14253	750.16	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 47	Geometry	14252.6	752.28	108866.2	12281.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14250.6	775.87	5548.5	4193.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 47	Geometry	14271.2	684.78	71323.8	7746.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14251	712.99	26883.2	10485
+725_composite_PHILEMON.tif	Tile 48	Other	Image	Rectangle	14745.2	750.16	242159.3	1968.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 48	Geometry	14735.7	733.87	91738.7	12671.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14719.7	782.84	7233.8	5001.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 48	Geometry	14757	755.27	77247.6	9718.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14743.6	774.91	40926	15304.2
+725_composite_PHILEMON.tif	Tile 49	Other	Image	Geometry	883.66	1333.2	87554.5	1545.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 49	Geometry	888.88	1349.3	43050.3	5006.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Polygon	876.62	1481.3	10.91	14.12
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 49	Geometry	859.4	1326.2	20542.5	4226.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	767.98	1403.4	596.19	493.49
+725_composite_PHILEMON.tif	Tile 50	Other	Image	Geometry	1224.8	1272.4	214193.3	1834.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 50	Geometry	1200.9	1299.6	61310.2	9679.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1282.5	1343.4	74.04	93.58
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 50	Geometry	1230.2	1263.8	78403.7	16479.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1242.9	1360.3	1359.2	1323.3
+725_composite_PHILEMON.tif	Tile 51	Other	Image	Geometry	2761.2	1251.5	239383.8	1946.3
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 51	Geometry	2762.7	1251.9	135547.4	16512.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2870.3	1269.3	121.58	153.61
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 51	Geometry	2743.9	1253.5	49808.9	10124
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2695.4	1355.8	1533.7	1356
+725_composite_PHILEMON.tif	Tile 52	Other	Image	Rectangle	3250.7	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 52	Geometry	3260.8	1248.6	148961.3	17615.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3246.4	1178.4	238.48	305.45
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 52	Geometry	3220.9	1288.8	37073.8	7463.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3256.7	1342.4	3249.1	2308.5
+725_composite_PHILEMON.tif	Tile 53	Other	Image	Rectangle	3750.8	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 53	Geometry	3727.7	1234.7	124369.3	15521.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3823.2	1215.5	65.46	75.92
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 53	Geometry	3808.9	1283.1	69655.5	9740.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3888.8	1332.1	7720.9	5035.5
+725_composite_PHILEMON.tif	Tile 54	Other	Image	Rectangle	4250.9	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 54	Geometry	4315	1244.8	87357.3	11834.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4289	1244.2	1091.8	1171.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 54	Geometry	4180.6	1257.1	98976.4	11414.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4181.8	1232.5	26858.3	13888.2
+725_composite_PHILEMON.tif	Tile 55	Other	Image	Rectangle	4751	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 55	Geometry	4679.9	1270.4	71202.1	8504
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4677.1	1265.7	972.61	1042.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 55	Geometry	4668.6	1226.8	25965.9	4011.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4655.3	1205.4	5832.5	4276.3
+725_composite_PHILEMON.tif	Tile 56	Other	Image	Rectangle	5251.1	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 56	Geometry	5316.8	1206.3	75280.9	8174.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5338	1235	2113.9	1857.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 56	Geometry	5301.4	1276.3	28446.5	3728.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5344.8	1296.4	6971.5	4451.1
+725_composite_PHILEMON.tif	Tile 57	Other	Image	Rectangle	5751.2	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 57	Geometry	5733.4	1238.5	98169	10499.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5713.2	1223.3	1905.9	1748.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 57	Geometry	5761.4	1173.5	44089.4	5260.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5742.9	1180.7	13302.1	8063.5
+725_composite_PHILEMON.tif	Tile 58	Other	Image	Rectangle	6251.3	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 58	Geometry	6246	1248.4	115416.5	12418.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6202.1	1262.6	2037.2	1866.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 58	Geometry	6319.6	1298.5	62350	8035.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6295.6	1277	13627.9	9342.7
+725_composite_PHILEMON.tif	Tile 59	Other	Image	Rectangle	6751.4	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 59	Geometry	6708.1	1245	63113.3	5901.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6786.3	1346.6	1734.8	1178.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 59	Geometry	6741.2	1180.8	113380.1	7788.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6722.7	1211.2	24899.8	8376.9
+725_composite_PHILEMON.tif	Tile 60	Other	Image	Rectangle	7251.5	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 60	Geometry	7229.5	1238.3	90781.3	7941.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7329.4	1340.2	491.76	515.56
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 60	Geometry	7316.9	1232	88869.2	6634.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7254.7	1220.1	21275.9	6907.9
+725_composite_PHILEMON.tif	Tile 61	Other	Image	Rectangle	7751.6	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 61	Geometry	7804.2	1222.1	22976.4	3961.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7695.7	1313.6	846.75	952.54
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 61	Geometry	7756.5	1325.4	125575	5142.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7763.5	1301.6	18702.5	11700.6
+725_composite_PHILEMON.tif	Tile 62	Other	Image	Rectangle	8251.8	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 62	Geometry	8290.1	1222.7	108858.4	10143.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8258.3	1230.3	5701.2	5197
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 62	Geometry	8209.2	1277.2	122998.5	10313.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8226.2	1250.9	43560.2	20698.1
+725_composite_PHILEMON.tif	Tile 63	Other	Image	Rectangle	8751.9	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 63	Geometry	8751.4	1259.8	122782.4	12092.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8736.8	1258.6	7076	7027.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 63	Geometry	8752.9	1241.8	116339.4	10180.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8752.5	1242.6	56230.2	19843.6
+725_composite_PHILEMON.tif	Tile 64	Other	Image	Rectangle	9252	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 64	Geometry	9248.9	1266.5	105527.1	8393.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9213.2	1259.3	2969.3	3108.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 64	Geometry	9254.1	1232.7	132775.6	7113.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9250.7	1241.5	52169.9	21425.6
+725_composite_PHILEMON.tif	Tile 65	Other	Image	Rectangle	9752.1	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 65	Geometry	9758.4	1363.4	40915.5	4333.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9704.9	1409.2	2057.1	1717.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 65	Geometry	9707.6	1398.1	61124.7	4531.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9717.4	1407.3	22481.1	8820.1
+725_composite_PHILEMON.tif	Tile 66	Other	Image	Rectangle	10252.2	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 66	Geometry	10292.4	1259.8	126561.6	8642.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10316.1	1294.9	6565.1	5837.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 66	Geometry	10262.2	1283.8	82472	7129.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10299.1	1278.9	42038.2	15411
+725_composite_PHILEMON.tif	Tile 67	Other	Image	Rectangle	10752.3	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 67	Geometry	10765.4	1247.7	108165.8	10476.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10745.7	1259.5	9575.3	8436.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 67	Geometry	10730	1260.5	124008.7	9367.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10738	1243.5	69648.1	21186.3
+725_composite_PHILEMON.tif	Tile 68	Other	Image	Rectangle	11252.4	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 68	Geometry	11239.2	1256.2	126413.7	11818.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11218.5	1312.6	6468.5	5936.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 68	Geometry	11236.9	1252	79899.7	7470.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11227.3	1268.8	48383.9	16076.7
+725_composite_PHILEMON.tif	Tile 69	Other	Image	Rectangle	11752.5	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 69	Geometry	11683.7	1246.1	103876.9	8729.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11678.1	1291.5	5880.9	4783.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 69	Geometry	11693.3	1291.6	64992.1	6977.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11685	1293.1	32898.9	11527.6
+725_composite_PHILEMON.tif	Tile 70	Other	Image	Rectangle	12252.6	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 70	Geometry	12345.2	1276.9	60261.6	5632.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12181	1373.7	3068.6	1616.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 70	Geometry	12389.3	1217.8	37984.8	2162
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12382.8	1224.1	18262.6	5735.6
+725_composite_PHILEMON.tif	Tile 71	Other	Image	Rectangle	12752.7	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 71	Geometry	12733.5	1215.8	107702.8	10736.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12725.2	1247.9	4636.7	3772.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 71	Geometry	12782.9	1296.7	100543.3	6650.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12751.1	1247.3	38880.3	13071.6
+725_composite_PHILEMON.tif	Tile 72	Other	Image	Rectangle	13252.8	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 72	Geometry	13270.2	1251.4	126324.1	12496
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13253.2	1211.1	4715.8	3965.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 72	Geometry	13212.6	1169.4	73985.9	7590.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13247.5	1182.4	29644.8	10850.5
+725_composite_PHILEMON.tif	Tile 73	Other	Image	Rectangle	13752.9	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 73	Geometry	13755.9	1248.1	137010.4	14760.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13690.8	1237.7	5826.3	4048.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 73	Geometry	13729.4	1260	81075.3	8720.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13725.6	1264.3	42066	15198.3
+725_composite_PHILEMON.tif	Tile 74	Other	Image	Rectangle	14253	1250.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 74	Geometry	14228.6	1275.6	91457.2	10423.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14212.8	1256.3	4188.2	2994.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 74	Geometry	14150.9	1288	54894.5	5868
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14153.2	1276	27952.4	10140.7
+725_composite_PHILEMON.tif	Tile 75	Other	Image	Rectangle	14745.2	1250.3	242159.3	1968.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 75	Geometry	14781.3	1230.7	99319.3	10955.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14743.6	1187	4556.8	3133.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 75	Geometry	14772.7	1247	36276.9	6866.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14768.4	1222.3	17122.8	7517.9
+725_composite_PHILEMON.tif	Tile 76	Other	Image	Geometry	346.02	1850.4	103451	1462.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 76	Geometry	341.37	1876.7	54780.5	5993.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	307.25	1889.2	172.23	167.73
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 76	Geometry	353.75	1901.2	11058	2557.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	430.46	1945.3	77.93	97.11
+725_composite_PHILEMON.tif	Tile 77	Other	Image	Geometry	754.53	1755	245001.3	1942.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 77	Geometry	745.33	1766.5	141760	14706.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	826.31	1827.7	159.76	153.61
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 77	Geometry	787.26	1746.6	48079.1	10756.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	908.71	1818.9	1858.7	1472.5
+725_composite_PHILEMON.tif	Tile 78	Other	Image	Geometry	1250	1750.7	249795.8	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 78	Geometry	1231.4	1697.5	65281.8	8447.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1310.6	1628.7	182.75	189.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 78	Geometry	1281.1	1778.2	92015.4	13973.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1286	1806.5	6341.5	5099.1
+725_composite_PHILEMON.tif	Tile 79	Other	Image	Geometry	1740.3	1769.2	229841.9	1941.3
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 79	Geometry	1769.1	1886.3	38330.9	4647.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1684	1957.4	45.2	47.67
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 79	Geometry	1719.4	1757.6	103820.9	16447.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1648	1788.8	2302.9	2084.3
+725_composite_PHILEMON.tif	Tile 80	Other	Image	Geometry	2257.8	1765.5	234151.6	1932.7
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 80	Geometry	2253.6	1800.5	79675.8	10587.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2313.7	1791.9	317.19	337.23
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 80	Geometry	2257.7	1809.3	55882.8	9100.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2311.6	1829.5	3858.5	3190.4
+725_composite_PHILEMON.tif	Tile 81	Other	Image	Geometry	2750.8	1750.6	249880	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 81	Geometry	2762.2	1727.7	96649.3	12470.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2864.7	1864.1	100.53	109.47
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 81	Geometry	2737.2	1752.8	45049.5	8822.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2789.1	1732.7	2795.1	2114.3
+725_composite_PHILEMON.tif	Tile 82	Other	Image	Rectangle	3250.7	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 82	Geometry	3248.8	1716.9	101975.3	12992.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3233.4	1770.6	221.33	245.42
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 82	Geometry	3227	1740.4	37342.7	6946.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3209.2	1680.1	3305.9	2600.7
+725_composite_PHILEMON.tif	Tile 83	Other	Image	Rectangle	3750.8	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 83	Geometry	3697.8	1762.9	72632	9295
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3711.4	1821.7	949.23	1041.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 83	Geometry	3803.4	1746.3	136845.1	8144.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3845.3	1735.7	27727.2	16702.6
+725_composite_PHILEMON.tif	Tile 84	Other	Image	Rectangle	4250.9	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 84	Geometry	4296.4	1745	82488.8	10236.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4311.2	1735.3	3436.1	3316.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 84	Geometry	4183.8	1730.4	101333.3	7208.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4184.6	1720	28995.2	16582.5
+725_composite_PHILEMON.tif	Tile 85	Other	Image	Rectangle	4751	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 85	Geometry	4762.1	1691.5	46576.2	8756.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4701	1741.9	1239.5	1190.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 85	Geometry	4833.1	1686.3	43978.7	6359.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4825.4	1682.3	6381.6	5134.4
+725_composite_PHILEMON.tif	Tile 86	Other	Image	Rectangle	5251.1	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 86	Geometry	5281.5	1711.3	65877.1	8988.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5281.4	1712.3	3779.8	3267.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 86	Geometry	5218.6	1714	88360.3	6152.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5250	1714.1	26404.3	16941.8
+725_composite_PHILEMON.tif	Tile 87	Other	Image	Rectangle	5751.2	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 87	Geometry	5690.6	1794.8	69862.8	9028.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5676.8	1741.7	4248.2	3426.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 87	Geometry	5704.8	1772.1	29248.5	3944.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5686.9	1781	13467.7	7130.4
+725_composite_PHILEMON.tif	Tile 88	Other	Image	Rectangle	6251.3	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 88	Geometry	6248.9	1741.1	79788.4	8611.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6282.8	1753.9	3026.2	2541.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 88	Geometry	6340.7	1747	92557.8	8243.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6315.7	1752.1	22972.1	13325.9
+725_composite_PHILEMON.tif	Tile 89	Other	Image	Rectangle	6751.4	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 89	Geometry	6732.4	1713.3	85158.4	5449.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6597.5	1895.4	626.59	599.42
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 89	Geometry	6757.9	1805	119751.2	9199.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6719.1	1755.8	23961.5	9583.7
+725_composite_PHILEMON.tif	Tile 90	Other	Image	Rectangle	7251.5	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 90	Geometry	7067	1674.1	19789.3	1812.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7143.4	1698.7	303.94	164.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 90	Geometry	7265.7	1758.4	202099.5	11647.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7206	1718.2	31968.6	15337.8
+725_composite_PHILEMON.tif	Tile 91	Other	Image	Rectangle	7751.6	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 91	Geometry	7848.7	1788	26095.3	2709.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7805.9	1823	1227.5	1199.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 91	Geometry	7745.8	1737.3	198566.4	9534.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7804.3	1727.4	30765.5	18333.1
+725_composite_PHILEMON.tif	Tile 92	Other	Image	Rectangle	8251.8	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 92	Geometry	8232.5	1846.1	88467.1	6120.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8313	1797.4	3084.6	2844.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 92	Geometry	8264.9	1695	125519.2	10290.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8272.1	1728.8	23312.3	12203.8
+725_composite_PHILEMON.tif	Tile 93	Other	Image	Rectangle	8751.9	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 93	Geometry	8766.9	1717.2	108590.7	10276.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8760	1718.2	7808.9	7163
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 93	Geometry	8739.9	1777.9	123861.2	11081.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8770.6	1710.6	39873.9	17225.2
+725_composite_PHILEMON.tif	Tile 94	Other	Image	Rectangle	9252	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 94	Geometry	9261.3	1719.2	71124.9	8540.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9328.5	1738	6404.6	5436.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 94	Geometry	9253.9	1768.9	165349.9	6734.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9246.3	1770.8	57661.5	22481.4
+725_composite_PHILEMON.tif	Tile 95	Other	Image	Rectangle	9752.1	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 95	Geometry	9772.1	1779.5	122372.1	11645
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9720.8	1746.2	9903.8	9277.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 95	Geometry	9732.5	1719.9	120126.2	10106.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9735.2	1734.3	73821	22605.9
+725_composite_PHILEMON.tif	Tile 96	Other	Image	Rectangle	10252.2	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 96	Geometry	10244.2	1724.3	106114.6	9835.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10258.5	1762.7	8696.6	8151.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 96	Geometry	10245.1	1763.2	128609.1	10020.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10250.4	1777.1	68397.6	22179.5
+725_composite_PHILEMON.tif	Tile 97	Other	Image	Rectangle	10752.3	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 97	Geometry	10767.4	1718.2	110563.4	9275.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10726.2	1707.1	6828.5	6261.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 97	Geometry	10745.1	1771.9	123645.1	7430.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10743.5	1764.1	65001.3	21403.5
+725_composite_PHILEMON.tif	Tile 98	Other	Image	Rectangle	11252.4	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 98	Geometry	11278.8	1747.7	133276.6	11944.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11178.3	1720.1	10691.7	8729.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 98	Geometry	11211.7	1760.4	101783	9321.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11226	1760.3	55905.3	18634.1
+725_composite_PHILEMON.tif	Tile 99	Other	Image	Rectangle	11752.5	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 99	Geometry	11745.1	1782.2	124573.7	9059.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11798.3	1662	3355.4	3100.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 99	Geometry	11771.7	1704	74214.6	5871.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11760.5	1734.5	38534.7	11512.6
+725_composite_PHILEMON.tif	Tile 100	Other	Image	Rectangle	12252.6	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 100	Geometry	12259.8	1757.1	104196.4	10524.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12171.5	1688.8	7624.2	5719.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 100	Geometry	12220.9	1765.7	117714	8486.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12208.7	1788.1	64082.4	18339.3
+725_composite_PHILEMON.tif	Tile 101	Other	Image	Rectangle	12752.7	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 101	Geometry	12804.5	1750.8	83875.8	8301
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12794.8	1780.6	2848.9	2939.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 101	Geometry	12675	1755.8	107990.2	5717
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12706.5	1775.2	35124.7	13857.3
+725_composite_PHILEMON.tif	Tile 102	Other	Image	Rectangle	13252.8	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 102	Geometry	13270.8	1763.2	133399.7	12692
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13266.7	1753.8	3600.5	2815.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 102	Geometry	13229.1	1764.6	39197.7	5451.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13232	1769	26961.3	7162.2
+725_composite_PHILEMON.tif	Tile 103	Other	Image	Rectangle	13752.9	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 103	Geometry	13765.2	1735	128842.1	14334.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13791.5	1746.9	2956	2832.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 103	Geometry	13739.6	1713.9	61531.1	7855.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13743.3	1703.7	31040	11430.5
+725_composite_PHILEMON.tif	Tile 104	Other	Image	Rectangle	14253	1750.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 104	Geometry	14251.9	1760.8	117972.2	12459
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14288	1713.5	4065.4	3186.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 104	Geometry	14233.7	1798.7	80800.8	8109.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14249.8	1780	38304.4	15071.2
+725_composite_PHILEMON.tif	Tile 105	Other	Image	Rectangle	14745.2	1750.4	242159.3	1968.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 105	Geometry	14754.6	1763.7	119466.5	13912.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14735.9	1741.8	6211.3	4482.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 105	Geometry	14739	1788.9	77858.8	8966.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14740.3	1791.6	39149.9	15792.4
+725_composite_PHILEMON.tif	Tile 106	Other	Image	Geometry	258.52	2252.5	241512.2	1939.7
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 106	Geometry	278.8	2247.1	116798.6	14782.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	96.58	2275.7	2053.2	1389.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 106	Geometry	243.69	2267.2	47219.2	12286.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	189.11	2251	1996.1	1520.2
+725_composite_PHILEMON.tif	Tile 107	Other	Image	Rectangle	750.16	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 107	Geometry	752.13	2268.9	110107.1	13953.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	725.73	2191.8	670.23	738.02
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 107	Geometry	765.67	2250.3	51026.2	9839.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	802.21	2275.7	4278.2	3275.2
+725_composite_PHILEMON.tif	Tile 108	Other	Image	Rectangle	1250.3	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 108	Geometry	1271.4	2264	70048.7	11282.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1281.8	2267.7	536.18	552.63
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 108	Geometry	1259.9	2216	66146.1	13333.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1268.3	2198.5	3663.3	3302.6
+725_composite_PHILEMON.tif	Tile 109	Other	Image	Rectangle	1750.4	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 109	Geometry	1758.4	2214.3	74110.9	11178.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1808.2	2214.8	405.25	436.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 109	Geometry	1753.3	2235.2	72089.3	14208.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1741.2	2237.8	3684.7	3313.1
+725_composite_PHILEMON.tif	Tile 110	Other	Image	Rectangle	2250.5	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 110	Geometry	2269.6	2235	98204.9	13112.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2270.7	2257.4	385.77	444.93
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 110	Geometry	2232.2	2247.4	70530.7	10904.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2278.9	2263.8	5873.9	4906.6
+725_composite_PHILEMON.tif	Tile 111	Other	Image	Rectangle	2750.6	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 111	Geometry	2752.8	2243.3	96095.2	13922.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2857.9	2358.9	911.82	909.28
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 111	Geometry	2762.1	2274.7	72105.3	13468.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2795.5	2326.6	6163.4	5172.3
+725_composite_PHILEMON.tif	Tile 112	Other	Image	Rectangle	3250.7	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 112	Geometry	3201.6	2250.4	37913.9	7208.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3148.7	2363.8	333.56	301.92
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 112	Geometry	3293.7	2297.4	27938.6	4806.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3283.6	2345.4	1863.8	1750.6
+725_composite_PHILEMON.tif	Tile 113	Other	Image	Rectangle	3750.8	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 113	Geometry	3783.1	2181.9	42098.2	7158.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3849.9	2204.4	558.78	679.76
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 113	Geometry	3792.8	2253.8	94624.6	7020
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3818.4	2247	15767.5	10592.7
+725_composite_PHILEMON.tif	Tile 114	Other	Image	Rectangle	4250.9	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 114	Geometry	4196.5	2159	24835.3	4300.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4135.1	2169.5	533.07	630.32
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 114	Geometry	4160.5	2278.2	68915.9	6787
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4134.8	2218	8143.7	6546
+725_composite_PHILEMON.tif	Tile 115	Other	Image	Rectangle	4751	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 115	Geometry	4856.2	2259.5	29521.2	5144.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4884.8	2217.3	1268	1084.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 115	Geometry	4901.5	2290.6	42482.8	3977.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4920.9	2311	7737.2	5556.3
+725_composite_PHILEMON.tif	Tile 116	Other	Image	Geometry	5215	2237	206385.4	2282.5
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 116	Geometry	5218.2	2187.5	56314	5877.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5185	2227.4	3205.4	2883.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 116	Geometry	5212.9	2278.7	114088.6	7258.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5201	2257.1	33382.5	17679.3
+725_composite_PHILEMON.tif	Tile 117	Other	Image	Geometry	5758.2	2049.2	43517.1	1420.8
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 117	Geometry	5788.7	2037.8	17282.5	1857.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5678.1	2027.8	123.14	164.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 117	Geometry	5657.3	2055.7	17452.7	1257.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5652.7	2048.7	6930	3360.3
+725_composite_PHILEMON.tif	Tile 118	Other	Image	Geometry	6274.7	2115	110084.8	1457.3
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 118	Geometry	6266.9	2122.1	66978.4	4222.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6337.5	2141.4	2052.4	1284.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 118	Geometry	6278.2	2058.3	14689.7	1794.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6253.1	2062.3	3976.2	2618.4
+725_composite_PHILEMON.tif	Tile 119	Other	Image	Geometry	6797.7	2209	184560.9	2069.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 119	Geometry	6751	2201.7	5700.1	1070
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6688.6	2181.2	294.2	226.88
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 119	Geometry	6828.7	2211.2	121244.5	9277.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6805.1	2118.2	17257.2	9427.4
+725_composite_PHILEMON.tif	Tile 120	Other	Image	Rectangle	7251.5	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 120	Geometry	7250.9	2317	45773.5	4002.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7378.5	2276.7	1790.9	1557.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 120	Geometry	7261	2212.4	166245	5493.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7305.5	2240.2	49023.7	22686.2
+725_composite_PHILEMON.tif	Tile 121	Other	Image	Rectangle	7751.6	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 121	Geometry	7754.3	2215.3	55913.4	4618.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7688.4	2191.7	3715.1	3427
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 121	Geometry	7754.9	2262.2	180355.7	7088.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7737.8	2289.7	45847	22463.7
+725_composite_PHILEMON.tif	Tile 122	Other	Image	Rectangle	8251.8	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 122	Geometry	8164.9	2164.1	82893.3	4941.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8313.9	2145.9	1106.7	1160
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 122	Geometry	8296.5	2302.6	143500.9	7222.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8249.3	2305.6	26259.1	12823.6
+725_composite_PHILEMON.tif	Tile 123	Other	Image	Rectangle	8751.9	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 123	Geometry	8639.1	2112.4	14805	1887.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8651.5	2080.9	1083.3	1087.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 123	Geometry	8758.1	2257.8	221043.2	7396.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8739.8	2228.4	33596.2	17343.5
+725_composite_PHILEMON.tif	Tile 124	Other	Image	Rectangle	9252	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 124	Geometry	9325.3	2279.8	68030.6	4535.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9305.9	2213.7	6260.8	4144.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 124	Geometry	9184.4	2208.9	148615.8	4601.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9247.3	2225.2	47184.1	16254.1
+725_composite_PHILEMON.tif	Tile 125	Other	Image	Rectangle	9752.1	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 125	Geometry	9762.6	2247.1	114902.9	9333.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9790	2206.6	9690.7	8001.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 125	Geometry	9794.5	2200	96600.2	7593.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9795.4	2197.6	57869.6	18045.3
+725_composite_PHILEMON.tif	Tile 126	Other	Image	Rectangle	10252.2	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 126	Geometry	10226.3	2263	103445.9	8953.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10207	2199.5	7705.7	6772.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 126	Geometry	10219	2191.2	93631.9	8506.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10215	2194.6	55125.5	18143.3
+725_composite_PHILEMON.tif	Tile 127	Other	Image	Rectangle	10752.3	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 127	Geometry	10770.1	2232.8	81426.6	8720.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10776.9	2214.2	6182.1	5506
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 127	Geometry	10758.1	2248.4	133713.2	9060.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10778.2	2240.9	67065.7	23335.9
+725_composite_PHILEMON.tif	Tile 128	Other	Image	Rectangle	11252.4	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 128	Geometry	11277.1	2277.5	104809	9319.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11287.5	2226.4	8642.1	7773.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 128	Geometry	11242.7	2219.5	130963.9	8520.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11237.7	2216.4	69732.2	23901.8
+725_composite_PHILEMON.tif	Tile 129	Other	Image	Rectangle	11752.5	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 129	Geometry	11754.4	2234.2	131065.6	10457.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11716.1	2289.8	7176.5	6445.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 129	Geometry	11740.6	2273.8	106216.5	8523.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11739.7	2255	59761	16597.5
+725_composite_PHILEMON.tif	Tile 130	Other	Image	Rectangle	12252.6	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 130	Geometry	12209.7	2225.1	106686.6	9666.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12239.9	2248.4	4677.2	4667.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 130	Geometry	12293.8	2268.5	129743.1	10097.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12262	2245.4	56014.4	20109.3
+725_composite_PHILEMON.tif	Tile 131	Other	Image	Rectangle	12752.7	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 131	Geometry	12804.5	2240.6	111644.3	9868.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12827.1	2292	9885.1	6453.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 131	Geometry	12697.8	2272.3	107683.6	8609.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12765.5	2285.1	43393	14986.4
+725_composite_PHILEMON.tif	Tile 132	Other	Image	Rectangle	13252.8	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 132	Geometry	13273.4	2256.2	104946.1	10553
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13255.3	2303.3	7525.7	5201.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 132	Geometry	13244.3	2261.2	66215.1	6189.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13242.8	2273.1	39762.9	11920.4
+725_composite_PHILEMON.tif	Tile 133	Other	Image	Rectangle	13752.9	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 133	Geometry	13778.5	2239.2	79960.6	8843.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13783.3	2235.6	3878.4	3254
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 133	Geometry	13798.7	2237.3	58280.3	6019.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13786	2232.3	27333.6	9847.6
+725_composite_PHILEMON.tif	Tile 134	Other	Image	Rectangle	14253	2250.5	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 134	Geometry	14263.5	2251.4	112202	12602.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14205	2263	2834.1	2605.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 134	Geometry	14259.2	2231.8	67770.3	7483.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14248.7	2229.3	28859.2	12595.8
+725_composite_PHILEMON.tif	Tile 135	Other	Image	Rectangle	14745.2	2250.5	242159.3	1968.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 135	Geometry	14741.8	2271.1	124761	15844.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14723.1	2177.3	1830.7	1827.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 135	Geometry	14743.9	2225.8	74795.2	10621
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14720	2174.3	21710.3	11513.5
+725_composite_PHILEMON.tif	Tile 136	Other	Image	Geometry	254.24	2751	245917.5	1983.7
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 136	Geometry	266.32	2746.5	125692.8	21352.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	209.63	2787.1	1557.1	1290.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 136	Geometry	247.19	2727.4	43440.4	11707.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	225.71	2676.9	1098.1	1045.2
+725_composite_PHILEMON.tif	Tile 137	Other	Image	Rectangle	750.16	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 137	Geometry	742.24	2743.6	118525.3	13396.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	773.62	2691.9	354.6	418.45
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 137	Geometry	774.11	2758.5	62367.1	11040.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	811.51	2749.7	3902.5	3132.2
+725_composite_PHILEMON.tif	Tile 138	Other	Image	Rectangle	1250.3	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 138	Geometry	1245.4	2754.6	99848.1	11773
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1249.7	2765.8	215.88	263.96
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 138	Geometry	1247.2	2764.2	48074.5	9579.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1293.8	2753.3	2523.5	2234.4
+725_composite_PHILEMON.tif	Tile 139	Other	Image	Rectangle	1750.4	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 139	Geometry	1680.6	2708	75827.8	9682.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1775.4	2849.7	413.05	453.76
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 139	Geometry	1796.4	2779.6	74807.7	13046
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1820.7	2798.4	5976.7	4769.8
+725_composite_PHILEMON.tif	Tile 140	Other	Image	Rectangle	2250.5	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 140	Geometry	2279.8	2721.4	59488.3	9244.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2295.9	2779.4	489.81	576.47
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 140	Geometry	2218.8	2763.9	100066.9	14565.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2224.7	2793.7	8096.5	7131.3
+725_composite_PHILEMON.tif	Tile 141	Other	Image	Rectangle	2750.6	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 141	Geometry	2724.3	2702.6	61754.6	9201.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2752.6	2693.4	651.52	693.88
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 141	Geometry	2710.2	2727.2	81432.8	9488.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2712.8	2710.6	8848.2	7253.1
+725_composite_PHILEMON.tif	Tile 142	Other	Image	Rectangle	3250.7	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 142	Geometry	3285.3	2727.5	36171.3	6636.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3322	2692.2	499.55	522.62
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 142	Geometry	3282.4	2695.6	70620.1	8058.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3341.7	2658.8	6666.8	5512.2
+725_composite_PHILEMON.tif	Tile 143	Other	Image	Rectangle	3750.8	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 143	Geometry	3747.6	2757.9	34638.4	6125.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3691.3	2808.1	553.33	587.94
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 143	Geometry	3760.1	2745	118632.3	14203.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3746.9	2749.1	10861.6	8643.5
+725_composite_PHILEMON.tif	Tile 144	Other	Image	Rectangle	4250.9	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 144	Geometry	4277.3	2728.6	42023.9	7472.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4270.9	2718.8	882.6	1035.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 144	Geometry	4270.5	2776.9	131461.9	9782.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4294.9	2815.7	20269	13603.1
+725_composite_PHILEMON.tif	Tile 145	Other	Image	Rectangle	4751	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 145	Geometry	4804.1	2759.4	66434.5	9040.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4758.8	2744.7	1856.8	1953.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 145	Geometry	4728.4	2766.5	112554.8	6279.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4728	2751.2	29055.2	17350.6
+725_composite_PHILEMON.tif	Tile 146	Other	Image	Rectangle	5251.1	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 146	Geometry	5237.5	2757.8	107509.8	12955.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5235.4	2722.5	2736.6	2747.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 146	Geometry	5232.8	2720	99058.8	8525.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5227.8	2717.2	28710.3	16455.4
+725_composite_PHILEMON.tif	Tile 147	Other	Image	Geometry	5733.8	2784	213546	1900.8
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 147	Geometry	5729.2	2822	69917.7	7608.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5717.6	2728.8	2529.3	2511.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 147	Geometry	5751	2749.9	106090.6	7971.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5741.3	2766.3	29546.2	14510.9
+725_composite_PHILEMON.tif	Tile 148	Other	Image	Geometry	6251.1	2834.2	166344.8	1737.3
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 148	Geometry	6277	2863.5	35716.2	3608
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6310.8	2824	2760.4	2353.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 148	Geometry	6264.2	2846	97345.7	7551.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6267.5	2844.8	20040.6	11131.2
+725_composite_PHILEMON.tif	Tile 149	Other	Image	Geometry	6763.8	2765.1	233363.4	1935.7
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 149	Geometry	6777.1	2798.6	53167.8	4516.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6652.9	2770.6	4132	2853.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 149	Geometry	6757.5	2765.7	161363.7	6240.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6749.1	2770.3	25444.1	15569.9
+725_composite_PHILEMON.tif	Tile 150	Other	Image	Rectangle	7251.5	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 150	Geometry	7248.7	2797.7	64825.2	4898.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7287.6	2818	1975.6	1778
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 150	Geometry	7268.3	2756.8	149885.2	5263.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7281.6	2757.5	35751.1	19235.3
+725_composite_PHILEMON.tif	Tile 151	Other	Image	Rectangle	7751.6	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 151	Polygon	7535.9	2788.1	10176.6	564.11
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7541.5	2772.7	123.91	173.91
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 151	Geometry	7752.6	2745.9	216174.7	9238.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7723.1	2739.3	52306.5	26904.2
+725_composite_PHILEMON.tif	Tile 152	Other	Image	Rectangle	8251.8	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 152	Geometry	8410.6	2862.9	14459.8	1366.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8442.5	2780.7	626.59	495.25
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 152	Geometry	8239.9	2739.7	189091.6	13171.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8268.9	2757.6	37395.5	19634.4
+725_composite_PHILEMON.tif	Tile 153	Other	Image	Rectangle	8751.9	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 153	Geometry	8774.3	2853.4	67443.3	4265.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8844.5	2832.5	4915.3	3575.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 153	Geometry	8749.9	2707.9	173830.7	4375.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8748.6	2763.5	52391	21082.1
+725_composite_PHILEMON.tif	Tile 154	Other	Image	Rectangle	9252	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 154	Geometry	9132.3	2769.1	32379.8	2930.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9128.8	2825.9	1931.6	1630.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 154	Geometry	9060.1	2722.4	47542.2	2014.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9067.3	2733.5	21724	7597.4
+725_composite_PHILEMON.tif	Tile 155	Other	Image	Rectangle	9752.1	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 155	Geometry	9839.5	2725.1	54396.1	4431.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9898.4	2657.9	2533.6	2337.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 155	Geometry	9914.3	2711.3	56497.2	3538.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9903.2	2704.3	26677.8	9623.4
+725_composite_PHILEMON.tif	Tile 156	Other	Image	Rectangle	10252.2	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 156	Geometry	10286.6	2749.5	101852.2	9999.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10248.1	2737.3	8127.7	7155.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 156	Geometry	10227.3	2755.5	135633.3	9053.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10232.6	2741.4	74543.5	25541.2
+725_composite_PHILEMON.tif	Tile 157	Other	Image	Geometry	10752.2	2750.5	250003.3	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 157	Geometry	10768.1	2781.6	93951.3	7083.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10757.1	2750.7	6832.8	5665.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 157	Geometry	10740.7	2710.3	136244.1	6491.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10752.8	2714.7	71419.9	26829.2
+725_composite_PHILEMON.tif	Tile 158	Other	Image	Geometry	11195.5	2699.9	169954.4	1869.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 158	Geometry	11216.3	2723.7	65744.3	4922.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11188.5	2684.4	3935.6	3222.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 158	Geometry	11159.7	2660.5	77011	5118.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11169.2	2652.5	35111.2	12290.2
+725_composite_PHILEMON.tif	Tile 159	Other	Image	Geometry	11807	2707.5	176771.6	1917.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 159	Geometry	11806.6	2729	109299.7	8480.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11818.8	2706.8	6293.3	5544.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 159	Geometry	11817.2	2667.4	58283.7	5679.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11806.3	2664.6	32926.5	11073.4
+725_composite_PHILEMON.tif	Tile 160	Other	Image	Rectangle	12252.6	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 160	Geometry	12128.9	2677	56481.6	5199.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12146.7	2702.4	2504.8	2397.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 160	Geometry	12293.9	2781.1	175404.7	7589.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12234.6	2768.8	42793.7	19450.7
+725_composite_PHILEMON.tif	Tile 161	Other	Image	Rectangle	12752.7	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 161	Geometry	12737.3	2742.3	102796.9	7259.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12726.9	2831.4	3247.5	2415.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 161	Geometry	12649.5	2819	64193.9	3936.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12671.7	2809.8	26873.1	9166.1
+725_composite_PHILEMON.tif	Tile 162	Other	Image	Rectangle	13252.8	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 162	Geometry	13243	2748.8	82012.2	8097.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13267.7	2708.6	8230.2	4342.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 162	Geometry	13251.1	2831.4	82497	7260.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13263.7	2782.8	30447.1	10741.9
+725_composite_PHILEMON.tif	Tile 163	Other	Image	Rectangle	13752.9	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 163	Geometry	13722.5	2826.6	63586.8	5919.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13780.7	2820.4	7132.1	5092.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 163	Geometry	13783	2739.6	165493.5	5624.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13775.4	2750	46547.4	21091
+725_composite_PHILEMON.tif	Tile 164	Other	Image	Rectangle	14253	2750.6	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 164	Geometry	14257.4	2745.8	106704.1	10416.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14211	2744.5	5303.4	4389.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 164	Geometry	14221.9	2776.7	95551.2	7422.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14206.4	2768.3	40890.6	17987.9
+725_composite_PHILEMON.tif	Tile 165	Other	Image	Rectangle	14745.2	2750.6	242159.3	1968.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 165	Geometry	14735.3	2750.9	137986.9	13648.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14733	2770.3	4301.9	3220.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 165	Geometry	14745	2760.5	80682.3	11506.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14721.2	2762.6	22442.9	11855.1
+725_composite_PHILEMON.tif	Tile 166	Other	Image	Geometry	251.5	3251.1	248660.3	1994.7
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 166	Geometry	231.85	3253.6	134102.8	17338
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	255.9	3184.5	4282.7	3582
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 166	Geometry	331.5	3218.2	49682.9	9571.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	370.45	3211.6	6125.6	4247.2
+725_composite_PHILEMON.tif	Tile 167	Other	Image	Rectangle	750.16	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 167	Geometry	699.2	3270.6	86440	13040.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	691.77	3214.1	480.85	494.37
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 167	Geometry	722.89	3233.5	70006.2	13288.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	695.93	3210.8	4536.1	3721.9
+725_composite_PHILEMON.tif	Tile 168	Other	Image	Rectangle	1250.3	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 168	Geometry	1256.8	3240.5	75479.5	13010.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1284.8	3211.2	486.31	558.81
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 168	Geometry	1218	3193.4	59418.1	11857.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1191.9	3189.2	2864.1	2772
+725_composite_PHILEMON.tif	Tile 169	Other	Image	Rectangle	1750.4	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 169	Geometry	1763.9	3226.8	73385.4	9418.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1768.4	3219.5	298.49	333.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 169	Geometry	1779	3248.9	25369.3	5818.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1814.9	3250.1	1617.9	1345.4
+725_composite_PHILEMON.tif	Tile 170	Other	Image	Rectangle	2250.5	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 170	Geometry	2269	3255.9	74799.1	9849.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2246.8	3231	595.41	600.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 170	Geometry	2289	3237.9	74842	10157.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2298.9	3231.4	8964.3	7017.4
+725_composite_PHILEMON.tif	Tile 171	Other	Image	Rectangle	2750.6	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 171	Geometry	2667.3	3272.1	43485.4	6940.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2729.9	3353.4	515.14	496.13
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 171	Geometry	2775	3320.9	63652.3	7284
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2736.9	3303.4	6388.6	4971.9
+725_composite_PHILEMON.tif	Tile 172	Other	Image	Rectangle	3250.7	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 172	Geometry	3242.1	3215.9	28804.3	6154.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3213.7	3188.7	289.91	356.65
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 172	Geometry	3280	3244.7	96247.2	7127.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3289.1	3259.2	9028.6	7200.1
+725_composite_PHILEMON.tif	Tile 173	Other	Image	Rectangle	3750.8	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 173	Geometry	3780.5	3226.7	25027.6	4575.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3838	3227.1	418.5	524.38
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 173	Geometry	3773.4	3300.8	147895.3	5831.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3768.1	3302.7	21348.7	14003.9
+725_composite_PHILEMON.tif	Tile 174	Other	Image	Rectangle	4250.9	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 174	Geometry	4251.7	3250.7	19552.8	3362.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4228.7	3190	661.27	733.61
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 174	Geometry	4224	3243.5	188406.4	4813
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4220.2	3237.8	26250.4	16736.1
+725_composite_PHILEMON.tif	Tile 175	Other	Image	Rectangle	4751	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 175	Geometry	4805.6	3233.2	75396.5	8411.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4813.2	3227.6	2838.3	3245.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 175	Geometry	4782.5	3234	79370.7	5601.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4810.6	3249.4	19761.2	11999
+725_composite_PHILEMON.tif	Tile 176	Other	Image	Rectangle	5251.1	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 176	Geometry	5246.5	3258.6	102100.2	10963.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5205.8	3232.9	4677.6	5033.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 176	Geometry	5198.5	3230.4	94620.7	7907.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5219.4	3229.7	31659	16302.7
+725_composite_PHILEMON.tif	Tile 177	Other	Image	Rectangle	5751.2	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 177	Geometry	5717.4	3282.2	95107.6	10520.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5733.8	3253.3	6865.9	5982.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 177	Geometry	5779.6	3219.9	134750.3	8472.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5734.7	3243.1	40884.3	20187
+725_composite_PHILEMON.tif	Tile 178	Other	Image	Rectangle	6251.3	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 178	Geometry	6233.9	3268.5	73265.4	5456.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6241.9	3200.9	1401.2	1447.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 178	Geometry	6255.1	3156.8	104128.8	4222.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6273.7	3172.5	23765.1	12730.9
+725_composite_PHILEMON.tif	Tile 179	Other	Image	Rectangle	6751.4	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 179	Geometry	6779.5	3267.4	116312	10152.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6762.1	3328.5	1718.4	1638.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 179	Geometry	6712.6	3252.2	53725.7	4375.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6706.8	3286	13727.6	7513.5
+725_composite_PHILEMON.tif	Tile 180	Other	Image	Rectangle	7251.5	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 180	Geometry	7122.9	3316.4	28390.8	2732.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7219.3	3335.1	1190	910.17
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 180	Geometry	7261.2	3252.4	185916.2	10888.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7270.4	3258.8	31303	18575
+725_composite_PHILEMON.tif	Tile 181	Other	Image	Rectangle	7751.6	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 181	Geometry	7739	3378.4	44176.7	3251.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7706.6	3362.3	4988.5	3333.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 181	Geometry	7746	3238.7	172006	10628
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7758.3	3257.3	38573.2	18720.7
+725_composite_PHILEMON.tif	Tile 182	Other	Image	Rectangle	8251.8	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 182	Geometry	8257.8	3264.8	109275	7022.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8175	3304.8	3831.2	3446.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 182	Geometry	8180.9	3202.6	95361.1	5604.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8205.8	3236.5	33589	14009.2
+725_composite_PHILEMON.tif	Tile 183	Other	Image	Rectangle	8751.9	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 183	Geometry	8772.8	3250.5	102548.1	7584.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8766.3	3271.9	3124	3307.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 183	Geometry	8728.5	3235.8	86041.8	4531.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8738.6	3240.6	33172.4	12788.2
+725_composite_PHILEMON.tif	Tile 184	Other	Image	Rectangle	9252	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 184	Geometry	9238.6	3261.3	106569.9	9837
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9225.7	3220	6661	6285.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 184	Geometry	9241	3273.6	118071.1	7548.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9243.8	3252.2	55937.8	20612.5
+725_composite_PHILEMON.tif	Tile 185	Other	Image	Rectangle	9752.1	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 185	Geometry	9763.8	3260.2	122817.1	9720.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9796	3264.8	7332.4	6378.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 185	Geometry	9771	3281.5	92720.5	7273.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9779.8	3267	49209.8	17476.8
+725_composite_PHILEMON.tif	Tile 186	Other	Image	Rectangle	10252.2	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 186	Geometry	10267.5	3238.3	123807.2	10410.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10243.6	3244.8	5160.4	4857.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 186	Geometry	10234.5	3268	104253.9	8274.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10256.6	3246.5	49096.8	18233.4
+725_composite_PHILEMON.tif	Tile 187	Other	Image	Geometry	10733	3237.7	228375.5	1875.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 187	Geometry	10741.2	3269.8	108816.5	6440.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10710.8	3279.7	2630.6	2707.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 187	Geometry	10711.9	3238	70682.1	4905.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10704.9	3230.7	28953.9	11854.5
+725_composite_PHILEMON.tif	Tile 188	Other	Image	Geometry	11914	3178.7	70554.7	1267.1
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 188	Geometry	11897.3	3117.8	30860.5	2242.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11924.7	3178.4	1308	1057.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 188	Geometry	11930.6	3251.5	31066.2	2044.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11923.1	3229.2	13484	5817.2
+725_composite_PHILEMON.tif	Tile 189	Other	Image	Geometry	12252.8	3250.5	249901.3	1989.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 189	Geometry	12228.4	3273.3	102298	5906.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12222.8	3232.4	3495.7	2885.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 189	Geometry	12274.8	3239.8	129765.9	6276.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12277.5	3249.9	45102.8	21332
+725_composite_PHILEMON.tif	Tile 190	Other	Image	Rectangle	12752.7	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 190	Geometry	12737.1	3245.3	138883.1	8836.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12784.1	3183.4	3461.4	3028.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 190	Geometry	12779.9	3257.7	88112.7	5932.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12766	3210.7	35486.3	14164.5
+725_composite_PHILEMON.tif	Tile 191	Other	Image	Rectangle	13252.8	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 191	Geometry	13229.1	3256.2	135665.6	8745
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13187.8	3164.3	4803	4037.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 191	Geometry	13222.6	3190	75846.9	7681.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13218.2	3174.4	29310.4	12837.7
+725_composite_PHILEMON.tif	Tile 192	Other	Image	Rectangle	13752.9	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 192	Geometry	13682.8	3190.8	76457.5	7027.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13768.7	3109	1354.5	1299.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 192	Geometry	13744.9	3184.7	37428.4	7043.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13718.4	3124.2	10071.4	5201.5
+725_composite_PHILEMON.tif	Tile 193	Other	Image	Rectangle	14253	3250.7	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 193	Geometry	14281.3	3254.1	101557.6	10314.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14255.6	3245.1	4124.2	3955.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 193	Geometry	14240.5	3264.4	83104.5	8561.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14240.4	3262.7	26411.3	14833.7
+725_composite_PHILEMON.tif	Tile 194	Other	Image	Rectangle	14745.2	3250.7	242159.3	1968.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 194	Geometry	14745.1	3263.9	126220.5	14167.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14705.1	3268.3	2427.2	2135.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 194	Geometry	14745	3223.6	87029.2	10849.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14722.1	3226.1	16486.5	11145.4
+725_composite_PHILEMON.tif	Tile 195	Other	Image	Geometry	250.05	3750.8	250105.2	2000.3
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 195	Geometry	280.69	3762.3	149031.9	13903
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	318.21	3777.7	445.78	517.32
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 195	Geometry	192.47	3705	59129.8	9208.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	156.05	3671.8	5197.4	3714.8
+725_composite_PHILEMON.tif	Tile 196	Other	Image	Rectangle	750.16	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 196	Geometry	739.68	3755.9	143736	16048.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	725.34	3751.7	787.13	836.89
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 196	Geometry	741.71	3733.7	53774.8	9269.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	742.82	3714.3	6514.1	5186.4
+725_composite_PHILEMON.tif	Tile 197	Other	Image	Rectangle	1250.3	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 197	Geometry	1233.9	3779.8	106728.1	15192.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1276.9	3765.3	880.26	904.87
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 197	Geometry	1222.9	3792.1	52010.5	9983.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1216.6	3799.3	5485.7	4472.3
+725_composite_PHILEMON.tif	Tile 198	Other	Image	Rectangle	1750.4	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 198	Geometry	1687.2	3779.6	17358.9	3636.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1754.2	3849	52.22	63.56
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 198	Geometry	1719.2	3721.8	28504.4	6981.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1739	3758.3	2565.6	1673.8
+725_composite_PHILEMON.tif	Tile 199	Other	Image	Rectangle	2250.5	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 199	Geometry	2300	3756.7	72027.8	8988.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2240.1	3760.2	725.56	789.22
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 199	Geometry	2297.9	3714	47509.9	7469.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2281.3	3697.4	4570	3978.8
+725_composite_PHILEMON.tif	Tile 200	Other	Image	Rectangle	2750.6	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 200	Geometry	2721.1	3787.6	70365.5	9766.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2715.1	3759.1	1241.5	1278.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 200	Geometry	2773.5	3822.4	79251.8	8078.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2774.6	3827.8	12164.3	9025.7
+725_composite_PHILEMON.tif	Tile 201	Other	Image	Rectangle	3250.7	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 201	Geometry	3242.7	3792	38563.1	5903.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3184.6	3839.8	664.77	738.02
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 201	Geometry	3266.7	3794.5	101921.2	6137.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3273.2	3824.9	16392.2	12078.5
+725_composite_PHILEMON.tif	Tile 202	Other	Image	Rectangle	3750.8	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 202	Geometry	3797.4	3850.3	53763.3	5167.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3762.9	3690.3	2243.7	1343.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 202	Geometry	3715.1	3754.2	106421.4	6235.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3704.6	3744.1	15251.2	10293.4
+725_composite_PHILEMON.tif	Tile 203	Other	Image	Rectangle	4250.9	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 203	Geometry	4254.9	3770.7	77613.3	7044.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4275.7	3790.3	1405.1	1608.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 203	Geometry	4221.3	3758.8	120026.3	5061.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4234.1	3774.4	16868.3	11842.8
+725_composite_PHILEMON.tif	Tile 204	Other	Image	Rectangle	4751	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 204	Geometry	4739	3771.9	105508.4	10355.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4724.5	3739.4	3100.2	2998
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 204	Geometry	4801.1	3748.8	106567.2	7029.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4798	3740.4	22128.5	14039.2
+725_composite_PHILEMON.tif	Tile 205	Other	Image	Rectangle	5251.1	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 205	Geometry	5268.8	3744.3	120704.5	13458.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5249.6	3733.5	5509.1	5390.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 205	Geometry	5247	3753.3	100692.5	8900.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5246.6	3747.9	34958.3	18518.5
+725_composite_PHILEMON.tif	Tile 206	Other	Image	Rectangle	5751.2	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 206	Geometry	5737.2	3752.2	113264.2	12188.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5781.2	3739.1	6433	5896.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 206	Geometry	5770	3737.3	113911.6	6789.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5754.8	3740.8	41510.9	18489.4
+725_composite_PHILEMON.tif	Tile 207	Other	Image	Rectangle	6251.3	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 207	Geometry	6255.9	3759.3	122429	10718.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6280.1	3714.6	4008.1	3571.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 207	Geometry	6266	3723.4	92854.9	5698.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6278.8	3726	21064.7	11073.8
+725_composite_PHILEMON.tif	Tile 208	Other	Image	Rectangle	6751.4	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 208	Geometry	6750.7	3758.7	125054.2	11721.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6748.6	3768.7	3572.9	3740.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 208	Geometry	6754.8	3743.6	100241.1	7840.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6779	3759.8	27246.7	14865.5
+725_composite_PHILEMON.tif	Tile 209	Other	Image	Rectangle	7251.5	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 209	Geometry	7241.3	3748.3	118891.2	9270.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7258.4	3776.6	4672.1	3966.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 209	Geometry	7226.2	3745.8	92729.9	5800.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7222.1	3759.3	26004.9	12221.5
+725_composite_PHILEMON.tif	Tile 210	Other	Image	Rectangle	7751.6	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 210	Geometry	7740.3	3766	84459.7	6913.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7753.7	3745	4347.9	3849.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 210	Geometry	7767	3729.4	129090.2	5351.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7806.4	3707	29273.6	14342
+725_composite_PHILEMON.tif	Tile 211	Other	Image	Rectangle	8251.8	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 211	Geometry	8247.5	3737.2	122687.7	10613.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8262.2	3765.6	5512.2	4989.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 211	Geometry	8255.2	3791.9	92062.9	5931.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8247.4	3755.3	32237.2	13701.1
+725_composite_PHILEMON.tif	Tile 212	Other	Image	Rectangle	8751.9	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 212	Geometry	8720.5	3769.1	103880.4	9724.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8749.6	3755.5	4203	4518.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 212	Geometry	8802.7	3741.2	123430.4	6838.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8790.6	3733.4	37842.6	18650
+725_composite_PHILEMON.tif	Tile 213	Other	Image	Rectangle	9252	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 213	Geometry	9261	3709.2	82272.9	6636.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9339.6	3763.4	3472.3	3284.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 213	Geometry	9262.9	3791.6	117077.9	4881.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9304.6	3751.6	32987.5	13988
+725_composite_PHILEMON.tif	Tile 214	Other	Image	Rectangle	9752.1	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 214	Geometry	9752.3	3733.9	95204.4	8203
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9773.2	3799.5	7743.9	6819.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 214	Geometry	9751.9	3768.3	145962.8	8154.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9716.2	3753.4	40023	18739.2
+725_composite_PHILEMON.tif	Tile 215	Other	Image	Geometry	10251.8	3750.4	249675.8	1989.7
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 215	Geometry	10258	3694.8	85356.2	7897.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10272.4	3655.9	3044.9	3253.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 215	Geometry	10204.3	3733.7	90528.6	6998
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10256.7	3662.2	24750.7	11823.3
+725_composite_PHILEMON.tif	Tile 216	Other	Image	Geometry	10608	3660.3	75945.2	1381.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 216	Geometry	10613.3	3626.4	30168.6	2093.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10558.1	3716.9	1101.2	1029.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 216	Geometry	10602.7	3686.9	44154.8	2299.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10604.1	3685.7	16015.5	6688.5
+725_composite_PHILEMON.tif	Tile 217	Other	Image	Geometry	12341.4	3637.1	98948.5	1541.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 217	Geometry	12396	3657	57401	3004
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12314.2	3696	604.38	604.81
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 217	Geometry	12245.6	3618.7	34440.3	2051
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12253.1	3613.1	15345.2	6125.8
+725_composite_PHILEMON.tif	Tile 218	Other	Image	Geometry	12755.4	3748.2	247192.8	1956.3
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 218	Geometry	12744	3771.2	113838.6	8805.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12665.3	3795.2	613.93	699.77
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 218	Geometry	12743.6	3729.2	85036.9	4785.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12736.2	3725.8	22192.4	10747.2
+725_composite_PHILEMON.tif	Tile 219	Other	Image	Rectangle	13252.8	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 219	Geometry	13290.4	3830	41812.9	5625.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13284.8	3732.5	547.09	464.35
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 219	Geometry	13221.1	3661.1	106215.3	6128.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13221	3642.3	33435.5	15349.2
+725_composite_PHILEMON.tif	Tile 220	Other	Image	Rectangle	13752.9	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 220	Geometry	13734.7	3783	77455.9	9587.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13788.5	3735.8	3117.3	2726.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 220	Geometry	13786.4	3788.7	76386.6	8059.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13772.1	3769	21444.2	12868.6
+725_composite_PHILEMON.tif	Tile 221	Other	Image	Rectangle	14253	3750.8	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 221	Geometry	14281.7	3748.5	98450.4	11330.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14236.9	3706.6	3224.1	3102.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 221	Geometry	14247.9	3746.9	89642.3	10700.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14214.9	3705.8	20432.6	13525.4
+725_composite_PHILEMON.tif	Tile 222	Other	Image	Rectangle	14745.2	3750.8	242159.3	1968.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 222	Geometry	14761.6	3752.1	145772	17246.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14657	3705.5	1134.7	1092.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 222	Geometry	14715.6	3744.7	67262.9	12488.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14714.5	3733.7	8405.9	6621.9
+725_composite_PHILEMON.tif	Tile 223	Other	Image	Geometry	256.63	4231.4	224762.5	1853
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 223	Geometry	246.19	4212.5	123099.3	10740
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	222.66	4312.8	1126.9	962.25
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 223	Geometry	233.22	4296.3	32279	4388.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	270.01	4299.3	4616.1	3480.6
+725_composite_PHILEMON.tif	Tile 224	Other	Image	Geometry	753.7	4247.6	246252.6	1992.1
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 224	Geometry	724.79	4247.2	138149.4	12986.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	798.19	4249.2	934.46	894.67
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 224	Geometry	821.72	4251	73622.6	9617.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	837.17	4241.8	10247	7708.2
+725_composite_PHILEMON.tif	Tile 225	Other	Image	Rectangle	1250.3	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 225	Geometry	1227.9	4264	126364.2	14838.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1200.7	4229.3	1384.9	1393.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 225	Geometry	1246.6	4226.9	72920.9	9388.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1239.1	4236.6	10826.5	7866.6
+725_composite_PHILEMON.tif	Tile 226	Other	Image	Rectangle	1750.4	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 226	Geometry	1721.3	4246.2	92239.3	11487
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1721.9	4243.6	972.61	965.78
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 226	Geometry	1746.3	4236.3	113751.1	9498
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1767.8	4232.6	13539.4	10492.1
+725_composite_PHILEMON.tif	Tile 227	Other	Image	Rectangle	2250.5	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 227	Geometry	2280.1	4325.5	59425.1	8050.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2294	4268.9	879.09	972.85
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 227	Geometry	2212	4257.9	111460	9286.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2213.5	4237.9	20353.9	13440.6
+725_composite_PHILEMON.tif	Tile 228	Other	Image	Rectangle	2750.6	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 228	Geometry	2731.1	4261	78841.5	9766.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2717.1	4298.1	1349	1562.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 228	Geometry	2782.1	4247.8	128044.7	7564.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2768.8	4261.5	24720.5	16376.8
+725_composite_PHILEMON.tif	Tile 229	Other	Image	Rectangle	3250.7	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 229	Geometry	3235.7	4271	67919.5	7081.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3279.4	4231.3	1072.4	1209.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 229	Geometry	3245.1	4257.1	133111.1	6110.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3251	4254.4	25220.5	16672.6
+725_composite_PHILEMON.tif	Tile 230	Other	Image	Rectangle	3750.8	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 230	Geometry	3773.6	4230.3	93883.5	6601.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3789.8	4303.2	1007.7	1190
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 230	Geometry	3763.5	4279.2	107046.6	5720.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3766.6	4279.3	15406.7	10553.9
+725_composite_PHILEMON.tif	Tile 231	Other	Image	Rectangle	4250.9	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 231	Geometry	4240.7	4267.2	109582.6	10442.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4223.7	4212.5	2355.9	2412.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 231	Geometry	4203.3	4258.9	85844.6	7225.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4209.3	4272	15379.4	10498.3
+725_composite_PHILEMON.tif	Tile 232	Other	Image	Rectangle	4751	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 232	Geometry	4761.5	4258.1	107110	10856.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4720.7	4239.1	1291	1559.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 232	Geometry	4762.2	4268.3	74360.3	6791.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4772.5	4250.3	13762.3	9656.9
+725_composite_PHILEMON.tif	Tile 233	Other	Image	Rectangle	5251.1	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 233	Geometry	5250.1	4252.8	131383.2	13860.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5292.1	4271.8	2911.6	2956.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 233	Geometry	5262.3	4265.3	65569.4	6526.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5291	4267.5	17214.7	10756
+725_composite_PHILEMON.tif	Tile 234	Other	Image	Rectangle	5751.2	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 234	Geometry	5737	4236.5	116266	12258.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5751.7	4209.2	2294	2430.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 234	Geometry	5715.1	4255	66982.6	7012.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5722.6	4219.4	20901	12066.1
+725_composite_PHILEMON.tif	Tile 235	Other	Image	Rectangle	6251.3	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 235	Geometry	6268.2	4244.3	110563	11106.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6285.5	4233.3	2844.6	3159.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 235	Geometry	6274.5	4269.9	78776	6284.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6274.4	4241.6	16093.7	10172.5
+725_composite_PHILEMON.tif	Tile 236	Other	Image	Rectangle	6751.4	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 236	Geometry	6774.8	4265.8	100760.3	10872.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6802	4204.1	5628.8	5314.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 236	Geometry	6736	4230.4	124310.7	8410.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6767.5	4233.4	27677.3	15522.3
+725_composite_PHILEMON.tif	Tile 237	Other	Image	Rectangle	7251.5	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 237	Geometry	7237.4	4240.9	109425.8	11000.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7242	4258.7	6808.3	6163.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 237	Geometry	7265.1	4261.6	126911.9	9087.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7235.5	4253.5	32327	17601.3
+725_composite_PHILEMON.tif	Tile 238	Other	Image	Rectangle	7751.6	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 238	Geometry	7736.3	4242.3	106161.1	9882.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7719.5	4252.6	5110.1	4625.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 238	Geometry	7764.1	4270.6	122853.1	6956.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7760.5	4259	33913.8	16826.2
+725_composite_PHILEMON.tif	Tile 239	Other	Image	Rectangle	8251.8	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 239	Geometry	8252	4231	97969.5	8603.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8284.5	4225.5	3835.9	4109.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 239	Geometry	8277.2	4233	118009.4	8051.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8257.8	4236.8	28612.5	16909.2
+725_composite_PHILEMON.tif	Tile 240	Other	Image	Rectangle	8751.9	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 240	Geometry	8758.7	4251.7	115690.7	11329
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8771.5	4165.3	4093.9	3913.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 240	Geometry	8782.3	4188.7	75712.5	6454.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8782.4	4184.3	21055.3	11679.4
+725_composite_PHILEMON.tif	Tile 241	Other	Image	Geometry	9251.6	4250.5	249717	1994.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 241	Geometry	9288.8	4229.8	93913.9	8505.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9203.1	4206.1	4699	4537.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 241	Geometry	9203.9	4274.6	129612.9	6463
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9203.9	4250.7	30022.4	15989.3
+725_composite_PHILEMON.tif	Tile 242	Other	Image	Geometry	9737.7	4208.3	205503.2	1842.5
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 242	Geometry	9709.7	4231.3	99085.1	8260.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9769.5	4173.1	3101.4	3208.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 242	Geometry	9788.4	4171.3	75222.8	5386.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9755.7	4147.5	14478.6	8969.7
+725_composite_PHILEMON.tif	Tile 243	Other	Image	Geometry	10174.4	4133.1	101113	1401.9
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 243	Geometry	10118	4144	25471	2868.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10064.6	4160.6	1002.2	1054.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 243	Geometry	10084.2	4197.3	20015.9	1744.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10089	4164.6	4476.8	2711.3
+725_composite_PHILEMON.tif	Tile 244	Other	Image	Geometry	12824.1	4252.2	174869.8	2104.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 244	Geometry	12818.7	4300.3	54786.1	5595.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12780.9	4387.5	3639.5	1902
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 244	Geometry	12822.4	4219	102496.2	5929.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12829.1	4241.6	20100.7	10694
+725_composite_PHILEMON.tif	Tile 245	Other	Image	Rectangle	13252.8	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 245	Geometry	13276.4	4248	92747	11784.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13260.1	4244.6	1567.6	1548.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 245	Geometry	13227.2	4294.3	75194.2	8755.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13213.3	4255.5	10765.4	7958.4
+725_composite_PHILEMON.tif	Tile 246	Other	Image	Rectangle	13752.9	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 246	Geometry	13739.2	4263.5	109180.5	12644.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13682.8	4146.3	534.62	595.01
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 246	Geometry	13736.8	4286.1	45646.5	7547.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13731.5	4238.3	5682.9	4125.3
+725_composite_PHILEMON.tif	Tile 247	Other	Image	Rectangle	14253	4250.9	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 247	Geometry	14280.1	4245	100992.6	11776.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14357.2	4260	1068.9	1189.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 247	Geometry	14286.4	4249.2	81131.2	9205
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14289.3	4247.7	15606.6	9734.6
+725_composite_PHILEMON.tif	Tile 248	Other	Image	Geometry	14744.5	4250.3	241503.2	1959.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 248	Geometry	14734.4	4245.4	136282.9	15384.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14756.4	4262	589.96	657.69
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 248	Geometry	14788.8	4249.7	62910.3	10172.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14820.7	4220.6	6134.5	4996.6
+725_composite_PHILEMON.tif	Tile 249	Other	Image	Geometry	784.91	4748.2	215258.4	1878
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 249	Geometry	763.09	4736.8	102623.6	8968
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	697.88	4880.7	9121.5	5417.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 249	Geometry	829.58	4783.1	72309.1	8981
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	811.4	4805.8	12076.6	8739.7
+725_composite_PHILEMON.tif	Tile 250	Other	Image	Rectangle	1250.3	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 250	Geometry	1240.7	4715	86504.5	9355
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1240.1	4770.6	2728.5	2584.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 250	Geometry	1268.4	4768.4	133929.3	10552.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1283.3	4724.1	17682	12014
+725_composite_PHILEMON.tif	Tile 251	Other	Image	Rectangle	1750.4	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 251	Geometry	1755.3	4726.2	93280.3	9929.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1747.7	4780	1441.8	1401.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 251	Geometry	1733.5	4780.3	127299.4	11599.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1737.9	4741.4	16274.1	11999.9
+725_composite_PHILEMON.tif	Tile 252	Other	Image	Rectangle	2250.5	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 252	Geometry	2265.6	4709.1	61482.6	7928.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2278.6	4733.9	1154.6	1233.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 252	Geometry	2246.5	4752.4	130041	11358.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2274.5	4715.8	14396.7	10854
+725_composite_PHILEMON.tif	Tile 253	Other	Image	Rectangle	2750.6	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 253	Geometry	2760.4	4735	75772.9	8128.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2704.1	4732	1275.8	1340.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 253	Geometry	2730.4	4735.8	130246.1	8950.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2749.1	4712.4	18730.6	13648.1
+725_composite_PHILEMON.tif	Tile 254	Other	Image	Rectangle	3250.7	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 254	Geometry	3283.1	4695	66990.2	7958.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3344.6	4699	1704.8	1559.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 254	Geometry	3248.9	4747.3	127370.9	8486.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3277.5	4724.5	19143.6	13214.6
+725_composite_PHILEMON.tif	Tile 255	Other	Image	Rectangle	3750.8	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 255	Geometry	3797.5	4757.6	81609.7	6925.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3656.7	4806.6	1187.7	1189.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 255	Geometry	3734.2	4798.4	99917.7	4071.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3688.7	4801.7	13875.7	9513.1
+725_composite_PHILEMON.tif	Tile 256	Other	Image	Rectangle	4250.9	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 256	Geometry	4258.9	4743.7	130436.5	11631.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4258.5	4736.6	873.64	1120.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 256	Geometry	4235.5	4743.5	86700.3	6707.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4276.6	4710.5	9918.6	8057.3
+725_composite_PHILEMON.tif	Tile 257	Other	Image	Rectangle	4751	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 257	Geometry	4770	4769.3	88645.9	9218.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4742.2	4797.8	1126.1	1341.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 257	Geometry	4727.5	4723.3	123576.2	7423.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4738.8	4705.6	16261.6	11710.3
+725_composite_PHILEMON.tif	Tile 258	Other	Image	Rectangle	5251.1	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 258	Geometry	5255.2	4734	101209.6	9249.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5325.4	4810.9	2966.2	2953
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 258	Geometry	5257.9	4761.8	126137.3	7103.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5269.3	4757.5	18623	12585.2
+725_composite_PHILEMON.tif	Tile 259	Other	Image	Rectangle	5751.2	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 259	Geometry	5765.1	4751.8	121489.1	11137.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5817.3	4773.5	3380.8	3527.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 259	Geometry	5754.3	4814.7	63341.1	5745.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5748.1	4803.5	14846	9423.9
+725_composite_PHILEMON.tif	Tile 260	Other	Image	Rectangle	6251.3	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 260	Geometry	6269.4	4741.5	108992.3	10085.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6222.7	4717.2	3813.3	3751.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 260	Geometry	6238.6	4762.3	97872.1	7011.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6279.6	4739.2	17784.8	11134.8
+725_composite_PHILEMON.tif	Tile 261	Other	Image	Rectangle	6751.4	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 261	Geometry	6744.4	4760.8	101807	10704.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6704.3	4755.3	5948.7	5318.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 261	Geometry	6743.8	4754.8	99808.4	7670.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6724.4	4764.6	24150.8	13943.8
+725_composite_PHILEMON.tif	Tile 262	Other	Image	Rectangle	7251.5	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 262	Geometry	7232.5	4776.4	102614.4	9290.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7215.9	4813.1	5778.8	5264.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 262	Geometry	7255.1	4748	105498.5	7232.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7238.7	4742.2	22459.9	13900.6
+725_composite_PHILEMON.tif	Tile 263	Other	Image	Rectangle	7751.6	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 263	Geometry	7719.7	4747.7	93286.1	8981.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7741.3	4765.3	3171.9	2937.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 263	Geometry	7779.7	4766.1	120255.4	6854.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7762.9	4754	21356.5	13056.6
+725_composite_PHILEMON.tif	Tile 264	Other	Image	Rectangle	8251.8	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 264	Geometry	8302.5	4763.2	47932.9	4625.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8269.1	4848.4	2791.8	2267.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 264	Geometry	8302.2	4767.3	68106.2	4186.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8309.3	4797.5	13725.3	7720.1
+725_composite_PHILEMON.tif	Tile 265	Other	Image	Rectangle	8751.9	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 265	Geometry	8784	4757.9	93202.5	8097.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8790	4800.3	5991.1	5518.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 265	Geometry	8764.9	4753.2	114792.3	6669.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8783.9	4762.9	22667	14429.4
+725_composite_PHILEMON.tif	Tile 266	Other	Image	Geometry	9231.3	4749.1	229377.8	1931.9
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 266	Geometry	9188	4767.2	74794.6	5491.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9190.5	4744.3	5483.8	4377.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 266	Geometry	9251.7	4737.1	142158.8	6864.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9248.4	4750.1	23143.3	13855.7
+725_composite_PHILEMON.tif	Tile 267	Other	Image	Geometry	12303.3	4813.7	166248.4	1756.8
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 267	Geometry	12350.7	4784.3	24814.1	2965.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12329.9	4662.4	953.13	485.54
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 267	Geometry	12336.2	4775.2	76432.9	6154.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12319.2	4763.6	9958.4	5322.2
+725_composite_PHILEMON.tif	Tile 268	Other	Image	Geometry	12752.7	4751	250106	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 268	Geometry	12723.8	4763.3	69393.6	8616.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12830.8	4714.9	406.81	515.56
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 268	Geometry	12785.5	4741.9	142370.6	8549
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12777.5	4727.7	15054	11781
+725_composite_PHILEMON.tif	Tile 269	Other	Image	Rectangle	13252.8	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 269	Geometry	13226.7	4749.2	102029.1	10593.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13312.3	4774.2	863.11	913.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 269	Geometry	13250.9	4770.8	103614.6	8775
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13264.7	4741.2	12930.4	10229.9
+725_composite_PHILEMON.tif	Tile 270	Other	Image	Rectangle	13752.9	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 270	Geometry	13759.4	4752.3	85303.6	9957.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13792.9	4866.2	765.31	697.41
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 270	Geometry	13669.8	4752.6	62346.5	6480.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13658.5	4791.5	5278.1	4257.7
+725_composite_PHILEMON.tif	Tile 271	Other	Image	Rectangle	14253	4751	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 271	Geometry	14267.7	4750.8	125468.4	12966.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14211.4	4744	384.99	354.89
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 271	Geometry	14259.2	4825.9	44565.5	7066.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14244.1	4858.6	2364.5	2056.9
+725_composite_PHILEMON.tif	Tile 272	Other	Image	Geometry	14731.8	4747.8	228668.3	1915.9
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 272	Geometry	14734.9	4750.3	162619.1	14215.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14740.5	4659.4	330.44	397.26
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 272	Geometry	14717	4721.6	36946.8	8318.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14672.1	4685.1	2098.4	1931.6
+725_composite_PHILEMON.tif	Tile 273	Other	Image	Geometry	781.67	5080.4	66030.7	1249.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 273	Geometry	707.79	5077.8	18599.8	2211
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	650.22	5073.7	1985.7	1352.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 273	Geometry	812.63	5068.5	30359.2	4774.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	782.74	5059.3	4299.2	2836.2
+725_composite_PHILEMON.tif	Tile 274	Other	Image	Geometry	1277.4	5145.4	139392.1	1581.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 274	Geometry	1286.1	5141	45936.2	5792.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1267.1	5110.7	5266.8	3183.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 274	Geometry	1279.7	5136.6	68581.4	8683.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1320.3	5132.3	12628.1	7739.2
+725_composite_PHILEMON.tif	Tile 275	Other	Image	Geometry	1760.2	5241.6	238475.7	1943.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 275	Geometry	1760.4	5231.6	67440.6	6782.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1677.7	5196.3	3260	2859.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 275	Geometry	1757.1	5233.9	136357.6	14188.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1720.3	5232.2	19864.2	13857.9
+725_composite_PHILEMON.tif	Tile 276	Other	Image	Rectangle	2250.5	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 276	Geometry	2250.3	5261	98299	10155.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2310.9	5332.2	1190	1313.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 276	Geometry	2248.7	5250.1	113635.3	12821.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2244.4	5267.9	10985.5	8429.9
+725_composite_PHILEMON.tif	Tile 277	Other	Image	Rectangle	2750.6	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 277	Geometry	2702.5	5251.9	41362.7	5148.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2668.7	5310.6	400.58	399.03
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 277	Geometry	2752.2	5258.8	156643.8	10079.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2770.3	5232.5	19120.6	12762.6
+725_composite_PHILEMON.tif	Tile 278	Other	Image	Rectangle	3250.7	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 278	Geometry	3204.7	5287.6	33896.4	4527
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3199	5257.3	529.17	538.51
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 278	Geometry	3176	5236.4	63641.7	4023.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3186.4	5208.5	10033.6	6869.1
+725_composite_PHILEMON.tif	Tile 279	Other	Image	Rectangle	3750.8	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 279	Geometry	3744.7	5224.5	50867.3	6393.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3775	5313	909.48	745.08
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 279	Geometry	3810.1	5172.7	97990.6	4844.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3810.4	5177.1	12911.6	8425.4
+725_composite_PHILEMON.tif	Tile 280	Other	Image	Rectangle	4250.9	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 280	Geometry	4270.9	5297.5	101053.2	10449.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4263.8	5278.2	2562.5	2062.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 280	Geometry	4233.2	5201.4	102793.6	10196.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4252.1	5223.7	10405.7	7937.3
+725_composite_PHILEMON.tif	Tile 281	Other	Image	Rectangle	4751	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 281	Geometry	4728.3	5254.2	109164.9	12995.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4778.6	5239.1	1490.1	1525.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 281	Geometry	4776.4	5251.3	104188.2	8735.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4784.4	5269.4	14445.8	9942.1
+725_composite_PHILEMON.tif	Tile 282	Other	Image	Rectangle	5251.1	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 282	Geometry	5264.7	5262.2	123932.9	10827.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5215.8	5141.1	1858.7	1913
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 282	Geometry	5239.6	5251.2	76433	6160.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5231.9	5261.1	11506.5	8037
+725_composite_PHILEMON.tif	Tile 283	Other	Image	Rectangle	5751.2	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 283	Geometry	5749.2	5244.3	122933.4	10697.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5744.6	5297.9	2777.9	2589.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 283	Geometry	5784.7	5273.9	98999.8	6248.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5771.4	5301.6	18105.5	11035
+725_composite_PHILEMON.tif	Tile 284	Other	Image	Rectangle	6251.3	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 284	Geometry	6239.1	5253.8	105235.3	9367.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6241	5339.8	2483	2494.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 284	Geometry	6220.4	5263.4	89237.1	5808.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6219.3	5270.3	14409.1	9826.4
+725_composite_PHILEMON.tif	Tile 285	Other	Image	Rectangle	6751.4	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 285	Geometry	6762.3	5269	109970.9	9911.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6787.2	5206.8	4123.5	3727.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 285	Geometry	6748.6	5261.3	68052.4	5813.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6757.1	5237.7	12923.7	8783
+725_composite_PHILEMON.tif	Tile 286	Other	Image	Rectangle	7251.5	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 286	Geometry	7274	5255.3	115147.6	11672.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7246.7	5254.4	1835.7	1958.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 286	Geometry	7246	5248.9	75590.1	5831.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7248.7	5235	14519.8	9653.4
+725_composite_PHILEMON.tif	Tile 287	Other	Image	Rectangle	7751.6	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 287	Geometry	7736.8	5255.7	96948.8	10337.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7734.1	5297.3	3362.1	3387.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 287	Geometry	7727.3	5315.7	92624.8	6075.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7744.6	5300.6	13716.7	10046.3
+725_composite_PHILEMON.tif	Tile 288	Other	Image	Rectangle	8251.8	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 288	Geometry	8205.8	5311.6	67842.5	8060.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8190.9	5283.3	4000.7	3940.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 288	Geometry	8229.5	5281.6	89673.5	6319.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8246.9	5245.2	20237.4	11572.6
+725_composite_PHILEMON.tif	Tile 289	Other	Image	Rectangle	8751.9	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 289	Geometry	8778.4	5244.1	91273.5	9335.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8814.7	5214	4953.1	4706.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 289	Geometry	8769.5	5249	107872.9	7622.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8780.1	5262.4	22690	13958.8
+725_composite_PHILEMON.tif	Tile 290	Other	Image	Geometry	9250.3	5252.7	248330.4	1967.7
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 290	Geometry	9218.1	5240.7	84755.9	7796
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9170.6	5217.4	4051	3644.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 290	Geometry	9257.8	5222.4	118296.6	6330.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9227.9	5214.1	18903.4	12817.9
+725_composite_PHILEMON.tif	Tile 291	Other	Image	Geometry	9587.9	5368.5	50692.4	1270
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 291	Geometry	9622.3	5459.4	1987.8	358.69
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9585.3	5476.6	170.67	165.97
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 291	Geometry	9586.5	5364.5	47555	1984.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9579.9	5370.6	4009.9	3269.5
+725_composite_PHILEMON.tif	Tile 292	Other	Image	Geometry	11902.2	5308.9	86437.2	1391.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 292	Geometry	11886.2	5257.8	22517.9	2531.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11895.1	5240.8	332.76	387.23
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 292	Geometry	11909.5	5331.8	58354.5	3160.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11905.6	5326.3	9661.9	6499.7
+725_composite_PHILEMON.tif	Tile 293	Other	Image	Geometry	12252.6	5251.1	250080.5	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 293	Geometry	12254	5292.9	76766.9	7516.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12139.5	5258	857.27	923.41
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 293	Geometry	12220.5	5280.8	111757.3	8842.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12208.2	5285.5	13152.1	8927.8
+725_composite_PHILEMON.tif	Tile 294	Other	Image	Rectangle	12752.7	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 294	Geometry	12746	5240.2	82386.7	8219.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12659.7	5243.2	154.31	203.04
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 294	Geometry	12733.6	5251.1	113602.8	8076.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12713.9	5264.4	7610.2	6633.4
+725_composite_PHILEMON.tif	Tile 295	Other	Image	Rectangle	13252.8	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 295	Geometry	13221	5239.7	64806.5	7345.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13304.7	5134.1	410.71	365.48
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 295	Geometry	13280.8	5254.2	151482	8310.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13307.2	5314.2	19163.1	12720.3
+725_composite_PHILEMON.tif	Tile 296	Other	Image	Rectangle	13752.9	5251.1	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 296	Geometry	13768	5261.6	121164.9	14685.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13849.9	5089.8	1259.4	849.25
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 296	Geometry	13729.9	5220.8	64271.2	10028.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13742.8	5163.2	4874.4	4054.7
+725_composite_PHILEMON.tif	Tile 297	Other	Image	Geometry	14253	5251.1	250071.1	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 297	Geometry	14240.9	5226.6	115936.3	12415.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14129.3	5116.2	430.97	448.46
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 297	Geometry	14205.1	5230.7	66532.7	8557.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14200	5182.9	4483.5	3577.1
+725_composite_PHILEMON.tif	Tile 298	Other	Image	Geometry	14657.5	5190.5	131080.4	1642.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 298	Geometry	14601.9	5164	38482.6	4570.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14632	5174.7	53.77	65.33
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 298	Geometry	14707.5	5146.4	32327.3	7669.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14593.5	5195.3	358.27	384.6
+725_composite_PHILEMON.tif	Tile 299	Other	Image	Geometry	1867.3	5677.7	105307	1487.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 299	Geometry	1858.5	5651	41025.7	4344.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	1884.7	5637.9	1082.5	875.74
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 299	Geometry	1894.1	5704.1	43171.5	5600.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	1886.8	5672.9	3956.8	3028
+725_composite_PHILEMON.tif	Tile 300	Other	Image	Rectangle	2250.5	5745.7	244587.5	1978.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 300	Geometry	2229.9	5760.5	38428.3	3842.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2216.4	5743.4	711.53	766.27
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 300	Geometry	2253.2	5735.2	147370.7	15652.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2245.6	5743.5	7957.4	6249.3
+725_composite_PHILEMON.tif	Tile 301	Other	Image	Rectangle	2750.6	5745.7	244587.5	1978.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 301	Geometry	2747.6	5738.1	83878.6	8026.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	2769.8	5845.4	1437.9	1372.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 301	Geometry	2748.2	5766.8	128054.4	9860
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	2745.2	5786	10622	7990.2
+725_composite_PHILEMON.tif	Tile 302	Other	Image	Geometry	3251.2	5750.5	249420.1	2001.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 302	Geometry	3196.1	5785.6	37224.1	4985
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3310.2	5843	3302.4	2195.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 302	Geometry	3235	5752.1	154772.5	10388.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3260.5	5740.4	22755.6	14636.7
+725_composite_PHILEMON.tif	Tile 303	Other	Image	Rectangle	3750.8	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 303	Geometry	3821.3	5797.2	75435.8	9238.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3731.2	5782.5	4757.5	2817
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 303	Geometry	3695.7	5768.4	70075.5	7679.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3672.1	5792.8	12708.6	8239.2
+725_composite_PHILEMON.tif	Tile 304	Other	Image	Rectangle	4250.9	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 304	Geometry	4245.6	5775.8	139764.5	14327
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4245.5	5784.8	1960	1742.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 304	Geometry	4255.1	5790.3	51349.7	6401.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4256.3	5778.5	6129.9	4900.4
+725_composite_PHILEMON.tif	Tile 305	Other	Image	Rectangle	4751	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 305	Geometry	4747.2	5741.5	143989.9	16300
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4791.2	5704.4	615.68	732.72
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 305	Geometry	4737.7	5714.2	50211.4	6729.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4724.1	5673.3	6722.2	4965.8
+725_composite_PHILEMON.tif	Tile 306	Other	Image	Rectangle	5251.1	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 306	Geometry	5227	5756.9	122032.1	13549.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5236.4	5725.5	1700.1	1446.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 306	Geometry	5280.4	5699.6	71877	6587.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5275.9	5659.2	13150.1	9013.4
+725_composite_PHILEMON.tif	Tile 307	Other	Image	Rectangle	5751.2	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 307	Geometry	5755	5740.9	115594.4	11231
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5807.2	5767.1	1471.8	1510.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 307	Geometry	5746.6	5736.5	101033.9	7396.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5744.3	5700.3	16087.4	10955.5
+725_composite_PHILEMON.tif	Tile 308	Other	Image	Rectangle	6251.3	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 308	Geometry	6235	5729.2	93631	9205
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6198	5741.9	2719.9	2639.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 308	Geometry	6250.3	5776.3	127834.5	7348.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6211.9	5742.3	14978.8	10911.4
+725_composite_PHILEMON.tif	Tile 309	Other	Image	Rectangle	6751.4	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 309	Geometry	6701.6	5717	82496.2	8110.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6731.2	5712.9	2774.4	2666.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 309	Geometry	6728.5	5748.1	58108.8	8173.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6747	5713.8	8149.1	6102.8
+725_composite_PHILEMON.tif	Tile 310	Other	Image	Rectangle	7251.5	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 310	Geometry	7268.6	5729	94433.1	9765.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7252.9	5742.5	2476.7	2537.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 310	Geometry	7267.5	5767.7	80836.6	7020
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7284.2	5725	9182.9	7491.4
+725_composite_PHILEMON.tif	Tile 311	Other	Image	Rectangle	7751.6	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 311	Geometry	7760.2	5751.7	115670	12482.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7741.7	5757.1	2555.4	2889.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 311	Geometry	7741.7	5749.7	94006.6	7903.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7774.7	5736.2	17524.9	12084.6
+725_composite_PHILEMON.tif	Tile 312	Other	Image	Rectangle	8251.8	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 312	Geometry	8245.8	5764	109328.5	11432.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8195.4	5717.4	3013.3	3084.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 312	Geometry	8250.9	5733.2	102822.5	7119.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8239.4	5710.7	17108	11806.6
+725_composite_PHILEMON.tif	Tile 313	Other	Image	Rectangle	8751.9	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 313	Geometry	8727.7	5728.5	97550.8	10626.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8745	5707.5	1937.4	2094
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 313	Geometry	8771.1	5745.9	93448.2	6974.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8766.7	5742.4	18463.2	12667.3
+725_composite_PHILEMON.tif	Tile 314	Other	Image	Rectangle	9252	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 314	Geometry	9283.4	5757.9	60058.7	6391.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9274	5704.9	1087.2	1144.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 314	Geometry	9327.6	5738.9	75739.2	4261.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9264	5687.9	9990.7	6847.9
+725_composite_PHILEMON.tif	Tile 315	Other	Image	Geometry	9744	5760.4	239840.7	1920.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 315	Geometry	9742.2	5798.7	80512.3	7420.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9774.9	5786.6	2454.6	2731.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 315	Geometry	9753.7	5736.1	139237.9	6664.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9735.5	5721.2	19846.8	13447.7
+725_composite_PHILEMON.tif	Tile 316	Other	Image	Geometry	10104.2	5832.2	71222.5	1108.7
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 316	Geometry	10090.6	5838.4	19701.4	2209.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10065.8	5803.4	712.31	769.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 316	Geometry	10109.5	5830	49584.4	2457.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10104.2	5811.2	5059	3471.7
+725_composite_PHILEMON.tif	Tile 317	Other	Image	Geometry	11826.6	5763.6	174690.3	1707.9
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 317	Geometry	11800.3	5730.4	60452.7	6624.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11772.3	5666.2	661.66	674.46
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 317	Geometry	11850.2	5793.8	92642.4	7726.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11860.9	5731.3	6887.8	5767.3
+725_composite_PHILEMON.tif	Tile 318	Other	Image	Rectangle	12252.6	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 318	Geometry	12241.4	5779.7	89553.5	9561.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12306.1	5675.6	308.62	335.46
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 318	Geometry	12240.1	5693.5	118654.1	8352.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12202.6	5693.7	8818.2	6918.5
+725_composite_PHILEMON.tif	Tile 319	Other	Image	Rectangle	12752.7	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 319	Geometry	12782.1	5771.3	79616.9	9049.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12883.4	5660.9	78.71	88.28
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 319	Geometry	12732.6	5699	94726.5	7865.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12723.1	5671.2	4381	3908.2
+725_composite_PHILEMON.tif	Tile 320	Other	Image	Rectangle	13252.8	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 320	Geometry	13218.8	5793	80310.6	8798
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13117.6	5741.4	68.58	82.98
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 320	Geometry	13271.8	5713.8	138236.4	5845.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13294.7	5697.8	31141.5	18296
+725_composite_PHILEMON.tif	Tile 321	Other	Image	Rectangle	13752.9	5751.2	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 321	Geometry	13718.8	5752.1	95606.6	13165.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13764.1	5684.1	433.31	474.95
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 321	Geometry	13729.6	5742.4	64339	9998.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13742.1	5698	4559.9	4096.2
+725_composite_PHILEMON.tif	Tile 322	Other	Image	Geometry	14249.8	5750.4	246910.5	1978.8
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 322	Geometry	14197.9	5789.3	86566.7	9746.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14226.3	5590.4	155.09	132.42
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 322	Geometry	14255.7	5810.7	57036.4	8861.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14277	5839.4	4107.5	2872.6
+725_composite_PHILEMON.tif	Tile 323	Other	Image	Geometry	3406.2	6252.8	93475.2	1636.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 323	Geometry	3385.6	6230.8	17409	2578.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3405.8	6141.9	1882.5	986.09
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 323	Geometry	3419.1	6287.3	57471.3	6064.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3449.1	6215.3	8061.1	4801.5
+725_composite_PHILEMON.tif	Tile 324	Other	Image	Rectangle	3750.8	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 324	Geometry	3789	6256.3	80997.9	8386.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3667.3	6276.4	3417.8	2394.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 324	Geometry	3742.5	6253.3	140051.5	11039.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3717.9	6236.8	11186.6	8614.4
+725_composite_PHILEMON.tif	Tile 325	Other	Image	Rectangle	4250.9	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 325	Geometry	4246.6	6250.9	127567.9	12880.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4232	6263.4	1692.7	1892.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 325	Geometry	4232.5	6225.1	76781.1	7666.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4258.7	6214.4	7575.1	5667.6
+725_composite_PHILEMON.tif	Tile 326	Other	Image	Rectangle	4751	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 326	Geometry	4751.9	6251.4	126409.8	13198.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4769.4	6274.4	878.31	845.72
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 326	Geometry	4715.7	6265.1	79622.2	7720.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4743.5	6256	5588.6	4381.3
+725_composite_PHILEMON.tif	Tile 327	Other	Image	Rectangle	5251.1	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 327	Geometry	5260	6273.9	96809.1	13286.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5269.8	6293.4	951.57	1013.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 327	Geometry	5249.3	6283.2	67844.3	5943
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5266.2	6275.9	4463.3	3918.7
+725_composite_PHILEMON.tif	Tile 328	Other	Image	Rectangle	5751.2	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 328	Geometry	5719	6253.7	67593.6	8426.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5771.9	6348	1858.7	1746.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 328	Geometry	5769.5	6229.7	89503.6	5860
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5758.8	6257.7	10464.5	7903.7
+725_composite_PHILEMON.tif	Tile 329	Other	Image	Rectangle	6251.3	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 329	Geometry	6310.1	6212.9	54688.3	5187.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6301.6	6262.6	1294.9	1317.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 329	Geometry	6254.4	6235.5	144860.6	7560.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6246	6245.1	12720.3	9604.9
+725_composite_PHILEMON.tif	Tile 330	Other	Image	Rectangle	6751.4	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 330	Geometry	6747.4	6277.7	94541	7758.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6693	6241	1145.2	1303.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 330	Geometry	6713.1	6253.1	99009.6	8689.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6715.8	6257.9	8578.9	6550.4
+725_composite_PHILEMON.tif	Tile 331	Other	Image	Rectangle	7251.5	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 331	Geometry	7247.9	6268.8	117293.9	11918.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7248.2	6228	1660	1853.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 331	Geometry	7241.5	6247.9	85953.3	8107.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7256.1	6245.4	7713.5	6655.4
+725_composite_PHILEMON.tif	Tile 332	Other	Image	Rectangle	7751.6	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 332	Geometry	7736.5	6243.8	110364.1	10602.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7773.7	6151.6	1126.1	1348.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 332	Geometry	7831.8	6254.5	89915.9	7969
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7826.5	6227.7	8315.5	7080.9
+725_composite_PHILEMON.tif	Tile 333	Other	Image	Rectangle	8251.8	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 333	Geometry	8241.9	6265.3	130209.1	13576.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8210.4	6201.5	636.72	732.72
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 333	Geometry	8253.6	6206.5	88344	7390.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8274.9	6178.4	12358.3	8745
+725_composite_PHILEMON.tif	Tile 334	Other	Image	Rectangle	8751.9	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 334	Geometry	8732.2	6216.2	84716.5	9408.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8714.1	6204.3	964.04	1138.8
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 334	Geometry	8733	6286.5	66028.4	4635.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8722.1	6239.2	10496.9	7384.6
+725_composite_PHILEMON.tif	Tile 335	Other	Image	Rectangle	9252	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 335	Geometry	9287.2	6235.5	82038.9	8581.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9218.1	6209.6	405.25	520.85
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 335	Geometry	9313.6	6250.4	82836.4	4955.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9261	6234.5	7508.1	5569.6
+725_composite_PHILEMON.tif	Tile 336	Other	Image	Geometry	9723.9	6227.1	215104.6	1867.9
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 336	Geometry	9747	6203.7	102378.3	8901.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9691.9	6184.5	1271.1	1412.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 336	Geometry	9680.8	6265.4	94498.3	6196.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9699.8	6253.8	10201.1	8032.6
+725_composite_PHILEMON.tif	Tile 337	Other	Image	Geometry	10076	6076.9	24978	707.11
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 337	Geometry	10051	6090.8	11458.2	787.25
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	10069.5	6047.7	49.88	60.03
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 337	Geometry	10097.5	6064.9	13357.9	856.74
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	10076.2	6086.4	685.04	630.32
+725_composite_PHILEMON.tif	Tile 338	Other	Image	Geometry	11796.2	6250.2	206367.1	1801.6
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 338	Geometry	11764.1	6291.6	64245.3	6442.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	11802.5	6212.2	69.36	86.51
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 338	Geometry	11821.9	6205.3	103171.1	10491.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11820.9	6199.8	3496.1	3210.7
+725_composite_PHILEMON.tif	Tile 339	Other	Image	Rectangle	12252.6	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 339	Geometry	12270.1	6221.1	80204	8438.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12307.1	6194.8	155.87	164.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 339	Geometry	12245.5	6239.4	93256.9	9687
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12257.6	6187.8	2144.7	1994.2
+725_composite_PHILEMON.tif	Tile 340	Other	Image	Rectangle	12752.7	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 340	Geometry	12763.4	6234.9	96505.9	11868.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12831.7	6196.1	328.1	374.31
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 340	Geometry	12729.6	6251	96721.8	9954.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12728	6286.7	2357.5	2177
+725_composite_PHILEMON.tif	Tile 341	Other	Image	Rectangle	13252.8	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 341	Geometry	13216.9	6217.7	98526	10444.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13046.8	6253.1	95.86	88.28
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 341	Geometry	13304.1	6247	93859.3	9573.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13328.3	6224.9	17010.6	9183.8
+725_composite_PHILEMON.tif	Tile 342	Other	Image	Rectangle	13752.9	6251.3	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 342	Geometry	13732	6287.7	97785.6	10787.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13671.2	6201.1	1130	614.43
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 342	Geometry	13738.3	6275.3	64842.5	8741.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13618.8	6236.6	4968.7	3097.7
+725_composite_PHILEMON.tif	Tile 343	Other	Image	Geometry	14249.4	6252.5	246428.9	1980.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 343	Geometry	14262.1	6286.7	103507.3	12884.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14222.9	6345	358.49	400.79
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 343	Geometry	14292.5	6239	47068.8	8287.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14355.4	6160.9	1623.4	1412.5
+725_composite_PHILEMON.tif	Tile 344	Other	Image	Geometry	3435	6649.7	43833.3	1120.8
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 344	Geometry	3431.3	6639.3	16383.1	1896.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3348.4	6550.7	238.48	218.93
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 344	Geometry	3431.3	6620.4	20465.3	1906.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3425.9	6554.5	226.01	227.76
+725_composite_PHILEMON.tif	Tile 345	Other	Image	Geometry	3751.6	6750.7	249317.8	1979.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 345	Geometry	3749.6	6756.7	107945	10123.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3719.9	6746.7	1809.2	1789.4
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 345	Geometry	3741.1	6711.3	79450	7977
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3781.7	6684.3	2262	2228.2
+725_composite_PHILEMON.tif	Tile 346	Other	Image	Rectangle	4250.9	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 346	Geometry	4249.8	6757.2	130028.7	11899.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4186.6	6798.7	2492.3	2337.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 346	Geometry	4257.6	6754.6	87478.7	9458.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4221.9	6773.3	8846.2	6984.7
+725_composite_PHILEMON.tif	Tile 347	Other	Image	Rectangle	4751	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 347	Geometry	4712.3	6778.5	102529	10548.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4702.7	6779.1	1162	1250.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 347	Geometry	4779.9	6727.1	75450.6	8282.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4732.1	6737.2	3837.8	3359.1
+725_composite_PHILEMON.tif	Tile 348	Other	Image	Rectangle	5251.1	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 348	Geometry	5258.5	6776	100284.4	10756.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5256.3	6695.1	699.06	792.75
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 348	Geometry	5224.2	6730.9	103651.7	9590.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5236	6755.4	7227.2	5753.2
+725_composite_PHILEMON.tif	Tile 349	Other	Image	Rectangle	5751.2	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 349	Geometry	5671.6	6721	47820.2	6088.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5711.2	6813.9	8411	3305.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 349	Geometry	5716	6723	99195.4	10769.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5725.8	6735.7	13371.5	6075.4
+725_composite_PHILEMON.tif	Tile 350	Other	Image	Rectangle	6251.3	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 350	Geometry	6333.4	6803	47447.5	6020.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6324	6744.8	191.33	258.66
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 350	Geometry	6352.1	6757	74606.2	6380
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6348.4	6723.2	4257.1	3575.3
+725_composite_PHILEMON.tif	Tile 351	Other	Image	Rectangle	6751.4	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 351	Geometry	6737.6	6777	77142.6	10892.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6819.5	6735.9	466.82	593.24
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 351	Geometry	6755.3	6740.5	122028.4	9892.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6775	6729.5	9593.6	7049.2
+725_composite_PHILEMON.tif	Tile 352	Other	Image	Rectangle	7251.5	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 352	Geometry	7252.9	6804.2	101582.1	10790.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7178.9	6749.7	545.54	635.62
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 352	Geometry	7212.5	6741	77355.7	6728.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7133.5	6655.7	5626.4	4276.3
+725_composite_PHILEMON.tif	Tile 353	Other	Image	Rectangle	7751.6	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 353	Geometry	7740.6	6743.3	118710.4	11780.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7846.4	6660.7	215.1	282.5
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 353	Geometry	7792	6747.8	80721.3	6924.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7782	6691.4	6330.2	4869.5
+725_composite_PHILEMON.tif	Tile 354	Other	Image	Rectangle	8251.8	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 354	Geometry	8249.2	6754.4	124130.3	14702.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8145.4	6656.2	396.68	430.81
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 354	Geometry	8214.6	6757.7	75862.9	7985.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8217.1	6721.4	3977	3757.2
+725_composite_PHILEMON.tif	Tile 355	Other	Image	Rectangle	8751.9	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 355	Geometry	8743.6	6770.1	73075.6	8129.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8832.5	6723.1	623.47	718.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 355	Geometry	8802.2	6741.2	113500.1	8288.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8835.2	6708	14149.6	9918.3
+725_composite_PHILEMON.tif	Tile 356	Other	Image	Geometry	9251.7	6751.2	249880	1992.8
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 356	Geometry	9291.6	6744.7	68489.6	7609.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9197.7	6703.8	587.62	662.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 356	Geometry	9332.9	6760.9	90099.8	6521.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9279.6	6752.5	4853.3	3893.1
+725_composite_PHILEMON.tif	Tile 357	Other	Image	Geometry	9593.2	6634.5	54639.8	1248.5
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 357	Geometry	9545.9	6694.3	15927.3	1777.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9553.1	6691.9	129.76	149.19
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 357	Geometry	9598.1	6617.8	28246.7	2735.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9581.5	6641.3	2471.8	1857.1
+725_composite_PHILEMON.tif	Tile 358	Other	Image	Geometry	11813.5	6747	188855.7	1753.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 358	Geometry	11799.7	6760.2	40220	4218.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Polygon	11691.5	6702.2	10.13	14.12
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 358	Geometry	11818.1	6717.5	110255.3	9968.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11800.8	6686.6	1624.1	1489.3
+725_composite_PHILEMON.tif	Tile 359	Other	Image	Rectangle	12252.6	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 359	Geometry	12217.4	6751.4	64574	6584.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Polygon	12061.7	6528.7	14.81	24.72
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 359	Geometry	12265.7	6737.8	108425.1	14291.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12299.6	6658.6	1183.8	999.33
+725_composite_PHILEMON.tif	Tile 360	Other	Image	Rectangle	12752.7	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 360	Geometry	12773	6757.9	45069.2	4720.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	12848.2	6582.8	47.54	45.91
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 360	Geometry	12745.3	6756.3	123509.1	14044.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12688.3	6776.6	2210.2	1983.7
+725_composite_PHILEMON.tif	Tile 361	Other	Image	Rectangle	13252.8	6751.4	250106.2	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 361	Geometry	13274.2	6750.2	107735.8	12195.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13292.1	6758.5	194.05	164.2
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 361	Geometry	13199.9	6756.2	52390.9	9318
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13166.1	6683.6	105.21	118.3
+725_composite_PHILEMON.tif	Tile 362	Other	Image	Geometry	13752.9	6751.4	250054.4	2000.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 362	Geometry	13811	6739.2	97214.4	9624.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13892.2	6796.2	72.48	95.34
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 362	Geometry	13669.1	6776.6	64178.3	9719.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13631.3	6693.9	2180.6	1666.7
+725_composite_PHILEMON.tif	Tile 363	Other	Image	Geometry	14252.7	6748	246652.8	1984.9
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 363	Geometry	14256.6	6753.4	126825.8	14371.1
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14230.2	6826.7	145.74	150.08
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 363	Geometry	14279	6748.1	49963.2	10020.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14257.6	6745	902.47	992.27
+725_composite_PHILEMON.tif	Tile 364	Other	Image	Geometry	14577.4	6749.2	68620.4	1219.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 364	Geometry	14579.9	6746.1	34355.4	4071.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	14564	6720.4	110.67	137.72
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 364	Geometry	14589.7	6713.8	16583.1	3017.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	14617.2	6766.9	199.5	214.71
+725_composite_PHILEMON.tif	Tile 365	Other	Image	Geometry	3805.4	7119.6	99789.6	1329.3
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 365	Geometry	3783.4	7120.1	59513.8	5618.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	3787.3	7143.4	155.87	208.34
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 365	Geometry	3814.5	7140.4	21660.5	3478.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	3816.1	7209	1208.9	732.38
+725_composite_PHILEMON.tif	Tile 366	Other	Image	Geometry	4235.1	7103.1	100093.6	1467.5
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 366	Geometry	4207.3	7096.8	42282	4704.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4200.6	7108.3	1101.2	942.83
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 366	Geometry	4256.2	7072	29773.7	3337.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4294.3	7047.8	1856.4	1467.2
+725_composite_PHILEMON.tif	Tile 367	Other	Image	Geometry	4790.7	7184.7	170020.7	1769.1
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 367	Geometry	4768.2	7171	67821.8	6508.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	4824.6	7260.5	2618.8	2090.9
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 367	Geometry	4795.9	7165.9	58020	4442.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	4804.2	7197.1	6788.6	5062.3
+725_composite_PHILEMON.tif	Tile 368	Other	Image	Geometry	5251.3	7239	237571.5	1949.7
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 368	Geometry	5278.7	7191.2	77988.7	7989.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5245.2	7243	562.68	642.68
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 368	Geometry	5231	7265.4	143398.8	7446.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5196.1	7275.1	6057.1	5317.4
+725_composite_PHILEMON.tif	Tile 369	Other	Image	Geometry	5751.4	7240	238560.1	1954.3
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 369	Geometry	5700.4	7247.4	64294.5	7641.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	5859.6	7075.3	2742.5	1223.6
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 369	Geometry	5676	7244	74947.1	5912
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	5716.5	7169.2	3337.1	2565.4
+725_composite_PHILEMON.tif	Tile 370	Other	Image	Geometry	6251.5	7241	239547.9	1958.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 370	Geometry	6245.1	7222.1	110624.2	10084.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6084.4	7082	8619.5	2122.3
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 370	Geometry	6247.8	7258.2	54526.9	6148
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6220.8	7217.7	986.64	1018.8
+725_composite_PHILEMON.tif	Tile 371	Other	Image	Geometry	6751.6	7242	240536.9	1962.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 371	Geometry	6749.3	7225.8	62334	6894.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	6717.8	7212.3	219.77	218.93
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 371	Geometry	6722.8	7219	41229.3	4437.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	6829.2	7251	1612.4	1364.8
+725_composite_PHILEMON.tif	Tile 372	Other	Image	Geometry	7251.7	7243	241524.7	1966.1
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 372	Geometry	7277.7	7261.3	78880.4	9082.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7315.8	7374.5	156.65	190.68
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 372	Geometry	7324.6	7287.7	48721.7	4923.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7351.2	7294.5	2239.8	1882.1
+725_composite_PHILEMON.tif	Tile 373	Other	Image	Geometry	7751.7	7243.7	242313.9	1968.8
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 373	Geometry	7756.9	7243.3	128437.7	14960.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	7739.5	7280.7	280.29	337.03
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 373	Geometry	7743.4	7225.5	76166.4	8856.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	7737.5	7149.7	1511.9	1327.7
+725_composite_PHILEMON.tif	Tile 374	Other	Image	Rectangle	8251.8	7243.8	242380.1	1969.5
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 374	Geometry	8249.6	7236.8	117059.8	13643.7
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8250.4	7182.1	174.57	231.29
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 374	Geometry	8242.2	7281.6	66993.3	7998.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8192.1	7257.1	3474.3	2842.6
+725_composite_PHILEMON.tif	Tile 375	Other	Image	Rectangle	8751.9	7243.8	242380.1	1969.5
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 375	Geometry	8752.9	7238.5	89832.9	9834.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	8764.4	7185.3	108.33	107.7
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 375	Geometry	8767	7279.3	61085.9	6777.3
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	8794.7	7296.3	2021.6	1668.5
+725_composite_PHILEMON.tif	Tile 376	Other	Image	Geometry	9230.3	7237.4	220924.2	1886.3
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 376	Geometry	9267.1	7170.4	51337.6	5599.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	9293	7237	142.62	144.78
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 376	Geometry	9328.1	7165.3	28724.7	3210.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	9270.5	7208.4	969.49	900.46
+725_composite_PHILEMON.tif	Tile 377	Other	Image	Geometry	11850.5	7223.7	142164.2	1542.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 377	Geometry	11827.5	7234.6	58114.2	6236.1
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 377	Geometry	11849.6	7229.6	17265.7	4234.4
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	11787.8	7213.2	79.49	88.28
+725_composite_PHILEMON.tif	Tile 378	Other	Image	Geometry	12252.9	7239	237586.6	1950.4
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 378	Geometry	12272.7	7233.8	50394.1	6194
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Polygon	12165.1	7240.8	24.94	24.72
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 378	Geometry	12256.8	7217.9	83616.1	13181.6
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12447	7176.4	2300.6	1408.9
+725_composite_PHILEMON.tif	Tile 379	Other	Image	Geometry	12753	7240.8	239318.5	1957.3
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 379	Geometry	12845.3	7314.7	45734.2	4671.5
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Polygon	12917.1	7365.5	10.13	14.12
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 379	Geometry	12764.1	7184.6	65262.2	11380.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	12690.6	7226.4	990.15	726.54
+725_composite_PHILEMON.tif	Tile 380	Other	Image	Geometry	13253.1	7242.5	241050.2	1964.2
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 380	Geometry	13283.6	7263.3	107464.8	10491.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13490.8	7216.1	32.73	37.08
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 380	Geometry	13196.6	7229.6	59724.3	9735.9
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13105.8	7165.9	342.13	294.86
+725_composite_PHILEMON.tif	Tile 381	Other	Image	Geometry	13735.6	7225.8	218161.5	1840.5
+725_composite_PHILEMON.tif	Tumor	Tumor	Tile 381	Geometry	13770.2	7242	97865.5	9114.2
+725_composite_PHILEMON.tif	ASMA	ASMA	Tumor	Geometry	13794.6	7212.1	286.8	256.01
+725_composite_PHILEMON.tif	Stroma	Stroma	Tile 381	Geometry	13699	7210.7	65524.2	11758.8
+725_composite_PHILEMON.tif	ASMA	ASMA	Stroma	Geometry	13692	7263	1248.5	1112.3
