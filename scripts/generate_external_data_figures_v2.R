@@ -975,7 +975,7 @@ s1=read.table("G:/My Drive/scRNAseq_analysis/compiled/clustering_data_lung4/samp
 il=strsplit(s1[,1],",")
 names(il)=rownames(s1)
 
-samp_names <- il$JG_stroma_consented_tumor
+samp_names <- il$JG_stroma_tumor
 
 stage_2_plus_samps <- as.character(c(246,248,260,400,412))
 stage_1_samps <- samp_names[samp_names%notin%stage_2_plus_samps]
