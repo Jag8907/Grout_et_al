@@ -913,6 +913,8 @@ gl$alv <- alv[[1]]
 gl$meso <- temp_meso[[1]]
 
 load(paste(data_path,"/in_house_v3.RData", sep=""))
+
+# using ldm version with 1000 UMI downsample / cutoff - create with dissector using 1000 UMI cutoff load 
 load(paste(data_path,"/ldm_1000.RData", sep=""))
 cluster_id <- ldm$dataset$cell_to_cluster
 
@@ -1128,6 +1130,396 @@ ggplot(temp, aes(x=dataASMA, y=dataFAP)) +
   ggtitle("In house") +
   theme(panel.grid.minor = element_blank())
 
+#####################################
+# loading and saving in house
+
+# read all saved sample sets
+s1=read.table("G:/My Drive/scRNAseq_analysis/compiled/clustering_data_lung4/sample_sets.txt",stringsAsFactors = F,row.names = 1)
+il=strsplit(s1[,1],",")
+names(il)=rownames(s1)
+
+# saving the tumor stroma sets
+samps <- paste("data_",il$JG_stroma_tumor,".rd",sep="")
+samps <- paste("G:/My Drive/scRNAseq_analysis/compiled/clustering_data_lung4/data/stroma_lung_compiled",samps,sep="/")
+samples <- samps
+
+# loading the samples from the raw data files
+u1=NA
+num <- 1
+samp_names <- il$JG_stroma_tumor
+for (samp in samples){
+  samp_env=new.env()
+  print(samp)
+  load(samp,envir=samp_env)
+  
+  temp_sum <- colSums(samp_env$umitab)
+  cutoff_cells <- names(temp_sum)[temp_sum>1000]
+  
+  if (sum(is.na(u1))==0){
+    u1=samp_env$umitab[,cutoff_cells]
+    colnames(u1) <- paste(samp_names[num],colnames(u1), sep="_")
+  }
+  else{
+    temp_u <- samp_env$umitab[,cutoff_cells]
+    
+    colnames(temp_u) <- paste(samp_names[num],colnames(temp_u), sep="_")
+    
+    u1=cbind(u1,temp_u)
+  }
+  num <- num + 1
+}
+
+u <- u1
+rm(u1)
+
+save(u, file = "C:/Users/johna/Desktop/in_house_v3.RData")
+
+#####################################
+# loading and saving lambs
+
+# some of the lambrechts files have a shorter gene list
+
+# read all saved sample sets
+s1=read.table("G:/My Drive/scRNAseq_analysis/compiled/clustering_data_lung4/sample_sets.txt",stringsAsFactors = F,row.names = 1)
+il=strsplit(s1[,1],",")
+names(il)=rownames(s1)
+
+gl$extended_fib <- gl$extended_fib[gl$extended_fib%notin%c(gl$FAP_CAF,gl$ADH1B_CAF)]
+
+# loading compiled lambrechts data
+samps <- paste("Lambrechtsdata_",il$JG_lambs,".rd",sep="")
+samps <- paste("G:/My Drive/scRNAseq_analysis/compiled/Lambrechts_compiled",samps,sep="/")
+samples <- samps
+
+count_table <- matrix(NA,nrow = length(samps),ncol=2)
+colnames(count_table) <- c("Fib count","myh11 count")
+rownames(count_table) <- samps
+
+norm_samps <- as.character(c(64,74,75,82,86,90,91))
+
+# loading the samples
+u1=0
+num <- 1
+count_samp = 1
+for (samp in samples){
+  samp_env=new.env()
+  print(samp)
+  load(samp,envir=samp_env)
+  
+  print(nrow(samp_env$umitab))
+  
+  prefix <- il$JG_lambs[count_samp]
+  count_samp <- count_samp + 1
+  colnames(samp_env$umitab) <- paste(prefix,colnames(samp_env$umitab),sep="_")
+  
+  temp_sum <- colSums(samp_env$umitab)
+  cutoff_cells <- names(temp_sum)[temp_sum>1000]
+  
+  gl$extended_fib <- gl$extended_fib[gl$extended_fib%in%rownames(samp_env$umitab)]
+  gl$pan_PvC <- gl$pan_PvC[gl$pan_PvC%in%rownames(samp_env$umitab)]
+  myh11_sig <- myh11_sig[myh11_sig%in%rownames(samp_env$umitab)]
+  
+  dataFib <- colSums(samp_env$umitab[gl$extended_fib,])/colSums(samp_env$umitab)
+  dataPvC <- colSums(samp_env$umitab[gl$pan_PvC,])/colSums(samp_env$umitab)
+  dataMYH11<- colSums(samp_env$umitab[myh11_sig,])/colSums(samp_env$umitab)
+  
+  dataFib <- dataFib[cutoff_cells]
+  dataPvC <- dataPvC[cutoff_cells]
+  dataMYH11 <- dataMYH11[cutoff_cells]
+  
+  plot(dataFib,dataPvC,log="xy", main = 'Fib v PvC', xlab = 'Fib', ylab = 'PvC', pch=20, cex=0.5)
+  abline(v=2.5e-2)
+  abline(h=7e-3)
+  
+  silico_gated <- c(dataFib > 2.5e-2 & dataPvC < 7e-3)
+  silico_gated <- silico_gated[cutoff_cells]
+  print(length(silico_gated[silico_gated]))
+  count_table[samps[num],"Fib count"] <- length(silico_gated[silico_gated])
+  
+  myh11_gated <- c(dataFib > 2.5e-2 & dataPvC < 7e-3 & dataMYH11 > 1e-3)
+  myh11_gated <- myh11_gated[cutoff_cells]
+  count_table[samps[num],"myh11 count"] <- length(myh11_gated[myh11_gated])
+  
+  num <- num + 1
+  
+  if (prefix%in%norm_samps){
+    next
+  }
+  
+  if (sum(u1)==0){
+    
+    u1=samp_env$umitab[,cutoff_cells]
+    
+  }else{
+    
+    temp_u <- samp_env$umitab[,cutoff_cells]
+    u1 <- u1[rownames(u1)[rownames(u1)%in%rownames(temp_u)],]
+    temp_u <- temp_u[rownames(temp_u)[rownames(temp_u)%in%rownames(u1)],]
+    
+    temp_u <- temp_u[rownames(u1),]
+    
+    u1=cbind(u1,temp_u)
+  }
+}
+count_table
+
+u_lambs <- u1
+rm(u1)
+
+write.csv(count_table, file = "C:/Users/johna/Desktop/lamb_count_table.csv")
+save(u_lambs, file = "C:/Users/johna/Desktop/lambs_tum_only.RData")
+
+#####################################
+# loading and saving wu
+
+files <- list.files(path=wu, pattern="*.txt", full.names=TRUE, recursive=FALSE)
+
+gl$extended_fib <- gl$extended_fib[gl$extended_fib%notin%c(gl$FAP_CAF,gl$ADH1B_CAF)]
+
+count_table <- matrix(NA,nrow = length(files),ncol=2)
+colnames(count_table) <- c("Fib count","myh11 count")
+rownames(count_table) <- files
+
+for (num in 1:length(files)){
+  
+  read_file <- read.table(files[num])
+  read_file <- as.matrix(read_file)
+  read_file <- Matrix(read_file, sparse = T)
+  
+  temp_sum <- colSums(read_file)
+  cutoff_cells <- names(temp_sum)[temp_sum>1000]
+  
+  gl$extended_fib <- gl$extended_fib[gl$extended_fib%in%rownames(read_file)]
+  gl$pan_PvC <- gl$pan_PvC[gl$pan_PvC%in%rownames(read_file)]
+  myh11_sig <- myh11_sig[myh11_sig%in%rownames(read_file)]
+  
+  dataFib <- colSums(read_file[gl$extended_fib,])/colSums(read_file)
+  dataPvC <- colSums(read_file[gl$pan_PvC,])/colSums(read_file)
+  dataMYH11<- colSums(read_file[myh11_sig,])/colSums(read_file)
+  
+  silico_gated <- c(dataFib > 2e-2 & dataPvC < 6e-3)
+  silico_gated <- silico_gated[cutoff_cells]
+  print(length(silico_gated[silico_gated]))
+  count_table[files[num],"Fib count"] <- length(silico_gated[silico_gated])
+  
+  myh11_gated <- c(dataFib > 7e-3 & dataPvC < 2e-3 & dataMYH11 > 1e-3)
+  myh11_gated <- myh11_gated[cutoff_cells]
+  count_table[files[num],"myh11 count"] <- length(myh11_gated[myh11_gated])
+  
+  if (files[num] == files[1]){
+    # keeping only cells above 1000 UMI
+    read_file <- read_file[,cutoff_cells]
+    
+    patient_3d_matrix <- read_file
+  }else{
+    # keeping only cells above 1000 UMI
+    read_file <- read_file[,cutoff_cells]
+    
+    read_file <- read_file[rownames(patient_3d_matrix),]
+    
+    patient_3d_matrix <- cbind(patient_3d_matrix, read_file)
+  }
+  rm(read_file)
+}
+count_table
+
+u <- patient_3d_matrix
+rm(patient_3d_matrix)
+
+save(u, file = "C:/Users/johna/Desktop/wu_data_v3.RData")
+
+#####################################
+# loading and saving laughney
+
+files <- list.files(path=laugh, pattern="*.csv", full.names=TRUE, recursive=FALSE)
+
+gl$extended_fib <- gl$extended_fib[gl$extended_fib%notin%c(gl$FAP_CAF,gl$ADH1B_CAF)]
+
+count_table <- matrix(NA,nrow = length(files),ncol=2)
+colnames(count_table) <- c("Fib count","myh11 count")
+rownames(count_table) <- files
+
+for (num in 1:length(files)){
+  
+  prefix <- strsplit(files[num],"_MSK_")[[1]][2]
+  prefix <- strsplit(prefix,"_PRIMARY")[[1]][1]
+  
+  read_file <- t(read.csv(files[num],row.names=1))
+  read_file <- as.matrix(read_file)
+  read_file <- Matrix(read_file, sparse = T)
+  
+  colnames(read_file) <- paste(prefix,colnames(read_file),sep="_")
+  
+  temp_sum <- colSums(read_file)
+  cutoff_cells <- names(temp_sum)[temp_sum>1000]
+  gl$extended_fib <- gl$extended_fib[gl$extended_fib%in%rownames(read_file)]
+  gl$pan_PvC <- gl$pan_PvC[gl$pan_PvC%in%rownames(read_file)]
+  myh11_sig <- myh11_sig[myh11_sig%in%rownames(read_file)]
+  
+  dataFib <- colSums(read_file[gl$extended_fib,])/colSums(read_file)
+  dataPvC <- colSums(read_file[gl$pan_PvC,])/colSums(read_file)
+  dataMYH11<- colSums(read_file[myh11_sig,])/colSums(read_file)
+  
+  silico_gated <- c(dataFib > 7e-3 & dataPvC < 2e-3)
+  silico_gated <- silico_gated[cutoff_cells]
+  print(length(silico_gated[silico_gated]))
+  count_table[files[num],"Fib count"] <- length(silico_gated[silico_gated])
+  
+  myh11_gated <- c(dataFib > 7e-3 & dataPvC < 2e-3 & dataMYH11 > 1e-3)
+  myh11_gated <- myh11_gated[cutoff_cells]
+  count_table[files[num],"myh11 count"] <- length(myh11_gated[myh11_gated])
+  
+  if (files[num] == files[1]){
+    # keeping only cells above 1000 UMI
+    read_file <- read_file[,cutoff_cells]
+    
+    patient_3d_matrix <- read_file
+  }else{
+    
+    patient_3d_matrix <- patient_3d_matrix[rownames(patient_3d_matrix)[rownames(patient_3d_matrix)%in%rownames(read_file)],]
+    read_file <- read_file[rownames(read_file)[rownames(read_file)%in%rownames(patient_3d_matrix)],]
+    
+    # keeping only cells above 1000 UMI
+    read_file <- read_file[,cutoff_cells]
+    
+    read_file <- read_file[rownames(patient_3d_matrix),]
+    
+    patient_3d_matrix <- cbind(patient_3d_matrix, read_file)
+  }
+  rm(read_file)
+}
+count_table
+
+u <- patient_3d_matrix
+rm(patient_3d_matrix)
+
+save(u, file = "C:/Users/johna/Desktop/laughney_data_v2.RData")
+
+#####################################
+# loading and saving kurten
+
+files <- list.files(path=kurten, pattern="*.rd", full.names=TRUE, recursive=FALSE)
+
+gl$extended_fib <- gl$extended_fib[gl$extended_fib%notin%c(gl$FAP_CAF,gl$ADH1B_CAF)]
+
+count_table <- matrix(NA,nrow = length(files),ncol=2)
+colnames(count_table) <- c("Fib count","myh11 count")
+rownames(count_table) <- files
+
+# loading the samples
+u1=0
+num <- 1
+samp <- files[1]
+for (samp in files){
+  samp_env=new.env()
+  print(samp)
+  load(samp,envir=samp_env)
+  
+  temp_u <- samp_env$umitab
+  rm(samp_env)
+  
+  print(paste("number of genes", nrow(temp_u)), sep = "")
+  
+  temp <- length(strsplit(files[num],"_")[[1]])
+  prefix <- strsplit(files[num],"_")[[1]][temp]
+  prefix <- strsplit(prefix,".rd")[[1]][1]
+  print(prefix)
+  
+  colnames(temp_u) <- paste(prefix,colnames(temp_u),sep="_")
+  
+  temp_sum <- colSums(temp_u)
+  cutoff_cells <- names(temp_sum)[temp_sum>1000]
+  
+  gl$extended_fib <- gl$extended_fib[gl$extended_fib%in%rownames(temp_u)]
+  gl$pan_PvC <- gl$pan_PvC[gl$pan_PvC%in%rownames(temp_u)]
+  myh11_sig <- myh11_sig[myh11_sig%in%rownames(temp_u)]
+  
+  dataFib <- colSums(temp_u[gl$extended_fib,])/colSums(temp_u)
+  dataPvC <- colSums(temp_u[gl$pan_PvC,])/colSums(temp_u)
+  dataMYH11<- colSums(temp_u[myh11_sig,])/colSums(temp_u)
+  
+  dataFib <- dataFib[cutoff_cells]
+  dataPvC <- dataPvC[cutoff_cells]
+  dataMYH11 <- dataMYH11[cutoff_cells]
+  
+  plot(dataFib,dataPvC,log="xy", main = 'Fib v PvC', xlab = 'Fib', ylab = 'PvC', pch=20, cex=0.5)
+  abline(v=2.5e-2)
+  abline(h=7e-3)
+  
+  silico_gated <- c(dataFib > 2.5e-2 & dataPvC < 7e-3)
+  silico_gated <- silico_gated[cutoff_cells]
+  print(paste("fib cells", length(silico_gated[silico_gated])), sep=" ")
+  count_table[files[num],"Fib count"] <- length(silico_gated[silico_gated])
+  
+  myh11_gated <- c(dataFib > 2.5e-2 & dataPvC < 7e-3 & dataMYH11 > 1e-3)
+  myh11_gated <- myh11_gated[cutoff_cells]
+  count_table[files[num],"myh11 count"] <- length(myh11_gated[myh11_gated])
+  
+  num <- num + 1
+  
+  if (sum(u1)==0){
+    
+    u1=temp_u[,cutoff_cells]
+    
+  }else{
+    
+    temp_u <- temp_u[,cutoff_cells]
+    u1 <- u1[rownames(u1)[rownames(u1)%in%rownames(temp_u)],]
+    temp_u <- temp_u[rownames(temp_u)[rownames(temp_u)%in%rownames(u1)],]
+    
+    temp_u <- temp_u[rownames(u1),]
+    
+    u1=cbind(u1,temp_u)
+  }
+}
+count_table
+
+u <- u1
+rm(u1)
+
+save(u, file = "C:/Users/johna/Desktop/kurten_cd45neg.RData")
+
+#####################################
+# loading and saving kim
+
+# Kim et al analysis
+library(data.table)
+temp <- fread("C:/Users/johna/Desktop/GSE131907_Lung_Cancer_raw_UMI_matrix.txt",nrows=100)
+
+# 210,000 cells sequenced
+
+# only selecting early stage cancers, not metastasis
+category_of_interest <- c("58","06","28","49","T06","T08","T09","T18","T19","T20","T25","T28","T30","T21","T34")
+category_of_interest <- c("T06","T08","T09","T18","T19","T20","T25","T28","T30","T21","T34")
+type_of_interest <- c("LUNG","EBUS","BRONCHO")
+type_of_interest <- c("LUNG")
+
+# selecting out only tumor cells, not interested in lymph node (LN), normal lung (Lung), or metastasis (m)
+cells <- colnames(temp)
+select_cells <- c()
+cell <- cells[2]
+# pat_list <- c()
+for (cell in cells){
+  cell_id <- strsplit(cell,"_")[[1]][3]
+  cell_type <- strsplit(cell,"_")[[1]][2]
+  # pat <- paste(cell_type,cell_id,sep="_")
+  if (cell_id%in%category_of_interest & cell_type%in%type_of_interest){
+    select_cells <- c(select_cells,cell)
+    # pat_list <- c(pat_list,pat)
+  }
+}
+# pat_list <- unique(pat_list)
+
+rm(temp)
+temp <- fread("C:/Users/johna/Desktop/GSE131907_Lung_Cancer_raw_UMI_matrix.txt",select=c("Index",select_cells))
+rm(select_cells)
+rm(cells)
+# gene_names <- unlist(temp[,"Index"])
+# temp <- as.matrix(temp, rownames = gene_names)
+
+fwrite(temp,file="C:/Users/johna/Desktop/Kim_cells_of_interest_v2.csv")
+
+#####################################
 
 
 
